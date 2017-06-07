@@ -85,7 +85,7 @@
 [data-icon]:before {
   content: attr(data-icon); }
 
-.icon-style, [data-icon]:before, .icon-arrow-left, .icon-home, .icon-bag, .icon-bell, .icon-user {
+.icon-style, [data-icon]:before, .icon-arrow-left, .icon-home, .icon-bag, .icon-bell, .icon-user, .icon-fb {
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
@@ -97,7 +97,7 @@
   font-smoothing: antialiased;
   font-family: "Komuto Icons" !important;
   text-decoration: none; }
-  .icon-style:hover, [data-icon]:hover:before, .icon-arrow-left:hover, .icon-home:hover, .icon-bag:hover, .icon-bell:hover, .icon-user:hover {
+  .icon-style:hover, [data-icon]:hover:before, .icon-arrow-left:hover, .icon-home:hover, .icon-bag:hover, .icon-bell:hover, .icon-user:hover, .icon-fb:hover {
     text-decoration: none; }
 
 .icon-arrow-left:before {
@@ -118,6 +118,10 @@
 
 .icon-user:before {
   content: "";
+  color: #000000; }
+
+.icon-fb:before {
+  content: "";
   color: #000000; }
 
 @keyframes spinAround {
@@ -4457,6 +4461,12 @@ body {
   .button.is-fb {
     background-color: #23599c;
     color: #ffffff; }
+    .button.is-fb span {
+      font-size: 24px;
+      vertical-align: middle;
+      margin-right: 15px; }
+      .button.is-fb span:before {
+        color: #ffffff; }
 
 .input {
   padding-top: 0.475em;
