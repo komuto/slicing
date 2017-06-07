@@ -1,0 +1,32 @@
+//Header style
+.nav
+  &.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: $primary;
+
+.nav-left
+  .nav-item
+    padding-left: 0
+    padding-right: 0
+    span
+      color: $white
+      font-size: 14px
+      letter-spacing: 0.23
+      .icon-arrow-left
+        &:before
+          color: $white
+
+@media screen and (max-width: 768px)
+  .nav-menu
+    opacity: 0;
+    height: 0px;
+    @include transition(all 300ms linear)
+    &.is-active
+      opacity: 1;
+      height: auto;
+      display: block;
+
+

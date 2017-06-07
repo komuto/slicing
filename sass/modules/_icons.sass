@@ -1,0 +1,21 @@
+@import 'komuto_icon'
+.icon-style
+  display: inline-block
+  vertical-align: middle
+  line-height: 1
+  text-decoration: inherit
+  text-rendering: optimizeLegibility
+  text-transform: none
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  font-family: $font_komuto !important
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+.icon-arrow-left
+  @extend .icon-style
+  &:before
+    content: $icons8-var-001-arrow-left
+    color: $black

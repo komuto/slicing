@@ -1,0 +1,50 @@
+html
+  -webkit-font-smoothing: antialiased !important
+  height: 100%
+
+body
+  font-size: 14px
+  position: relative
+  color: $color_text
+  font-family: $family-primary
+.main
+  margin-top: 52px
+
+.content
+  padding: 20px 0
+
+.container
+  &.is-fluid
+    margin: 0 20px
+
+.button
+  text-transform: uppercase
+  font-weight: 500
+  &.is-roundedfull
+    @include borderRadius(30px)
+
+.input
+  padding-top: 0.475em
+  padding-left: 0
+  padding-right: 0
+  padding-bottom: 0.475em
+  @include boxShadow(none)
+  @include borderRadius(0)
+  border: none
+  border-bottom: 1px solid $color_border
+  font-size: 13px
+  color: $color_input
+  margin-bottom: 20px
+  +placeholder
+    color: $color_input
+    opacity: 1
+
+.field
+  .label
+    font-size: 13px
+    color: $color_input
+    @extend .nunito-regular
+  .radio
+    color: $color_radio
+    font-size: 13px
+    letter-spacing: 0.02;
