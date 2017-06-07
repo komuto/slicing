@@ -1,0 +1,31 @@
+.level
+  &.nav-bottom
+    position: fixed
+    left: 0
+    bottom: 0
+    @include size(100%, 46px)
+    border-top: 1px solid $color_border_ccc
+    background-color: $white
+    .level-item
+      align-items: center
+      justify-content: center
+      display: block
+      padding: 10px
+      height: 46px
+      color: $color_radio
+      font-size: 10px
+      @extend .nunito-remibold
+      opacity: 0.5
+      border-top: 1px solid transparent
+      span
+        display: block
+        font-size: 18px
+        &:before
+          color: $color_radio
+      &.is-active
+        border-top: 1px solid $red
+        color: $red
+        opacity: 1
+        span
+          &:before
+           color: $red

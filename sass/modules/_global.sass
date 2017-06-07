@@ -3,13 +3,14 @@ html
   height: 100%
 
 body
-  font-size: 14px
+  font-size: 13px
   position: relative
   color: $color_text
   font-family: $family-primary
-.main
-  margin-top: 52px
 
+.main
+  margin-top: 61px
+  padding-bottom: 46px
 .content
   padding: 20px 0
 
@@ -18,10 +19,17 @@ body
     margin: 0 20px
 
 .button
-  text-transform: uppercase
-  font-weight: 500
-  &.is-roundedfull
-    @include borderRadius(30px)
+  font-size: 14px
+  height: auto
+  letter-spacing: 0.20px
+  @extend .nunito-bold
+  @include borderRadius(5px)
+  &.is-large
+    font-size: 14px
+    padding: 17px
+  &.is-fb
+    background-color: $color_fb
+    color: $white
 
 .input
   padding-top: 0.475em
@@ -34,12 +42,15 @@ body
   border-bottom: 1px solid $color_border
   font-size: 13px
   color: $color_input
-  margin-bottom: 20px
+  margin-bottom: 0
   +placeholder
     color: $color_input
     opacity: 1
 
 .field
+  margin-bottom: 35px
+  &:not(:last-child)
+    margin-bottom: 35px
   .label
     font-size: 13px
     color: $color_input
@@ -47,4 +58,51 @@ body
   .radio
     color: $color_radio
     font-size: 13px
-    letter-spacing: 0.02;
+    letter-spacing: 0.02
+    position: relative
+    margin-right: 20px
+    &:before
+      content: ""
+      position: absolute
+      left: 0
+      top: -5px
+      @include size(25px, 25px)
+      @include borderRadius(700px)
+      border: 1px solid $color_border_ccc
+    &.checked
+      &:after
+        content: ""
+        position: absolute
+        left: 4px
+        top: -1px
+        @include size(17px, 17px)
+        @include borderRadius(700px)
+        background-color: $black
+    input
+      margin-right: 20px
+      visibility: hidden
+
+.or
+  position: relative
+  margin: 30px 0
+  text-align: center
+  &:before
+    content: ""
+    @include size(100%, 1px)
+    background-color: $color_border
+    position: absolute
+    top: 50%
+    left: 0
+    letter-spacing: 0;
+    @include translateY(-50%)
+    z-index: 1
+  span
+    display: table
+    padding: 10px 20px
+    margin: 0 auto
+    background-color: $white
+    position: relative
+    z-index: 2
+  a
+    display: inline-block
+

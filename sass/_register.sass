@@ -1,9 +1,32 @@
-.register
+.user
+  &.login
+    .content
+      .form
+        .or
+          margin-top: 0
+        .has-text-centered
+          margin-top: 30px
   .hero
-    padding: 15px 0
+    padding: 19px 0
     background-color: $color_grey
-    a
-      color: $color_link
-.content
-  .form-register
-    padding-top: 20px
+  .content
+    .form
+      padding-top: 20px
+    .desc
+      padding: 30px 30px 20px 30px
+      strong
+        color: $color_radio
+      p
+        letter-spacing: 0.2px
+        line-height: 1.77
+        color: $color_text_desc
+      img
+        margin-bottom: 30px;
+    .columns
+      padding-top: 20px
+
+  &.user-success
+    .content
+      .desc
+        padding-top: 0
+        padding-bottom: 10px

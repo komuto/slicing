@@ -1,20 +1,21 @@
 //Header style
-.nav
+.level
   &.header
     position: fixed
     top: 0
     left: 0
     width: 100%
-    background-color: $primary;
+    background-color: $red;
+    z-index: 2
 
-.nav-left
-  .nav-item
-    padding-left: 0
-    padding-right: 0
+  .level-item
+    align-items: left;
+    justify-content: left;
+    padding: 20px 0
     span
       color: $white
       font-size: 14px
-      letter-spacing: 0.23
+      letter-spacing: 0.23px
       .icon-arrow-left
         &:before
           color: $white

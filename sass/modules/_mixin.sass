@@ -45,8 +45,24 @@
   -o-transform: translateX($x)
   transform: translateX($x)
 
+@mixin translateY($y)
+  -webkit-transform: translateY($y)
+  -moz-transform: translateY($y)
+  -o-transform: translateY($y)
+  transform: translateY($y)
+
+@mixin translateXY($x, $y)
+  -webkit-transform: translateXY($x, $y)
+  -moz-transform: translateXY($x, $y)
+  -o-transform: translateXY($x, $y)
+  transform: translateXY($x, $y)
+
 @mixin boxShadow($val)
   -webkit-box-shadow: $val
   -moz-box-shadow: $val
   box-shadow: $val
+
+@mixin size($w, $h)
+  width: $w
+  height: $h
 
