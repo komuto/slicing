@@ -5,20 +5,63 @@
     top: 0
     left: 0
     width: 100%
-    background-color: $red;
+    background-color: $red
     z-index: 2
-
-  .level-item
-    align-items: left;
-    justify-content: left;
-    padding: 20px 0
-    span
-      color: $white
-      font-size: 14px
-      letter-spacing: 0.23px
-      .icon-arrow-left
+    padding: 0 15px
+    flex-flow: row wrap;
+    .nav-left
+      overflow: visible
+      .level-item
+        align-items: left;
+        justify-content: left;
+        padding: 20px 0
+        span
+          color: $white
+          font-size: 14px
+          letter-spacing: 0.23px
+          @extend .nunito-bold
+          .icon-arrow-left
+            &:before
+              color: $white
+    .nav-right
+      overflow: visible
+      span[class^="icon-"]
+        margin-left: 15px
+        font-size: 18px
+        position: relative
+        &:first-child
+          margin-left: 0
+        &:last-child
+          margin-right: 6px
         &:before
           color: $white
+        .notif-cart
+          position: absolute
+          top: -6px
+          right: -6px
+          @include size(15px, 15px)
+          @include borderRadius(100px)
+          background-color: $white
+          border: 1px solid $red
+          color: $red
+          font-size: 8px
+          text-align: center
+          line-height: 15px
+          display: block
+    .search-form
+      width: 100%
+      margin-bottom: 15px
+      .control
+        &.has-icons-left
+          .icon
+            font-size: 15px
+            height: 43px
+            width: 40px
+            color: $color_input
+          input
+            @include borderRadius(2px)
+            @include boxShadow($shadow_search)
+
 
 @media screen and (max-width: 768px)
   .nav-menu

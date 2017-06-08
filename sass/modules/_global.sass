@@ -7,16 +7,19 @@ body
   position: relative
   color: $color_text
   font-family: $family-primary
-
+  height: 100%
 .main
   margin-top: 61px
   padding-bottom: 46px
+  min-height: 100%
+  &.home
+    padding-top: 119px
 .content
   padding: 20px 0
 
 .container
   &.is-fluid
-    margin: 0 20px
+    margin: 0 15px
 
 .button
   font-size: 14px
@@ -53,10 +56,15 @@ body
     color: $color_input
     opacity: 1
 
+.control
+  &.has-icons-left
+    input
+      &.is-medium
+        font-size: 13px
+        height: 43px
+        padding-left: 40px
+
 .field
-  margin-bottom: 35px
-  &:not(:last-child)
-    margin-bottom: 35px
   .label
     font-size: 13px
     color: $color_input
