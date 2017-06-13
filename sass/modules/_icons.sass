@@ -14,36 +14,6 @@
   &:hover
     text-decoration: none
 
-.icon-arrow-left
-  @extend .icon-style
-  &:before
-    content: $icons8-var-001-arrow-left
-    color: $black
-
-.icon-home
-  @extend .icon-style
-  &:before
-    content: $icons8-var-006-home
-    color: $black
-
-.icon-bag
-  @extend .icon-style
-  &:before
-    content: $icons8-var-002-bag
-    color: $black
-
-.icon-bell
-  @extend .icon-style
-  &:before
-    content: $icons8-var-003-bell
-    color: $black
-
-.icon-user
-  @extend .icon-style
-  &:before
-    content: $icons8-var-005-user
-    color: $black
-
 .icon-fb
   @extend .icon-style
   &:before
@@ -60,12 +30,6 @@
   @extend .icon-style
   &:before
     content: $icons8-var-008-love
-    color: $black
-
-.icon-search
-  @extend .icon-style
-  &:before
-    content: $icons8-var-010-search
     color: $black
 
 .icon-computer
@@ -134,3 +98,95 @@
   vertical-align: middle
   &.wishlisted
     background-image: url($icon-wishlisted)
+
+.icon-sort
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-sort)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-list
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-list)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-home
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-home)
+  background-repeat: no-repeat
+  vertical-align: middle
+  &.active
+    background-image: url($icon-home-active)
+
+.icon-user
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-profile)
+  background-repeat: no-repeat
+  vertical-align: middle
+  &.active
+    background-image: url($icon-profile-active)
+
+.icon-bag
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-bag)
+  background-repeat: no-repeat
+  vertical-align: middle
+  &.active
+    background-image: url($icon-bag-active)
+
+.icon-bell
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-bell)
+  background-repeat: no-repeat
+  vertical-align: middle
+  &.active
+    background-image: url($icon-bell-active)
+
+.icon-saldo
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-saldo)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-list-lg
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-list-lg)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-toko
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-toko)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-search
+  display: inline-block
+  @include size(18px, 18px)
+  background-image: url($icon-search)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-arrow-left
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-arrow-left)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-trash
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-trash)
+  background-repeat: no-repeat
+  vertical-align: middle

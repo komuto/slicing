@@ -18,17 +18,15 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main home bg-grey">
+    <div class="main wishlist">
       <nav class="level header is-fullwidth">
         <div class="nav-left">
           <a class="level-item">
-            <span>Galaksi Parabola</span>
+            <span><span class="icon-arrow-left"></span> Wishlist</span>
           </a>
         </div>
-        <div class="nav-right">
-          <span class="icon-love"></span>
-          <span class="icon-cart"><span class="notif-cart">4</span></span>
-        </div>
+      </nav>
+      <section class="section is-paddingless">
         <div class="field search-form">
           <p class="control has-icons-left">
             <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
@@ -37,77 +35,9 @@
             </span>
           </p>
         </div>
-      </nav>
-      <section class="section is-paddingless">
-        <div class="slide-banner">
-          <div>
-            <img src="../images/banner.jpg" alt="banner">
-          </div>
-          <div>
-            <img src="../images/banner.jpg" alt="banner">
-          </div>
-          <div>
-            <img src="../images/banner.jpg" alt="banner">
-          </div>
-        </div>
-      </section>
-      <section class="section is-paddingless">
-        <div class="container is-fluid">
-          <div class="title">
-            <h3>Kategori Produk</h3>
-          </div>
-        </div>
-        <div class="columns is-mobile is-multiline custom">
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-computer"></span>
-              <p>Komputer & Handphone</p>
-            </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-sport"></span>
-              <p>Peralatan Olahraga</p>
-            </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-office"></span>
-              <p>Peralatan Kantor</p>
-            </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-kitchen"></span>
-              <p>Perlengkapan Dapur</p>
-            </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-baby"></span>
-              <p>Perlengkepan Bayi</p>
-            </div>
-          </div>
-          <div class="column is-one-third">
-            <div class="has-text-centered">
-              <span class="icon-tv"></span>
-              <p>Peralatan TV dan Audio</p>
-            </div>
-          </div>
-          <div class="column is-paddingless">
-            <div class="see-all">
-              <span class="link">Lihat semua kategori <span class="icon-arrow-right"></span></span>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section class="section is-paddingless">
-        <div class="container is-fluid">
-          <div class="title">
-            <h3>Produk Terbaru</h3>
-          </div>
-        </div>
         <div class="columns is-mobile is-multiline custom">
           <div class="column is-half">
             <div class="box list">
@@ -126,6 +56,7 @@
                       <div class="discount"></div>
                       <span class="price">Rp 10.500.000 </span>
                       <span class="wish"><span class="icon-wishlist wishlisted"></span>1200</span>
+                      <div class="remove-item"><span class="icon-trash"></span></div>
                     </div>
                   </div>
                 </div>
@@ -149,6 +80,7 @@
                       <div class="discount">Rp 10.560.000</div>
                       <span class="price">Rp 10.500.000 </span>
                       <span class="wish"><span class="icon-wishlist wishlisted"></span>1200</span>
+                      <div class="remove-item"><span class="icon-trash"></span></div>
                     </div>
                   </div>
                 </div>
@@ -172,6 +104,7 @@
                       <div class="discount">Rp 10.560.000</div>
                       <span class="price">Rp 10.500.000 </span>
                       <span class="wish"><span class="icon-wishlist wishlisted"></span>1200</span>
+                      <div class="remove-item"><span class="icon-trash"></span></div>
                     </div>
                   </div>
                 </div>
@@ -195,24 +128,18 @@
                       <div class="discount">Rp 10.560.000</div>
                       <span class="price">Rp 10.500.000 </span>
                       <span class="wish"><span class="icon-wishlist"></span>1200</span>
+                      <div class="remove-item"><span class="icon-trash"></span></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="column is-paddingless">
-            <div class="see-all">
-              <span class="link">Lihat semua produk terbaru <span class="icon-arrow-right"></span></span>
-            </div>
-          </div>
         </div>
       </section>
-      <div class="level nav-bottom is-mobile">
-        <a class="level-item has-text-centered is-active"><span class="icon-home"></span>Home</a>
-        <a class="level-item has-text-centered"><span class="icon-bag"></span>Transaksi</a>
-        <a class="level-item has-text-centered"><span class="icon-bell"></span>Notifikasi</a>
-        <a class="level-item has-text-centered"><span class="icon-user"></span>Profil</a>
+      <div class="level nav-bottom filter-nav is-mobile">
+        <a class="level-item has-text-centered"><span class="icon-sort"></span>Urutkan</a>
+        <a class="level-item has-text-centered"><span class="icon-list"></span>Tampilan</a>
       </div>
     </div>
 

@@ -14,18 +14,46 @@
       height: 46px
       color: $color_radio
       font-size: 10px
-      @extend .nunito-remibold
+      @extend .nunito-semibold
       opacity: 0.5
       border-top: 1px solid transparent
       span
         display: block
         font-size: 18px
+        margin: -5px auto 0 auto
         &:before
           color: $color_radio
       &.is-active
-        border-top: 1px solid $red
         color: $red
         opacity: 1
+        position: relative
+        &:before
+          content: ""
+          @include size(32px, 1px)
+          background-color: $red
+          position: absolute
+          top: -1px
+          left: 50%
+          @include translateX(-50%)
+        .icon-home
+          background-image: url($icon-home-active)
+        .icon-bag
+          background-image: url($icon-bag-active)
+        .icon-bell
+          background-image: url($icon-bell-active)
+        .icon-user
+          background-image: url($icon-profile-active)
         span
           &:before
            color: $red
+  &.filter-nav
+    .level-item
+      opacity: 1
+      vertical-align: middle
+      font-size: 13px
+      color: $color_text
+      span
+        display: inline-block
+        vertical-align: middle
+        margin-top: -5px
+        margin-right: 10px
