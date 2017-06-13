@@ -24,6 +24,15 @@ $(document).ready(function () {
       $(this).find('input').prop('checked', false);
     }
   });
+
+  $('.slide-banner').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    autoplay: true,
+    arrows: false,
+    slidesToShow: 1
+  });
   // $('.modal-button').click(function() {
   //   var target = $(this).data('target');
   //   $('html').addClass('is-clipped');

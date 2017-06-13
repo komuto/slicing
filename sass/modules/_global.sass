@@ -13,13 +13,20 @@ body
   padding-bottom: 46px
   min-height: 100%
   &.home
-    padding-top: 119px
+    margin-top: 119px
 .content
   padding: 20px 0
 
+.section
+  background-color: transparent
+  &:after
+    content: ""
+    display: block
+    clear: both
+
 .container
   &.is-fluid
-    margin: 0 15px
+    margin: 0 20px
 
 .button
   font-size: 14px
@@ -120,3 +127,116 @@ body
   a
     display: inline-block
 
+.columns
+  margin-left: -1px
+  margin-right: -1px
+  margin-top: 0
+  &.custom
+    &:last-child
+      margin-bottom: 0
+    .column
+      background-color: $white
+      padding: 20px 21px
+      border-right: 1px solid $color_border
+      border-bottom: 1px solid $color_border
+      &.no-padding
+        padding: 0
+
+.title
+  font-size: 13px
+  letter-spacing: 0.2px
+  color: $color_radio
+  @extend .nunito-bold
+  margin-bottom: 15px
+
+.link
+  display: inline-block
+  color: $primary
+
+.see-all
+  padding: 15px 20px
+  .link
+    display: block
+    position: relative
+    .icon-arrow-right
+      position: absolute
+      top: 50%
+      right: 0
+      @include translateY(-50%)
+
+.box
+  background-color: none
+  padding: 0
+  @include boxShadow(none)
+  @include borderRadius(0)
+  .media
+    .media-left
+      .image
+        position: relative
+        .pin
+          @include size(42px, 42px)
+          @include borderRadius(700px)
+          background-color: $green
+          position: absolute
+          top: -15px
+          left: -15px
+          span
+            font-size: 8px
+            text-transform: uppercase
+            @extend .nunito-bold
+            color: $white
+            position: absolute
+            top: 50%
+            left: 0
+            width: 100%
+            @include translateY(-50%)
+            text-align: center
+          &.disc
+            background-color: $red
+            span
+              font-size: 13px
+  &.list
+    .media
+      display: block
+      .media-left
+        flex-basis: auto
+        flex-grow: 0
+        flex-shrink: 0
+        margin-right: 0
+      .media-content
+        flex-basis: auto
+        flex-grow: 0
+        flex-shrink: 0
+        .content
+          padding-top: 20px
+          padding-bottom: 0
+          h4
+            font-size: 13px
+            line-height: 1.38
+            letter-spacing: 0.2px
+            color: $color_radio
+          .detail
+            p, .discount
+              font-size: 12px
+              color: $color_input
+              line-height: 1.33
+              letter-spacing: 0.2px
+              vertical-align: middle
+              span
+               vertical-align: middle
+            .discount
+              min-height: 30px
+              text-decoration: line-through;
+            .price
+              font-size: 16px
+              line-height: 1.25
+              letter-spacing: 0.2px
+              @extend .nunito-bold
+              color: $red
+              display: block
+              margin-bottom: 15px
+            .wish
+              color: $color_input
+              font-size: 11px
+              span
+                margin-right: 10px

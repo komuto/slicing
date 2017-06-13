@@ -14,7 +14,7 @@ gulp.task('styles', function(){
   return  gulp.src('sass/*.sass')
     .pipe(sass().on('error', sass.logError))
     .pipe(plumber())
-    .pipe(gulp.dest('./css'))
+    .pipe(gulp.dest('./dist/css'))
     .pipe(autoprefixer())
     .pipe(connect.reload());
     //.pipe(livereload());

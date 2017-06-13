@@ -9,6 +9,8 @@
     z-index: 2
     padding: 0 15px
     flex-flow: row wrap;
+    display: flex;
+    margin-bottom: 0
     .nav-left
       overflow: visible
       .level-item
@@ -57,7 +59,8 @@
             font-size: 15px
             height: 43px
             width: 40px
-            color: $color_input
+            &:before
+              color: $color_input
           input
             @include borderRadius(2px)
             @include boxShadow($shadow_search)
