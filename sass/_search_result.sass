@@ -1,0 +1,33 @@
+.categories-option
+  height: 46px
+  padding: 13px 20px
+  background-color: $color_grey_bg
+  border-bottom: 1px solid $color_border
+  .columns
+    &:last-child
+      margin-bottom: 0
+
+    .select
+      width: 100%
+      select
+        background: transparent
+        border: none
+        padding-left: 0
+        padding-top: 0
+        height: auto
+        font-size: 13px
+        width: 100%
+      &:before
+        content: ""
+        @include size(24px, 24px)
+        background-image: url($icon-arrow-down)
+        position: absolute
+        top: -2px
+        right: 0
+      &:after
+        display: none
+
+    &.is-mobile
+      > .column
+        &.is-one-quarter
+          width: 58px

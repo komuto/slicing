@@ -24,6 +24,13 @@
           @extend .nunito-bold
           .icon-arrow-left
             margin-right: 15px
+    &.bg-white
+      background-color: $white
+      border-bottom: 1px solid $color_border
+      .nav-left
+        .level-item
+          span
+            color: $color_radio
     .nav-right
       overflow: visible
       span[class^="icon-"]
@@ -55,6 +62,14 @@
           input
             @include borderRadius(2px)
             @include boxShadow($shadow_search)
+    .button-search
+      @include size(64px, 64px)
+      text-align: center
+      line-height: 64px
+      position: absolute
+      top: 0
+      right: 0
+      cursor: pointer
 
 
 @media screen and (max-width: 768px)

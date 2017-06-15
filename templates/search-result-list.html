@@ -19,28 +19,40 @@
   </head>
   <body>
     <div class="main wishlist">
-      <nav class="level header is-fullwidth">
+      <nav class="level header is-fullwidth bg-white">
         <div class="nav-left">
           <a class="level-item">
-            <span><span class="icon-arrow-left"></span> Wishlist</span>
+            <span><span class="icon-arrow-left black"></span> Sepatu</span>
           </a>
+        </div>
+        <div class="button-search">
+          <span class="icon-search"></span>
         </div>
       </nav>
       <section class="section is-paddingless">
-        <div class="field search-form">
-          <p class="control has-icons-left">
-            <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
-            <span class="icon is-left">
-              <span class="icon-search"></span>
-            </span>
-          </p>
+        <div class="categories-option">
+          <div class="columns is-mobile">
+            <div class="column is-one-quarter is-paddingless"><span>Kategori :</span></div>
+            <div class="column is-paddingless">
+              <div class="field">
+                <p class="control">
+                  <span class="select">
+                    <select>
+                      <option>Semua Kategori</option>
+                      <option>With options</option>
+                    </select>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="section is-paddingless">
         <div class="columns is-mobile is-multiline custom">
-          <div class="column is-half">
-            <div class="box grid">
+          <div class="column">
+            <div class="box list">
               <div class="media">
                 <div class="media-left">
                   <figure class="image">
@@ -63,8 +75,10 @@
               </div>
             </div>
           </div>
-          <div class="column is-half">
-            <div class="box grid">
+        </div>
+        <div class="columns is-mobile is-multiline custom">
+          <div class="column">
+            <div class="box list">
               <div class="media">
                 <div class="media-left">
                   <figure class="image">
@@ -87,8 +101,10 @@
               </div>
             </div>
           </div>
-          <div class="column is-half">
-            <div class="box grid">
+        </div>
+        <div class="columns is-mobile is-multiline custom">
+          <div class="column">
+            <div class="box list">
               <div class="media">
                 <div class="media-left">
                   <figure class="image">
@@ -111,8 +127,10 @@
               </div>
             </div>
           </div>
-          <div class="column is-half">
-            <div class="box grid">
+        </div>
+        <div class="columns is-mobile is-multiline custom">
+          <div class="column">
+            <div class="box list">
               <div class="media">
                 <div class="media-left">
                   <figure class="image">
@@ -139,7 +157,8 @@
       </section>
       <div class="level nav-bottom filter-nav is-mobile">
         <a class="level-item has-text-centered js-sort"><span class="icon-sort"></span>Urutkan</a>
-        <a class="level-item has-text-centered"><span class="icon-list"></span>Tampilan</a>
+        <a class="level-item has-text-centered"><span class="icon-filter"></span>Filter</a>
+        <a class="level-item has-text-centered"><span class="icon-grid-view"></span>Tampilan</a>
       </div>
     </div>
 

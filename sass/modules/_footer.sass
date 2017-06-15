@@ -51,9 +51,23 @@
       opacity: 1
       vertical-align: middle
       font-size: 13px
+      height: auto
       color: $color_text
+      position: relative
+      &:after
+        content: ""
+        @include size(1px, 20px)
+        @include translateY(-50%)
+        background-color: $color_border
+        position: absolute
+        top: 50%
+        right: 0.5px
+      &:last-child
+        border-right: none
+        &:after
+          display: none
       span
         display: inline-block
         vertical-align: middle
-        margin-top: -5px
+        margin-top: -4px
         margin-right: 10px

@@ -16,9 +16,11 @@ $(document).ready(function () {
   });
 
   $('label.checkbox').click(function(){
-    $(this).toggleClass('checked');
-    $(this).find('input').trigger('click');
-    if($(this).hasClass('checked')){
+    var $this = $(this).find('.input-wrapper');
+    var sortText = $(this).find('.sort-text');
+    sortText.toggleClass('active');
+    $this.toggleClass('checked');
+    if($this.hasClass('checked')){
       $(this).find('input').prop('checked', true);
     } else {
       $(this).find('input').prop('checked', false);
@@ -32,6 +34,10 @@ $(document).ready(function () {
     autoplay: true,
     arrows: false,
     slidesToShow: 1
+  });
+
+  $('.js-sort').click(function(){
+    $('.sort-option').fadeIn(100)
   });
   // $('.modal-button').click(function() {
   //   var target = $(this).data('target');

@@ -11,11 +11,11 @@ body
 .bg-grey
   background-color: $color_bg
 .main
-  padding-top: 61px
+  padding-top: 64px
   padding-bottom: 46px
   min-height: 100%;
   &.home
-    margin-top: 119px
+    padding-top: 119px
   &.bg-grey
     section
       margin-bottom: 20px
@@ -156,7 +156,7 @@ body
   margin-right: -1px
   margin-top: 0
   &.custom
-    &:last-child
+    &:last-child, &:not(:last-child)
       margin-bottom: 0
     .column
       background-color: $white
@@ -219,7 +219,45 @@ body
             background-color: $red
             span
               font-size: 13px
-  &.list
+    .media-content
+      .content
+        padding-bottom: 0
+        h4
+          font-size: 13px
+          line-height: 1.38
+          letter-spacing: 0.2px
+          color: $color_radio
+        .detail
+          position: relative
+          p, .discount
+            font-size: 12px
+            color: $color_input
+            line-height: 1.33
+            letter-spacing: 0.2px
+            vertical-align: middle
+            span
+             vertical-align: middle
+          .discount
+            min-height: 22px
+            text-decoration: line-through;
+          .price
+            font-size: 16px
+            line-height: 1.25
+            letter-spacing: 0.2px
+            @extend .nunito-bold
+            color: $red
+            display: inline-block
+            margin-bottom: 15px
+          .wish
+            color: $color_input
+            font-size: 11px
+            span
+              margin-right: 10px
+          .remove-item
+            position: absolute
+            right: -14px
+            bottom: -14px
+  &.grid
     .media
       display: block
       .media-left
@@ -233,42 +271,16 @@ body
         flex-shrink: 0
         .content
           padding-top: 20px
-          padding-bottom: 0
-          h4
-            font-size: 13px
-            line-height: 1.38
-            letter-spacing: 0.2px
-            color: $color_radio
           .detail
-            position: relative
-            p, .discount
-              font-size: 12px
-              color: $color_input
-              line-height: 1.33
-              letter-spacing: 0.2px
-              vertical-align: middle
-              span
-               vertical-align: middle
+            .price
+              display: block
             .discount
               min-height: 30px
-              text-decoration: line-through;
-            .price
-              font-size: 16px
-              line-height: 1.25
-              letter-spacing: 0.2px
-              @extend .nunito-bold
-              color: $red
-              display: block
-              margin-bottom: 15px
-            .wish
-              color: $color_input
-              font-size: 11px
-              span
-                margin-right: 10px
             .remove-item
               position: absolute
               right: 0
               bottom: 0
+
 
 
 .notif-akun
@@ -282,3 +294,44 @@ body
   display: block
   text-align: center
   line-height: 22px
+
+.sort-option
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: $color_bg_overlay
+  z-index: 999
+  .sort-list
+    position: absolute
+    left: 0
+    bottom: 0
+    background-color: $white
+    width: 100%
+    p
+      padding: 18px 20px
+      strong
+        color: $color_text
+        @extend .nunito-semibold
+        font-size: 14px
+    .checkbox
+      padding: 18px 20px
+      position: relative
+      display: block
+      border-top: 1px solid $color_border_check
+      .input-wrapper
+        position: absolute
+        top: 50%
+        right: 20px
+        @include translateY(-50%)
+        @include size(24px, 24px)
+        &.checked
+          background-image: url($icon-selected-sign)
+        input
+          visibility: hidden
+      .sort-text
+        font-size: 14px
+        &.active
+          color: $primary
