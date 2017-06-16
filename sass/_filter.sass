@@ -1,0 +1,139 @@
+.modal-filter
+  .modal-card
+    height: 100%
+    min-height: 100%
+    margin: 0;
+    .modal-card-head
+      background-color: $white
+      @include borderRadius(0)
+      @include boxShadow($shadow_modal_head)
+      .modal-card-title
+        color: $color_radio
+        font-size: 14px
+        @extend .nunito-bold
+        letter-spacing: 0.4px
+      .delete
+        background-color: transparent
+        &:before, &:after
+          display: none
+    .modal-card-foot
+      @include borderRadius(0)
+      padding: 10px
+      background-color: $white
+      .columns
+        width: 100%
+        &:last-child
+          margin-bottom: 0
+        .button
+          @extend .nunito-semibold
+          letter-spacing: 0.2px
+          font-size: 14px
+    .modal-card-body
+      padding: 0 0 0 0
+      margin-left: 180px
+      position: relative
+      overflow: initial
+      .fiter-side
+        position: absolute
+        top: 0
+        left: -180px
+        @include size(180px, 100%)
+        background-color: $color_grey_bg
+        .tabs
+          ul
+            align-items: normal
+            border-bottom: 1px solid $color_border_tab
+            flex-direction: column
+            text-align: left
+            li
+              position: relative
+              &.is-active
+                background-color: $white
+                a
+                  border-bottom: 1px solid $white
+                &:after
+                  content: ""
+                  position: absolute
+                  top: 50%
+                  right: 20px
+                  @include translateY(-50%)
+                  @include size(24px, 24px)
+                  background-image: url($icon-selected-sign)
+              a
+                justify-content: left
+                align-items: normal
+                border-bottom: 1px solid $color_border_tab
+                font-size: 13px;
+                @extend .nunito-semibold
+                letter-spacing: 0.2px
+                color: $color_radio
+                padding: 20px
+      .filter-option
+        position: absolute
+        top: 0
+        right: 0
+        padding-left: 30px
+        @include size(100%, 100%)
+        display: none
+        &.active
+          display: block
+        .sort-list
+          background-color: $white
+          width: 100%
+          p
+            padding: 20px
+            strong
+              color: $color_text
+              @extend .nunito-semibold
+              font-size: 14px
+          .checkbox
+            padding: 20px
+            position: relative
+            display: block
+            border-bottom: 1px solid $color_border_tab
+            .input-wrapper
+              position: absolute
+              top: 50%
+              right: 20px
+              @include translateY(-50%)
+              @include size(30px, 30px)
+              border: 1px solid $color_border_tab
+              @include borderRadius(3px)
+              &.checked
+                background-image: url($icon-selected-sign)
+                background-position: 1px
+              input
+                visibility: hidden
+            .label
+              font-size: 13px
+              letter-spacing: 0.2px
+              color: $color_text
+              opacity: 0.5
+              display: block
+              @extend .nunito-regular
+            .sort-text
+              font-size: 13px
+              color: $color_text
+              &.active
+                color: $primary
+            .field
+              .control
+                padding: 0
+              .select
+                width: 100%
+                position: relative
+                select
+                  background: transparent
+                  width: 100%
+                  height: auto
+                  border: none
+                  padding-left: 0
+                &:before
+                  content: ""
+                  @include size(24px, 24px)
+                  background-image: url($icon-arrow-down)
+                  position: absolute
+                  top: 4px
+                  right: 0
+                &:after
+                  display: none

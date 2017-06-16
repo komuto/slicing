@@ -39,16 +39,29 @@ $(document).ready(function () {
   $('.js-sort').click(function(){
     $('.sort-option').fadeIn(100)
   });
-  // $('.modal-button').click(function() {
-  //   var target = $(this).data('target');
-  //   $('html').addClass('is-clipped');
-  //   $(target).addClass('is-active');
-  // });
+  $('.modal-button').click(function() {
+    var target = $(this).data('target');
+    $('html').addClass('is-clipped');
+    $(target).addClass('is-active');
+  });
 
-  // $('.modal-background, .modal-close').click(function() {
-  //   $('html').removeClass('is-clipped');
-  //   $(this).parent().removeClass('is-active');
-  // });
+  $('.modal-background, .delete').click(function() {
+    $('html').removeClass('is-clipped');
+    $(this).parents('.modal').removeClass('is-active');
+  });
+
+  $('.tabs ul li a').click(function(){
+    var dataTarget = $(this).data('target');
+    var thisActive = $(this).parent('li');
+    $(this).parents('ul').find('.is-active').removeClass('is-active');
+    $(this).parent().addClass('is-active');
+    $('.filter-option').removeClass('active');
+    if(thisActive.hasClass('is-active')) {
+      $(dataTarget).addClass('active');
+    } else {
+      $('.filter-option').removeClass('active');
+    }
+  });
 
   // $('.modal-card-head .delete, .modal-card-foot .button').click(function() {
   //   $('html').removeClass('is-clipped');

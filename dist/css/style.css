@@ -39,15 +39,15 @@
   font-family: 'nunitolight', sans-serif;
   font-weight: 300; }
 
-.nunito-regular, .field .label {
+.nunito-regular, .field .label, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label {
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .notif-akun, .sort-option .sort-list p strong, .profile-wrapp ul li .box .content p strong, .level.nav-bottom .level-item {
+.nunito-semibold, .notif-akun, .sort-option .sort-list p strong, .profile-wrapp ul li .box .content p strong, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .button, .title, .box .media .media-left .image .pin span, .box .media .media-content .content .detail .price, .level.header .nav-left .level-item span {
+.nunito-bold, .button, .title, .box .media .media-left .image .pin span, .box .media .media-content .content .detail .price, .level.header .nav-left .level-item span, .modal-filter .modal-card .modal-card-head .modal-card-title {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -327,6 +327,14 @@
   width: 24px;
   height: 24px;
   background-image: url("../../images/komuto-icon/035_arrow_down.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-close {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/036_icon_close.svg");
   background-repeat: no-repeat;
   vertical-align: middle; }
 
@@ -4681,7 +4689,8 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -o-border-radius: 5px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  border: 1px solid #dedede; }
   .button.is-large {
     font-size: 14px;
     padding: 17px; }
@@ -5012,7 +5021,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #ef5656;
-  z-index: 99;
+  z-index: 19;
   padding: 0 15px;
   flex-flow: row wrap;
   display: flex;
@@ -5225,6 +5234,160 @@ body {
       display: none; }
   .categories-option .columns.is-mobile > .column.is-one-quarter {
     width: 58px; }
+
+.modal-filter .modal-card {
+  height: 100%;
+  min-height: 100%;
+  margin: 0; }
+  .modal-filter .modal-card .modal-card-head {
+    background-color: #ffffff;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: 0 0.5px 0 0 #dedede;
+    -moz-box-shadow: 0 0.5px 0 0 #dedede;
+    box-shadow: 0 0.5px 0 0 #dedede; }
+    .modal-filter .modal-card .modal-card-head .modal-card-title {
+      color: #404852;
+      font-size: 14px;
+      letter-spacing: 0.4px; }
+    .modal-filter .modal-card .modal-card-head .delete {
+      background-color: transparent; }
+      .modal-filter .modal-card .modal-card-head .delete:before, .modal-filter .modal-card .modal-card-head .delete:after {
+        display: none; }
+  .modal-filter .modal-card .modal-card-foot {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    padding: 10px;
+    background-color: #ffffff; }
+    .modal-filter .modal-card .modal-card-foot .columns {
+      width: 100%; }
+      .modal-filter .modal-card .modal-card-foot .columns:last-child {
+        margin-bottom: 0; }
+      .modal-filter .modal-card .modal-card-foot .columns .button {
+        letter-spacing: 0.2px;
+        font-size: 14px; }
+  .modal-filter .modal-card .modal-card-body {
+    padding: 0 0 0 0;
+    margin-left: 180px;
+    position: relative;
+    overflow: initial; }
+    .modal-filter .modal-card .modal-card-body .fiter-side {
+      position: absolute;
+      top: 0;
+      left: -180px;
+      width: 180px;
+      height: 100%;
+      background-color: #f4f5f6; }
+      .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul {
+        align-items: normal;
+        border-bottom: 1px solid #e9e9e9;
+        flex-direction: column;
+        text-align: left; }
+        .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li {
+          position: relative; }
+          .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li.is-active {
+            background-color: #ffffff; }
+            .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li.is-active a {
+              border-bottom: 1px solid #ffffff; }
+            .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li.is-active:after {
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 20px;
+              -webkit-transform: translateY(-50%);
+              -moz-transform: translateY(-50%);
+              -o-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 24px;
+              height: 24px;
+              background-image: url("../../images/komuto-icon/031_selected_sign.svg"); }
+          .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a {
+            justify-content: left;
+            align-items: normal;
+            border-bottom: 1px solid #e9e9e9;
+            font-size: 13px;
+            letter-spacing: 0.2px;
+            color: #404852;
+            padding: 20px; }
+    .modal-filter .modal-card .modal-card-body .filter-option {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-left: 30px;
+      width: 100%;
+      height: 100%;
+      display: none; }
+      .modal-filter .modal-card .modal-card-body .filter-option.active {
+        display: block; }
+      .modal-filter .modal-card .modal-card-body .filter-option .sort-list {
+        background-color: #ffffff;
+        width: 100%; }
+        .modal-filter .modal-card .modal-card-body .filter-option .sort-list p {
+          padding: 20px; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong {
+            color: #41475e;
+            font-size: 14px; }
+        .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox {
+          padding: 20px;
+          position: relative;
+          display: block;
+          border-bottom: 1px solid #e9e9e9; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .input-wrapper {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            border: 1px solid #e9e9e9;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -o-border-radius: 3px;
+            border-radius: 3px; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .input-wrapper.checked {
+              background-image: url("../../images/komuto-icon/031_selected_sign.svg");
+              background-position: 1px; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .input-wrapper input {
+              visibility: hidden; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label {
+            font-size: 13px;
+            letter-spacing: 0.2px;
+            color: #41475e;
+            opacity: 0.5;
+            display: block; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .sort-text {
+            font-size: 13px;
+            color: #41475e; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .sort-text.active {
+              color: #56aaef; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .control {
+            padding: 0; }
+          .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .select {
+            width: 100%;
+            position: relative; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .select select {
+              background: transparent;
+              width: 100%;
+              height: auto;
+              border: none;
+              padding-left: 0; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .select:before {
+              content: "";
+              width: 24px;
+              height: 24px;
+              background-image: url("../../images/komuto-icon/035_arrow_down.svg");
+              position: absolute;
+              top: 4px;
+              right: 0; }
+            .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .select:after {
+              display: none; }
 
 .level.nav-bottom {
   position: fixed;

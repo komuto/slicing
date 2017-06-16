@@ -147,11 +147,12 @@
       </section>
       <div class="level nav-bottom filter-nav is-mobile">
         <a class="level-item has-text-centered js-sort"><span class="icon-sort"></span>Urutkan</a>
-        <a class="level-item has-text-centered"><span class="icon-filter"></span>Filter</a>
+        <a class="level-item has-text-centered modal-button" data-target="#modal-filter"><span class="icon-filter"></span>Filter</a>
         <a class="level-item has-text-centered"><span class="icon-grid-view"></span>Tampilan</a>
       </div>
     </div>
 
+    <!-- urutkan -->
     <div class="sort-option">
       <div class="sort-list">
         <p><strong>Urutkan Berdasarkan</strong></p>
@@ -179,6 +180,226 @@
           <input type="checkbox" id="terlaris">
           </span>
         </label>
+      </div>
+    </div>
+
+    <!-- filter -->
+    <div class="modal modal-filter" id="modal-filter">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Filter</p>
+          <button class="delete icon-close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="fiter-side">
+            <div class="tabs">
+              <ul>
+                <li class="is-active"><a data-target="#kondisi">Kondisi</a></li>
+                <li><a data-target="#jasa">Jasa Pngiriman</a></li>
+                <li><a data-target="#harga">Rentang Harga</a></li>
+                <li><a data-target="#dikirim">Dikirim Dari</a></li>
+                <li><a data-target="#brand">Brand</a></li>
+                <li><a data-target="#lainnya">Lainnya</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="filter-option active" id="kondisi">
+            <div class="sort-list">
+              <label class="checkbox" for="#semuaKondisi">
+                <span class="sort-text">Semua Kondisi</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="semuaKondisi">
+                </span>
+              </label>
+              <label class="checkbox" for="#baru">
+                <span class="sort-text">Termurah</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="baru">
+                </span>
+              </label>
+              <label class="checkbox" for="#bekas">
+                <span class="sort-text">Termahal</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="bekas">
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filter-option" id="jasa">
+            <div class="sort-list">
+              <label class="checkbox" for="#semuaEkspedisi">
+                <span class="sort-text">Semua Ekspedisi</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="semuaEkspedisi">
+                </span>
+              </label>
+              <label class="checkbox" for="#reguler">
+                <span class="sort-text">JNE Reguler</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="reguler">
+                </span>
+              </label>
+              <label class="checkbox" for="#oke">
+                <span class="sort-text">JNE Yes</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="oke">
+                </span>
+              </label>
+              <label class="checkbox" for="#popbox">
+                <span class="sort-text">JNE Popbox</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="popbox">
+                </span>
+              </label>
+              <label class="checkbox" for="#ctc">
+                <span class="sort-text">JNE CTC</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="ctc">
+                </span>
+              </label>
+              <label class="checkbox" for="#ctcOke">
+                <span class="sort-text">JNE CTC OKE</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="ctcOke">
+                </span>
+              </label>
+              <label class="checkbox" for="#ctcYes">
+                <span class="sort-text">JNE CTC YES</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="ctcYes">
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filter-option" id="harga">
+            <div class="sort-list">
+              <label class="checkbox" for="#hargaMinimal">
+                <span class="label">Harga Minimal</span>
+                <span class="sort-text">Rp 100.000</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="hargaMinimal">
+                </span>
+              </label>
+              <label class="checkbox" for="#hargaMaksimal">
+                <span class="label">Harga Maksimal</span>
+                <span class="sort-text">Rp 250.000</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="hargaMaksimal">
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filter-option" id="dikirim">
+            <div class="sort-list">
+              <label class="checkbox" for="#">
+                <span class="label">Harga Minimal</span>
+                <div class="field">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>DKI Jakarta</option>
+                        <option>With options</option>
+                      </select>
+                    </span>
+                  </p>
+                </div>
+              </label>
+              <label class="checkbox" for="#">
+                <span class="label">Kota</span>
+                <div class="field">
+                  <p class="control">
+                    <span class="select">
+                      <select>
+                        <option>Jakarta Barat</option>
+                        <option>With options</option>
+                      </select>
+                    </span>
+                  </p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-option" id="brand">
+            <div class="sort-list">
+              <label class="checkbox" for="#allBrand">
+                <span class="sort-text">Semua Brand</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="allBrand">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand1">
+                <span class="sort-text">Adidas</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand1">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand2">
+                <span class="sort-text">Nike</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand2">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand3">
+                <span class="sort-text">New Balance</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand3">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand4">
+                <span class="sort-text">Diadora</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand4">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand5">
+                <span class="sort-text">Rebook</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand35">
+                </span>
+              </label>
+              <label class="checkbox" for="#brand6">
+                <span class="sort-text">Umbro</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="brand6">
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="filter-option" id="lainnya">
+            <div class="sort-list">
+              <label class="checkbox" for="#diskon">
+                <span class="sort-text">Diskon</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="diskon">
+                </span>
+              </label>
+              <label class="checkbox" for="#terverifikasi">
+                <span class="sort-text">Seller Terverifikasi</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="terverifikasi">
+                </span>
+              </label>
+              <label class="checkbox" for="#grosir">
+                <span class="sort-text">Grosir</span>
+                <span class="input-wrapper">
+                <input type="checkbox" id="grosir">
+                </span>
+              </label>
+            </div>
+          </div>
+
+        </section>
+        <footer class="modal-card-foot">
+          <div class="columns is-mobile">
+            <div class="column">
+              <a class="button is-large is-fullwidth is-outlined">Reset Filter</a>
+            </div>
+            <div class="column">
+              <a class="button is-primary is-large is-fullwidth">Terapkan Filter</a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
