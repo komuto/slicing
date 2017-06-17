@@ -43,11 +43,11 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .notif-akun, .sort-option .sort-list p strong, .profile-wrapp ul li .box .content p strong, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .level.nav-bottom .level-item {
+.nunito-semibold, .title, .notif-akun, .sort-option .sort-list p strong, .profile-wrapp ul li .box .content p strong, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .button, .title, .box .media .media-left .image .pin span, .box .media .media-content .content .detail .price, .level.header .nav-left .level-item span, .modal-filter .modal-card .modal-card-head .modal-card-title {
+.nunito-bold, .button, .box .media .media-left .image .pin span, .box .media .media-content .content .detail .price, .level.header .nav-left .level-item span, .modal-filter .modal-card .modal-card-head .modal-card-title {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -180,7 +180,7 @@
   background-repeat: no-repeat;
   vertical-align: middle; }
   .icon-verified.unverified {
-    background-image: url("../../images/komuto-icon/013_verified.svg"); }
+    background-image: url("../../images/komuto-icon/021_unverified.svg"); }
 
 .icon-wishlist {
   display: inline-block;
@@ -279,6 +279,8 @@
   background-image: url("../../images/komuto-icon/010_search.svg");
   background-repeat: no-repeat;
   vertical-align: middle; }
+  .icon-search.white {
+    background-image: url("../../images/komuto-icon/037_search_white.svg"); }
 
 .icon-arrow-left {
   display: inline-block;
@@ -5025,7 +5027,8 @@ body {
   padding: 0 15px;
   flex-flow: row wrap;
   display: flex;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 64px; }
   .level.header .nav-left {
     overflow: visible; }
     .level.header .nav-left .level-item {
@@ -5238,7 +5241,8 @@ body {
 .modal-filter .modal-card {
   height: 100%;
   min-height: 100%;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
   .modal-filter .modal-card .modal-card-head {
     background-color: #ffffff;
     -webkit-border-radius: 0;
@@ -5388,6 +5392,48 @@ body {
               right: 0; }
             .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .field .select:after {
               display: none; }
+
+.main.categories {
+  padding-bottom: 0; }
+  .main.categories .title {
+    margin-top: 30px; }
+
+.categories-wrapp {
+  margin-bottom: 5px; }
+  .categories-wrapp:last-child {
+    margin-bottom: 0; }
+  .categories-wrapp ul {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 2px 8px 0 rgba(60, 108, 156, 0.07);
+    -moz-box-shadow: 0 2px 8px 0 rgba(60, 108, 156, 0.07);
+    box-shadow: 0 2px 8px 0 rgba(60, 108, 156, 0.07); }
+    .categories-wrapp ul li {
+      border-bottom: 1px solid #dedede; }
+      .categories-wrapp ul li:last-child {
+        border-bottom: none; }
+      .categories-wrapp ul li a {
+        position: relative;
+        padding: 20px;
+        line-height: 1.23;
+        letter-spacing: 0.2px;
+        font-size: 13px;
+        color: #41475e;
+        display: block; }
+        .categories-wrapp ul li a span[class^="icon-"] {
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%); }
+        .categories-wrapp ul li a .categories-img {
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-image: url("../../images/icon-category-temporary.svg");
+          vertical-align: middle;
+          margin-right: 8px; }
 
 .level.nav-bottom {
   position: fixed;
