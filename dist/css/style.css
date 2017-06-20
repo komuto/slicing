@@ -5772,6 +5772,8 @@ body {
     width: 100%; }
   .main.home section {
     margin-bottom: 20px; }
+  .main.home .level.header .nav-left .level-item > span {
+    padding-left: 0; }
 
 .user.login .content .form .or {
   margin-top: 0; }
