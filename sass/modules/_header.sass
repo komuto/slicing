@@ -18,13 +18,20 @@
         align-items: left;
         justify-content: left;
         padding: 20px 0
-        span
+        > span
           color: $white
           font-size: 14px
           letter-spacing: 0.23px
           @extend .nunito-bold
+          position: relative
+          padding-left: 40px
           .icon-arrow-left
             margin-right: 15px
+            position: absolute
+            top: 50%
+            left: 0
+            @include translateY(-50%)
+            display: block
     &.bg-white
       background-color: $white
       border-bottom: 1px solid $color_border
@@ -72,7 +79,10 @@
       right: 0
       cursor: pointer
 
-
+.home
+  .level
+    &.header
+      height: auto
 @media screen and (max-width: 768px)
   .nav-menu
     opacity: 0;

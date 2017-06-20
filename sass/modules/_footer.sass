@@ -71,3 +71,23 @@
         vertical-align: middle
         margin-top: -4px
         margin-right: 10px
+
+.add-comment
+  position: fixed
+  left: 0
+  bottom: 0
+  @include size(100%, 46px)
+  .textarea
+    @include borderRadius(0)
+    border: none
+    border-top: 1px solid $color_shadow_comment
+    font-size: 13px
+    color: $color_input
+    margin-bottom: 0
+    padding: 14px 20px
+    max-height: inherit
+    min-height: 46px
+    overflow: hidden
+    +placeholder
+      color: $color_input
+      opacity: 1
