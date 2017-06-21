@@ -80,3 +80,45 @@
               font-size: 12px
               letter-spacing: 0.2px
               margin-bottom: 10px
+  .product-discuss
+    .box
+      .media
+        .media-left
+          .image
+            @include borderRadius(0)
+            img
+              @include borderRadius(0)
+        .media-content
+          .content
+            .products-name
+              font-size: 12px
+              color: $color_input
+              letter-spacing: 0.2px
+              strong
+                font-size: 13px
+  .main-discuss
+    .box
+      .media
+        .media-left
+          .image
+            @include size(30px, 30px)
+  &.gap
+    ul
+      li
+        margin-bottom: 15px
+        background-color: $white
+        @include boxShadow($color_shadow_comment)
+        .box
+          .comment-count
+            padding-left: 40px
+            color: $color_text
+          .media
+            padding-bottom: 20px
+            margin-bottom: 20px
+            border-bottom: 1px solid $color_border_check
+      &.product-discuss
+        .box
+          .media
+            padding-bottom: 0
+            margin-bottom: 0
+            border-bottom: none

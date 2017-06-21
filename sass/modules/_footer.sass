@@ -6,6 +6,8 @@
     @include size(100%, 46px)
     border-top: 1px solid $color_border_ccc
     background-color: $white
+    &:not(:last-child)
+      margin-bottom: 0
     .level-item
       align-items: center
       justify-content: center
@@ -91,3 +93,17 @@
     +placeholder
       color: $color_input
       opacity: 1
+
+.sticky-button
+  position: absolute
+  right: 20px
+  bottom: 30px
+  @include size(56px, 56px)
+  background-color: $primary
+  @include boxShadow($shadow_sticky)
+  @include borderRadius(700px)
+  span
+    position: absolute
+    top: 50%
+    left: 50%
+    @include translateXY(-50%,-50%)

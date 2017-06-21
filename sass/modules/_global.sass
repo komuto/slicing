@@ -8,6 +8,9 @@ body
   color: $color_text
   font-family: $family-primary
   height: 100%
+  &.search-open
+    position: fixed
+    overflow: hidden
 .bg-grey
   background-color: $color_bg
 .main
@@ -336,3 +339,15 @@ body
         font-size: 14px
         &.active
           color: $primary
+.back
+  position: absolute
+  top: 0
+  left: 0
+  @include size(48px, 64px)
+  cursor: pointer
+  .icon-arrow-left
+    position: absolute
+    top: 50%
+    left: 50%
+    @include translateXY(-50%, -50%)
+    display: block

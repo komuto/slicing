@@ -63,6 +63,27 @@ $(document).ready(function () {
     }
   });
 
+  var bars=document.querySelectorAll('.sticky')
+  Array.prototype.forEach.call(bars, function(bar) {
+    sticky(bar);
+  });
+
+  $('.search-form .control .input').click(function(){
+    var onSearch = $('.on-search');
+    var body = $('body');
+    var input = $('.input');
+    //onSearch.fadeIn(100);
+    onSearch.addClass('slide');
+    body.addClass('search-open');
+    input.focus();
+  });
+  $('.back-on-seacrh').click(function(){
+    var onSearch = $('.on-search');
+    var body = $('body');
+    //onSearch.fadeOut(200);
+    onSearch.removeClass('slide');
+    body.removeClass('search-open');
+  });
   // $('.modal-card-head .delete, .modal-card-foot .button').click(function() {
   //   $('html').removeClass('is-clipped');
   //   $('#modal-ter').removeClass('is-active');

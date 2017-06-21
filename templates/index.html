@@ -29,15 +29,15 @@
           <span class="icon-love"></span>
           <span class="icon-cart"><span class="notif-cart">4</span></span>
         </div>
-        <div class="field search-form is-clearfix">
-          <p class="control has-icons-left">
-            <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
-            <span class="icon is-left">
-              <span class="icon-search"></span>
-            </span>
-          </p>
-        </div>
       </nav>
+      <div class="field search-form is-clearfix sticky">
+        <p class="control has-icons-left">
+          <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
+          <span class="icon is-left">
+            <span class="icon-search"></span>
+          </span>
+        </p>
+      </div>
       <section class="section is-paddingless">
         <div class="slide-banner">
           <div>
@@ -214,11 +214,24 @@
         <a class="level-item has-text-centered"><span class="icon-bell"></span>Notifikasi</a>
         <a class="level-item has-text-centered"><span class="icon-user"></span>Profil</a>
       </div>
+
+      <!-- search -->
+      <div class="on-search">
+        <div class="header-search">
+          <a class="back back-on-seacrh"><span class="icon-arrow-left black"></span></a>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../component/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="../js/sticky-header-master/index.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

@@ -18,20 +18,25 @@
         align-items: left;
         justify-content: left;
         padding: 20px 0
+        cursor: inherit
         > span
           color: $white
           font-size: 14px
           letter-spacing: 0.23px
           @extend .nunito-bold
-          position: relative
-          padding-left: 40px
-          .icon-arrow-left
-            margin-right: 15px
+          padding-left: 48px
+          .back
             position: absolute
-            top: 50%
+            top: 0
             left: 0
-            @include translateY(-50%)
-            display: block
+            @include size(48px, 64px)
+            cursor: pointer
+            .icon-arrow-left
+              position: absolute
+              top: 50%
+              left: 50%
+              @include translateXY(-50%, -50%)
+              display: block
     &.bg-white
       background-color: $white
       border-bottom: 1px solid $color_border
@@ -64,12 +69,6 @@
           text-align: center
           line-height: 15px
           display: block
-    .search-form
-      .control
-        &.has-icons-left
-          input
-            @include borderRadius(2px)
-            @include boxShadow($shadow_search)
     .button-search
       @include size(64px, 64px)
       text-align: center
