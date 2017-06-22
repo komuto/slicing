@@ -5874,6 +5874,12 @@ body {
   .search-form .control.has-icons-left input {
     border-radius: 2px;
     box-shadow: 0 3px 4px 0 #da4b4b; }
+  .search-form.floating {
+    background-color: transparent;
+    padding: 0; }
+    .search-form.floating .control.has-icons-left input {
+      border-radius: 0;
+      box-shadow: 0 5px 5px 0 rgba(234, 234, 235, 0.3); }
 
 .on-search {
   position: fixed;
@@ -6076,7 +6082,11 @@ body {
         padding: 9px 15px; }
 
 .wishlist .search-form {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-color: #ffffff;
+  padding: 0; }
+  .wishlist .search-form .control.has-icons-left .input {
+    box-shadow: none; }
 
 .categories-option {
   height: 46px;

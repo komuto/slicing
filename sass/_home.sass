@@ -26,6 +26,14 @@
       input
         @include borderRadius(2px)
         @include boxShadow($shadow_search)
+  &.floating
+    background-color: transparent
+    padding: 0
+    .control
+      &.has-icons-left
+        input
+          @include borderRadius(0)
+          @include boxShadow($shadow_floating)
 
 .on-search
   position: fixed

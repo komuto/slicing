@@ -74,8 +74,9 @@ $(document).ready(function () {
     var input = $('.input');
     //onSearch.fadeIn(100);
     onSearch.addClass('slide');
-    body.addClass('search-open');
+    //body.addClass('search-open');
     input.focus();
+    return false;
   });
   $('.back-on-seacrh').click(function(){
     var onSearch = $('.on-search');
