@@ -22,7 +22,7 @@
       <nav class="level header is-fullwidth bg-white">
         <div class="nav-left">
           <a class="level-item">
-            <span><span class="icon-arrow-left black"></span> Sepatu</span>
+            <span class="is-paddingless"><span class="icon-arrow-left black"></span> Sepatu</span>
           </a>
         </div>
         <div class="button-search">
@@ -31,21 +31,7 @@
       </nav>
       <section class="section is-paddingless">
         <div class="categories-option">
-          <div class="columns is-mobile">
-            <div class="column is-one-quarter is-paddingless"><span>Kategori :</span></div>
-            <div class="column is-paddingless">
-              <div class="field">
-                <p class="control">
-                  <span class="select">
-                    <select>
-                      <option>Semua Kategori</option>
-                      <option>With options</option>
-                    </select>
-                  </span>
-                </p>
-              </div>
-            </div>
-          </div>
+          <a class="choose-option modal-button" data-target="#modal-categories"><span>Kategori : Semua Kategori</span> <span class="icon-arrow-down"></span></a>
         </div>
       </section>
 
@@ -400,6 +386,76 @@
             </div>
           </div>
         </footer>
+      </div>
+    </div>
+
+    <!-- modal categories -->
+    <div class="modal modal-filter categories" id="modal-categories">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Pilih Kategori</p>
+          <button class="delete icon-close"></button>
+        </header>
+        <section class="modal-card-body">
+          <section class="section is-paddingless">
+            <div class="container is-fluid">
+              <div class="title">
+                <h3>Fashion dan Aksesoris</h3>
+              </div>
+            </div>
+            <div class="categories-wrapp">
+              <ul>
+                <li>
+                  <a><span class="categories-img"></span> Lihat Semua di Fashion dan Aksesoris <span class="icon-arrow-right"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="categories-wrapp">
+              <ul>
+                <li>
+                  <a><span class="categories-img"></span> Fashion Pria <span class="icon-arrow-right"></span></a>
+                </li>
+                <li>
+                  <a><span class="categories-img"></span> Fashion Wanita <span class="icon-arrow-right"></span></a>
+                </li>
+                <li>
+                  <a><span class="categories-img"></span> Fashion Wanita <span class="icon-arrow-right"></span></a>
+                </li>
+                <li>
+                  <a><span class="categories-img"></span> Fashion Wanita <span class="icon-arrow-right"></span></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="section is-paddingless">
+            <div class="container is-fluid">
+              <div class="title">
+                <h3>Ibu dan Anak</h3>
+              </div>
+            </div>
+            <div class="categories-wrapp">
+              <ul>
+                <li>
+                  <a><span class="categories-img"></span> Lihat Semua di Ibu dan Anak <span class="icon-arrow-right"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="categories-wrapp">
+              <ul>
+                <li>
+                  <a><span class="categories-img"></span> Perlengkapan Bayi <span class="icon-arrow-right"></span></a>
+                </li>
+                <li>
+                  <a><span class="categories-img"></span> Susu dan Nutrisi Bayi <span class="icon-arrow-right"></span></a>
+                </li>
+                <li>
+                  <a><span class="categories-img"></span> Baby Sitter <span class="icon-arrow-right"></span></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
 

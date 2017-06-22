@@ -351,3 +351,36 @@ body
     left: 50%
     @include translateXY(-50%, -50%)
     display: block
+
+.notification
+  @include borderRadius(0)
+  padding: 20px
+  >.delete
+    @include size(24px, 24px)
+    background-color: transparent
+    position: absolute
+    top: 46%
+    right: 20px
+    @include translateY(-46%)
+    &:before
+      width: 65%
+    &:after
+      height: 65%
+  &.is-success
+    background-color: $success_bg
+    color: $success_text
+    >.delete
+      &:before, &:after
+        background-color: $success_text
+  &.is-warning
+    background-color: $color_bg_verification
+    color: $yellow
+    >.delete
+      &:before, &:after
+        background-color: $yellow
+  &.is-danger
+    background-color: $danger_bg
+    color: $danger_text
+    >.delete
+      &:before, &:after
+        background-color: $danger_text

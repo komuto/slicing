@@ -1,0 +1,25 @@
+.add-discussion
+  padding: 27px 20px
+  .field
+    label
+      font-size: 13px
+      letter-spacing: 0.2px
+      color: $color_text
+      @extend .nunito-regular
+      opacity: 0.5
+    .control
+      margin-bottom: 20px
+      .textarea
+        border: none
+        font-size: 13px
+        color: $color_text
+        border-bottom: 1px solid $color_border
+        @include boxShadow(none)
+        min-height: 40px
+        max-height: inherit
+        height: auto
+        padding: 10px 0
+        +placeholder
+          color: $color_input
+          opacity: 1
+          font-size: 13px

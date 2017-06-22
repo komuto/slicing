@@ -229,6 +229,15 @@
   background-image: url($icon-close)
   background-repeat: no-repeat
   vertical-align: middle
+  &.white
+    background-image: url($icon-close-white)
+
+.icon-close-success
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-close-sucsess)
+  background-repeat: no-repeat
+  vertical-align: middle
 
 .icon-comment
   display: inline-block
@@ -241,5 +250,12 @@
   display: inline-block
   @include size(36px, 36px)
   background-image: url($comment-sticky-icon)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-verify
+  display: inline-block
+  @include size(40px, 40px)
+  background-image: url($verify-icon)
   background-repeat: no-repeat
   vertical-align: middle

@@ -1,8 +1,17 @@
 .categories-option
   height: 46px
-  padding: 13px 20px
   background-color: $color_grey_bg
   border-bottom: 1px solid $color_border
+  .choose-option
+    padding: 13px 20px
+    color: $color_text
+    display: block
+    position: relative
+    .icon-arrow-down
+      position: absolute
+      top: 50%
+      right: 20px
+      @include translateY(-50%)
   .columns
     &:last-child
       margin-bottom: 0

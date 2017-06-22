@@ -84,6 +84,21 @@ $(document).ready(function () {
     onSearch.removeClass('slide');
     body.removeClass('search-open');
   });
+
+
+// var textarea = document.querySelector('.text-discus');
+
+// textarea.addEventListener('keydown', autosize);
+             
+// function autosize(){
+//   var el = this;
+//   setTimeout(function(){
+//     el.style.cssText = 'height:auto; padding:0';
+//     // for box-sizing other than "content-box" use:
+//     // el.style.cssText = '-moz-box-sizing:content-box';
+//     el.style.cssText = 'height:' + el.scrollHeight + 'px';
+//   },0);
+// }
   // $('.modal-card-head .delete, .modal-card-foot .button').click(function() {
   //   $('html').removeClass('is-clipped');
   //   $('#modal-ter').removeClass('is-active');
