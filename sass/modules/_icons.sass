@@ -89,6 +89,9 @@
   vertical-align: middle
   &.unverified
     background-image: url($icon-unverified)
+  &.md
+    @include size(32px, 32px)
+    background-size: 100%
 
 .icon-wishlist
   display: inline-block
@@ -245,6 +248,8 @@
   background-image: url($comment-icon)
   background-repeat: no-repeat
   vertical-align: middle
+  &.black
+    background-image: url($icon-comment-black)
 
 .icon-comment-sticky
   display: inline-block
@@ -257,5 +262,19 @@
   display: inline-block
   @include size(40px, 40px)
   background-image: url($verify-icon)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-plus
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-plus)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-catalog
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-catalog)
   background-repeat: no-repeat
   vertical-align: middle

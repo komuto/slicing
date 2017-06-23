@@ -1,0 +1,73 @@
+.seller-info
+  .section
+    &:nth-last-child(2)
+      margin-bottom: 0
+      .columns
+        &.custom
+          &:last-child
+            margin-bottom: -0.75rem
+  .box
+    &.seller
+      padding-bottom: 10px
+      margin-bottom: 0
+      .media
+        padding: 20px
+        .media-left
+          .image
+            @include borderRadius(700px)
+            @include size(78px, 78px)
+            border: 7px solid $color_border_seller
+            img
+              @include borderRadius(700px)
+        .media-content
+          .content
+            h4
+              color: $color_radio
+              font-size: 16px;
+              letter-spacing: 0.2px
+              @extend .nunito-semibold
+              margin-bottom: 5px
+            .detail
+              p
+                font-size: 13px
+                letter-spacing: 0.2px
+                color: $color_radio
+                &.address
+                  color: $color_seller_grey
+                > span
+                  margin-left: -3px
+      .columns
+        padding: 0 10px
+        margin-bottom: 0
+        .column
+          padding: 10px
+.nav-info
+  border-top: 1px solid $color_border
+  padding: 0 20px
+  .nav-item
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0 0
+    position: relative
+    &:after
+      content: ""
+      position: absolute
+      left: 50%
+      bottom: 0
+      width: 100%
+      max-width: 80px
+      height: 2px
+      background-color: transparent
+      @include translateX(-50%)
+    a
+      font-size: 13px
+      letter-spacing: 0.4px
+      color: $color_text_desc
+    &.is-active
+      &:after
+        content: ""
+        background-color: $red
+      a
+        color: $color_radio
+        @extend .nunito-semibold

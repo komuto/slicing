@@ -27,14 +27,14 @@ $(document).ready(function () {
     }
   });
 
-  $('.slide-banner').slick({
-    dots: false,
-    infinite: true,
-    speed: 300,
-    autoplay: true,
-    arrows: false,
-    slidesToShow: 1
-  });
+  // $('.slide-banner').slick({
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 300,
+  //   autoplay: true,
+  //   arrows: false,
+  //   slidesToShow: 1
+  // });
 
   $('.js-sort').click(function(){
     $('.sort-option').fadeIn(100)
@@ -86,7 +86,41 @@ $(document).ready(function () {
     body.removeClass('search-open');
   });
 
-
+  $('.slide-banner').owlCarousel({
+      margin:0,
+      nav: false,
+      navText: false,
+      dots: false,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+  $('.slide-items').owlCarousel({
+      stagePadding: 50,
+      margin:0,
+      nav: false,
+      navText: false,
+      dots: false,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:2
+          },
+          1000:{
+              items:2
+          }
+      }
+  });
 // var textarea = document.querySelector('.text-discus');
 
 // textarea.addEventListener('keydown', autosize);
