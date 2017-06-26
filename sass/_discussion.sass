@@ -23,3 +23,19 @@
           color: $color_input
           opacity: 1
           font-size: 13px
+  &.report
+    .field
+      .control
+        label
+          display: block
+          margin-top: 20px
+          margin-left: 0
+          height: 25px
+          opacity: 1
+        .radio.checked
+          &:before
+            content: ""
+            border-color: $primary
+          &:after
+            content: "";
+            background-color: $primary;

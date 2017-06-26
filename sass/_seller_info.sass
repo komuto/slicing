@@ -1,11 +1,41 @@
 .seller-info
   .section
-    &:nth-last-child(2)
+    margin-bottom: 20px
+    &:nth-last-child(1)
       margin-bottom: 0
       .columns
         &.custom
           &:last-child
             margin-bottom: -0.75rem
+.columns
+  &.detail-rating
+    padding: 20px 0
+    background-color: $white
+    &:last-child
+      margin-bottom: -0.75rem
+    &.no-margin-bottom
+      &:last-child
+        margin-bottom: 0
+    .column
+      padding: 0 20px
+      &:nth-child(2)
+        border-left: 1px solid $color_border_rete
+      .rating-content
+        text-align: center
+        h3
+          font-size: 13px
+          letter-spacing: 0.2px
+          @extend .nunito-semibold
+          color: $color_text
+        .value-rate
+          font-size: 30px
+          letter-spacing: 0.5px
+          @extend .nunito-semibold
+          color: $color_text
+        &.is-left
+          text-align: left
+          .star-rating
+            margin: 0
   .box
     &.seller
       padding-bottom: 10px
@@ -23,7 +53,7 @@
           .content
             h4
               color: $color_radio
-              font-size: 16px;
+              font-size: 16px
               letter-spacing: 0.2px
               @extend .nunito-semibold
               margin-bottom: 5px
@@ -41,33 +71,79 @@
         margin-bottom: 0
         .column
           padding: 10px
-.nav-info
-  border-top: 1px solid $color_border
-  padding: 0 20px
-  .nav-item
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding: 0 0
-    position: relative
-    &:after
-      content: ""
-      position: absolute
-      left: 50%
-      bottom: 0
-      width: 100%
-      max-width: 80px
-      height: 2px
-      background-color: transparent
-      @include translateX(-50%)
-    a
-      font-size: 13px
-      letter-spacing: 0.4px
-      color: $color_text_desc
-    &.is-active
-      &:after
-        content: ""
-        background-color: $red
-      a
-        color: $color_radio
-        @extend .nunito-semibold
+  .nav
+    border-top: 1px solid $color_border
+    @include boxShadow($shadow_detail)
+    .nav-info
+      padding: 0 20px
+      .nav-item
+        -webkit-box-flex: 1
+        -ms-flex-positive: 1
+        flex-grow: 1
+        padding: 0 0
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          left: 50%
+          bottom: 0
+          width: 100%
+          max-width: 80px
+          height: 2px
+          background-color: transparent
+          @include translateX(-50%)
+        a
+          font-size: 13px
+          letter-spacing: 0.4px
+          color: $color_text_desc
+        &.is-active
+          &:after
+            content: ""
+            background-color: $red
+          a
+            color: $color_radio
+            @extend .nunito-semibold
+.profile-content
+  padding: 20px
+  background-color: $white
+  @include boxShadow($shadow_detail)
+  &.rating
+    padding-top: 0
+    padding-bottom: 0
+    .profile-wrapp
+      .detail-seller
+        li
+          .box
+            .media
+              .media-content
+                .content
+                  p
+                    color: $color_text
+                    > span
+                      opacity: 0.5
+          &:last-child
+            border-bottom: 1px solid $color_border
+            .box
+              .media
+                .media-left
+                  .image
+                    @include size(45px, 45px)
+          .icon-arrow-right
+            right: 0
+.detail-rating
+  @include boxShadow($shadow_detail)
+  &:last-child
+    margin-bottom: -0.75rem
+  .desc
+    padding-top: 20px
+
+  h3
+    font-size: 13px
+    @extend .nunito-semibold
+    letter-spacing: 0.2px
+    color: $color_radio
+    margin-bottom: 8px
+  p
+    font-size: 13px
+    letter-spacing: 0.2px
+    color: $color_text_desc

@@ -4,10 +4,22 @@
     list-style: none
     padding: 0
     margin: 0 -20px 0 0
+    &.detail-seller
+      margin: 0
+      li
+        .box
+          .media
+            .media-content
+              .content
+                p
+                  color: $color_radio
     li
       border-bottom: 1px solid $color_border
       padding: 20px 0
       position: relative
+      &.padding-side
+        padding-left: 20px
+        padding-right: 20px
       &:last-child
         border-bottom: none
       .icon-arrow-right
@@ -32,6 +44,8 @@
           padding: 2px 0 0 0
           margin-right: 60px
           position: relative
+          &.no-margin-right
+            margin-right: 0
           p
             color: $color_input
             letter-spacing: 0.2px

@@ -34,3 +34,20 @@
       .desc
         padding-top: 0
         padding-bottom: 10px
+
+  .profile-content
+    border-bottom: 1px solid $color_shadow_discuss
+    @include boxShadow(none)
+    margin-bottom: 0
+    &.rating
+      .profile-wrapp
+        .detail-seller
+          li
+            &:last-child
+              border-bottom: none
+  .columns
+    &.detail-rating
+      @include boxShadow(none)
+      border-bottom: 1px solid $color_shadow_discuss
+      &:not(:last-child)
+        margin-bottom: 0

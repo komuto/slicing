@@ -16,14 +16,11 @@ body
 .main
   padding-top: 64px
   padding-bottom: 46px
-  min-height: 100%;
+  min-height: 100%
   &.home
     padding-top: 119px
   &.seller-info
     padding-bottom: 0
-    &.bg-grey
-      section
-        margin-bottom: 0
   &.bg-grey
     section
       margin-bottom: 20px
@@ -155,7 +152,7 @@ body
     position: absolute
     top: 50%
     left: 0
-    letter-spacing: 0;
+    letter-spacing: 0
     @include translateY(-50%)
     z-index: 1
   span
@@ -267,7 +264,7 @@ body
              vertical-align: middle
           .discount
             min-height: 22px
-            text-decoration: line-through;
+            text-decoration: line-through
           .price
             font-size: 16px
             line-height: 1.25
@@ -363,6 +360,26 @@ body
         font-size: 14px
         &.active
           color: $primary
+  .notif-report
+    position: absolute
+    top: 50%
+    left: 50%
+    @include translateXY(-50%, -50%)
+    width: 90%
+    padding: 20px
+    @include borderRadius(6px)
+    background-color: $white
+    text-align: center
+    h3
+      font-size: 14px
+      @extend .nunito-bold
+      letter-spacing: 0.2px
+      margin-bottom: 10px
+    p
+      font-size: 13px
+      letter-spacing: 0.2px
+      color: $color_text_desc
+      margin-bottom: 30px
 .back
   position: absolute
   top: 0
@@ -414,13 +431,13 @@ body
   display: -ms-flexbox
   display: flex
 .owl-item
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -ms-flex-negative: 1;
-  flex-shrink: 1;
+  -ms-flex-preferred-size: 0
+  flex-basis: 0
+  -webkit-box-flex: 1
+  -ms-flex-positive: 1
+  flex-grow: 1
+  -ms-flex-negative: 1
+  flex-shrink: 1
 
 .owl-theme
   .owl-nav
@@ -429,3 +446,70 @@ body
 .slide-items
   .owl-stage
     padding-left: 0 !important
+  &.owl-theme
+    .owl-nav
+      &.disabled
+        + .owl-dots
+          margin-top: 0
+
+
+.star-rating
+  font-size: 0
+  white-space: nowrap
+  display: block
+  @include size(80px, 16px)
+  margin: 0 auto
+  overflow: hidden
+  position: relative
+  background-image: url($icon-star-grey)
+  background-size: contain
+  i
+    opacity: 0
+    position: absolute
+    left: 0
+    top: 0
+    @include size(20%, 100%)
+    z-index: 1
+    background-image: url($icon-star-yellow)
+    background-size: contain
+
+  input
+    -moz-appearance: none
+    -webkit-appearance: none
+    opacity: 0
+    display:inline-block
+    @include size(20%, 100%)
+    margin: 0
+    padding: 0
+    z-index: 2
+    position: relative
+    &:hover + i,
+    &:checked + i
+      opacity: 1
+
+
+  i ~ i
+    width: 40%
+
+  i ~ i ~ i
+    width: 60%
+
+  i ~ i ~ i ~ i
+    width: 80%
+
+  i ~ i ~ i ~ i ~ i
+    width: 100%
+
+
+
+//JUST COSMETIC STUFF FROM HERE ON. THESE AREN'T THE DROIDS YOU ARE LOOKING FOR: MOVE ALONG.
+
+//just styling for the number
+.choice
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  text-align: center
+  padding: 20px
+  display: block
