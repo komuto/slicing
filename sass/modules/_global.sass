@@ -21,6 +21,8 @@ body
     padding-top: 119px
   &.seller-info
     padding-bottom: 0
+  &.detail
+    padding-bottom: 66px
   &.bg-grey
     section
       margin-bottom: 20px
@@ -32,6 +34,8 @@ body
 
 .section
   background-color: transparent
+  &.has-shadow
+    @include boxShadow($shadow_detail)
   &:after
     content: ""
     display: block
@@ -59,6 +63,8 @@ body
     letter-spacing: 0.4px
     padding: 8px 20px
     @extend .nunito-semibold
+  &.is-m-lg
+    padding: 12px
   > span
     margin-right: 8px
   &.is-fb
@@ -169,6 +175,9 @@ body
   margin-left: -1px
   margin-right: -1px
   margin-top: 0
+  &.no-margin-bottom
+    &:last-child, &:not(:last-child)
+      margin-bottom: 0
   &.custom
     &:last-child, &:not(:last-child)
       margin-bottom: 0
@@ -203,6 +212,7 @@ body
   cursor: pointer
 
 .see-all
+  background-color: $white
   padding: 15px 20px
   .link
     display: block
@@ -374,6 +384,7 @@ body
       font-size: 14px
       @extend .nunito-bold
       letter-spacing: 0.2px
+      margin-top: 10px
       margin-bottom: 10px
     p
       font-size: 13px
@@ -443,7 +454,7 @@ body
   .owl-nav
     display: none
 
-.slide-items
+.slide-items, .slide-product
   .owl-stage
     padding-left: 0 !important
   &.owl-theme
@@ -451,7 +462,13 @@ body
       &.disabled
         + .owl-dots
           margin-top: 0
-
+.columns
+  &.custom
+    .slide-product
+      .column
+        border-right: none
+        padding: 15px
+        border-bottom: none
 
 .star-rating
   font-size: 0
@@ -513,3 +530,38 @@ body
   text-align: center
   padding: 20px
   display: block
+
+.province-option
+  padding: 0 20px
+  .radio
+    display: block
+    width: 100%
+    border-bottom: 1px solid $color_border
+    padding: 15px 0
+    position: relative
+    margin: 0;
+    input
+      position: absolute
+      top: 0
+      left: 0
+    &:last-child
+      border-bottom: none
+    &:before
+      content: ""
+      position: absolute
+      top: 50%
+      right: 0
+      left: inherit
+      @include translateY(-50%)
+      border: none
+    &.checked
+      &:after
+        content: ""
+        position: absolute
+        top: 50%
+        right: 0px
+        left: inherit
+        @include size(24px, 24px)
+        @include translateY(-50%)
+        background-color: transparent
+        background-image: url($icon-selected-sign)

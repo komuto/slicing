@@ -57,6 +57,12 @@
   -o-transform: translate($x, $y)
   transform: translate($x, $y)
 
+@mixin rotate($x)
+  -webkit-transform: rotate($x)
+  -moz-transform: rotate($x)
+  -o-transform: rotate($x)
+  transform: rotate($x)
+
 @mixin boxShadow($val)
   -webkit-box-shadow: $val
   -moz-box-shadow: $val

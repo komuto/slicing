@@ -15,22 +15,25 @@
     text-decoration: none
 
 .icon-fb
-  @extend .icon-style
-  &:before
-    content: $icons8-var-012-facebook
-    color: $black
+  display: inline-block
+  @include size(10px, 20px)
+  background-image: url($icon-fb)
+  background-repeat: no-repeat
+  vertical-align: middle
 
 .icon-cart
-  @extend .icon-style
-  &:before
-    content: $icons8-var-004-cart
-    color: $black
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-cart)
+  background-repeat: no-repeat
+  vertical-align: middle
 
 .icon-love
-  @extend .icon-style
-  &:before
-    content: $icons8-var-008-love
-    color: $black
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-white-love)
+  background-repeat: no-repeat
+  vertical-align: middle
 
 .icon-computer
   display: inline-block
@@ -329,3 +332,24 @@
   vertical-align: middle
   &.active
     background-image: url($icon-star-yellow)
+
+.icon-dots
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-dots)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-qty-min
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-qty-min)
+  background-repeat: no-repeat
+  vertical-align: middle
+
+.icon-qty-plus
+  display: inline-block
+  @include size(24px, 24px)
+  background-image: url($icon-qty-plus)
+  background-repeat: no-repeat
+  vertical-align: middle

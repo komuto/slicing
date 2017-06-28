@@ -1,0 +1,193 @@
+.detail
+  .detail-rating, .profile-content
+    @include boxShadow(none)
+  .profile-content
+    &.rating
+      .profile-wrapp
+        .detail-seller
+          li
+            &:last-child
+              border-bottom: none
+  .review-content
+    border-bottom: 1px solid $color_border
+
+  .detail-product
+    padding: 5px 20px 20px 20px
+    background-color: $white
+    position: relative
+    border-bottom: 1px solid $color_border
+    h3
+      font-size: 14px;
+      @extend .nunito-semibold
+      letter-spacing: 0.2px
+      color: $color_radio
+    .price
+      font-size: 18px
+      @extend .nunito-bold
+      letter-spacing: 0.2px
+      color: $red
+    .icon-wishlist
+      position: absolute
+      top: 8px
+      right: 14px
+
+  .detail-rate
+    border-bottom: 1px solid $color_border
+    .columns
+      &.detail-rating
+        .column
+          border-left: none
+          .rating-content
+            position: relative
+            strong
+              font-size: 14px
+              @extend .nunito-semibold
+              letter-spacing: 0.2px
+              color: $color_radio
+            .star-rating
+              display: inline-block
+              vertical-align: top
+              margin-right: 8px
+            .value-rate
+              &.sm
+                display: inline-block
+                font-size: 13px
+                vertical-align: top
+            .box
+              .media
+                .media-left
+                  margin-right: 8px
+                  .image
+                    @include size(35px, 35px)
+                .media-content
+                  .content
+                    h4
+                      font-size: 13px
+                      position: relative
+                      margin-bottom: 0
+                      display: table
+                      padding-right: 20px
+                      > span
+                        position: absolute
+                        top: -2px
+                        right: -4px
+  .detail-result
+    background-color: $color_bg_detail
+    padding: 0 20px
+    ul
+      margin: 0
+      padding: 0
+      li
+        padding: 20px 0
+        border-bottom: 1px dashed $color_border
+        &:last-child
+          border-bottom: none
+    &.solid
+      padding-top: 20px
+      padding-bottom: 20px
+      strong
+        font-size: 14px
+        @extend .nunito-semibold
+        letter-spacing: 0.2px
+        color: $color_radio
+      ul
+        li
+          border-bottom: 1px solid $color_border
+          padding: 20px 0 6px 0
+          margin-bottom: 10px
+    &.white
+      background-color: $white
+    .columns
+      &.custom
+        .column
+          padding: 0
+          border-right: none
+          background-color: transparent
+          border-bottom: none
+          font-size: 13px
+          letter-spacing: 0.2px
+          strong
+            @extend .nunito-semibold
+
+  .info-product
+    .detail-rate
+      border-bottom: 1px solid $color_border
+      .columns
+        &.detail-rating
+          .column
+            span
+              color: $color_text_desc
+  .desc-wrapp
+    width: 313px
+    height: 92px
+    background-image: $bg_linear
+    font-size: 13px
+    line-height: 1.77
+    letter-spacing: 0.2px
+    text-align: left
+    -webkit-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+    overflow: hidden
+    @include transition(all 200ms linear)
+    &.open
+      background-image: none
+      -webkit-background-clip: inherit
+      background-clip: inherit
+      -webkit-text-fill-color: inherit
+      height: auto
+    ul
+      li
+        position: relative
+        padding-left: 15px
+        > span
+          position: absolute
+          top: -1px
+          left: 0
+  .open-desc
+    display: block
+    padding: 5px
+    width: 100%
+    position: relative
+    z-index: 2
+    &.close
+      .icon-arrow-down
+        @include rotate(180deg)
+  .qty
+    width: 100%
+    max-width: 80px
+    display: inline-block
+    text-align: center
+    font-size: 16px
+    letter-spacing: 0.3px
+
+  .detail-address
+    display: flex
+    .label
+      font-size: 13px
+      letter-spacing: 0.2px
+      color: $color_input
+      width: 100%
+      max-width: 74px
+      @extend .nunito-regular
+      vertical-align: middle
+      margin-bottom: 0
+      display: inline-block
+      position: relative
+
+    .location-label
+      vertical-align: middle
+      display: inline-block
+      font-size: 13px
+      letter-spacing: 0.2px
+      cursor: pointer
+      position: relative
+      width: 100%
+      &:after
+        content: ""
+        @include size(24px, 24px)
+        background-image: url($icon-arrow-down)
+        position: absolute
+        top: 50%
+        right: 0
+        @include translateY(-50%)
