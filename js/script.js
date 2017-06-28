@@ -39,11 +39,13 @@ $(document).ready(function () {
   $('.js-sort').click(function(){
     $('.sort-option').fadeIn(100);
   });
-  $('.js-location').click(function(){
+  $('.js-option').click(function(){
     var dataTarget = $(this).data('target');
     $(dataTarget).fadeIn(100);
-    console.log(dataTarget);
-    return;
+  });
+  $('.js-close').click(function(){
+    var dataTarget = $(this).data('target');
+    $(dataTarget).fadeOut(100);
   });
   $('.modal-button').click(function() {
     var target = $(this).data('target');
@@ -138,10 +140,10 @@ $(document).ready(function () {
               items:1
           },
           600:{
-              items:1
+              items:2
           },
           1000:{
-              items:1
+              items:4
           }
       }
   });

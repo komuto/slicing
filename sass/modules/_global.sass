@@ -222,7 +222,26 @@ body
       top: 50%
       right: 0
       @include translateY(-50%)
-
+.pin
+  @include size(42px, 42px)
+  @include borderRadius(700px)
+  background-color: $green
+  position: relative
+  span
+    font-size: 8px
+    text-transform: uppercase
+    @extend .nunito-bold
+    color: $white
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    @include translateY(-50%)
+    text-align: center
+  &.disc
+    background-color: $red
+    span
+      font-size: 13px
 .box
   background-color: none
   padding: 0
@@ -233,27 +252,9 @@ body
       .image
         position: relative
         .pin
-          @include size(42px, 42px)
-          @include borderRadius(700px)
-          background-color: $green
           position: absolute
           top: -15px
           left: -15px
-          span
-            font-size: 8px
-            text-transform: uppercase
-            @extend .nunito-bold
-            color: $white
-            position: absolute
-            top: 50%
-            left: 0
-            width: 100%
-            @include translateY(-50%)
-            text-align: center
-          &.disc
-            background-color: $red
-            span
-              font-size: 13px
     .media-content
       .content
         padding-bottom: 0
@@ -345,6 +346,21 @@ body
     bottom: 0
     background-color: $white
     width: 100%
+    &.catalog-list
+      max-width: 235px
+      left: 20px
+      bottom: 75px
+      @include borderRadius(5px)
+      ul
+        li
+          border-bottom: 1px solid $color_border
+          &:last-child
+            border-bottom: none
+          a
+            padding: 20px
+            display: block
+            color: $color_radio
+            @extend .nunito-semibold
     p
       padding: 18px 20px
       strong
@@ -565,3 +581,14 @@ body
         @include translateY(-50%)
         background-color: transparent
         background-image: url($icon-selected-sign)
+
+.other-option
+  li
+    border-bottom: 1px solid $color_border
+    a
+      padding: 20px
+      color: $color_radio
+      font-size: 13px
+      display: block
+      span
+        margin-right: 10px

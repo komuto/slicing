@@ -7,35 +7,7 @@
         &.custom
           &:last-child
             margin-bottom: -0.75rem
-.columns
-  &.detail-rating
-    padding: 20px 0
-    background-color: $white
-    &:last-child
-      margin-bottom: -0.75rem
-    &.no-margin-bottom
-      &:last-child
-        margin-bottom: 0
-    .column
-      padding: 0 20px
-      &:nth-child(2)
-        border-left: 1px solid $color_border_rete
-      .rating-content
-        text-align: center
-        h3
-          font-size: 13px
-          letter-spacing: 0.2px
-          @extend .nunito-semibold
-          color: $color_text
-        .value-rate
-          font-size: 30px
-          letter-spacing: 0.5px
-          @extend .nunito-semibold
-          color: $color_text
-        &.is-left
-          text-align: left
-          .star-rating
-            margin: 0
+
   .box
     &.seller
       padding-bottom: 10px
@@ -71,38 +43,39 @@
         margin-bottom: 0
         .column
           padding: 10px
-  .nav
-    border-top: 1px solid $color_border
-    @include boxShadow($shadow_detail)
-    .nav-info
-      padding: 0 20px
-      .nav-item
-        -webkit-box-flex: 1
-        -ms-flex-positive: 1
-        flex-grow: 1
-        padding: 0 0
-        position: relative
+.nav-seller
+  border-top: 1px solid $color_border
+  @include boxShadow($shadow_detail)
+  .nav-info
+    padding: 0 20px
+    .nav-item
+      -webkit-box-flex: 1
+      -ms-flex-positive: 1
+      flex-grow: 1
+      padding: 0 0
+      position: relative
+      &:after
+        content: ""
+        position: absolute
+        left: 50%
+        bottom: 0
+        width: 100%
+        max-width: 80px
+        height: 2px
+        background-color: transparent
+        @include translateX(-50%)
+      a
+        font-size: 13px
+        letter-spacing: 0.4px
+        color: $color_text_desc
+      &.is-active
         &:after
           content: ""
-          position: absolute
-          left: 50%
-          bottom: 0
-          width: 100%
-          max-width: 80px
-          height: 2px
-          background-color: transparent
-          @include translateX(-50%)
+          background-color: $red
         a
-          font-size: 13px
-          letter-spacing: 0.4px
-          color: $color_text_desc
-        &.is-active
-          &:after
-            content: ""
-            background-color: $red
-          a
-            color: $color_radio
-            @extend .nunito-semibold
+          color: $color_radio
+          @extend .nunito-semibold
+
 .profile-content
   padding: 20px
   background-color: $white
@@ -147,3 +120,47 @@
     font-size: 13px
     letter-spacing: 0.2px
     color: $color_text_desc
+
+.close-option
+  @include size(45px, 45px)
+  @include borderRadius(5px)
+  position: absolute
+  left: 20px
+  bottom: 20px
+  display: block
+  background-color: $color_radio
+  span
+    position: absolute
+    top: 50%
+    left: 50%
+    @include translateXY(-50%, -50%)
+
+.columns
+  &.detail-rating
+    padding: 20px 0
+    background-color: $white
+    &:last-child
+      margin-bottom: -0.75rem
+    &.no-margin-bottom
+      &:last-child
+        margin-bottom: 0
+    .column
+      padding: 0 20px
+      &:nth-child(2)
+        border-left: 1px solid $color_border_rete
+      .rating-content
+        text-align: center
+        h3
+          font-size: 13px
+          letter-spacing: 0.2px
+          @extend .nunito-semibold
+          color: $color_text
+        .value-rate
+          font-size: 30px
+          letter-spacing: 0.5px
+          @extend .nunito-semibold
+          color: $color_text
+        &.is-left
+          text-align: left
+          .star-rating
+            margin: 0

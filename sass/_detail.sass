@@ -97,6 +97,8 @@
           margin-bottom: 10px
     &.white
       background-color: $white
+    &.estimation
+      border-bottom: 1px solid $color_border
     .columns
       &.custom
         .column
@@ -191,3 +193,26 @@
         top: 50%
         right: 0
         @include translateY(-50%)
+
+.detail-discount
+  margin-top: 10px
+  h3
+    width: 100%
+    max-width: 340px
+  &:after
+    content: ""
+    display: table
+    clear: both
+  .pin
+    float: left
+    margin-right: 8px
+  .discount
+    font-size: 12px
+    line-height: 1.33
+    color: $color_input
+    text-decoration: line-through
+  &.wholesaler
+    margin-top: 0
+    h3
+      width: 100%
+      max-width: 260px
