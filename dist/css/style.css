@@ -58,22 +58,7 @@
   font-family: 'nunitoblack-black', sans-serif;
   font-weight: 900; }
 
-@font-face {
-  font-family: "Komuto Icons";
-  src: url("../../fonts/komuto-icon/komuto-icon.eot");
-  src: url("../../fonts/komuto-icon/komuto-icon.eot?#iefix") format("embedded-opentype"), url("../../fonts/komuto-icon/komuto-icon.svg#komuto") format("svg"), url("../../fonts/komuto-icon/komuto-icon.woff2") format("woff2"), url("../../fonts/komuto-icon/komuto-icon.woff") format("woff"), url("../../fonts/komuto-icon/komuto-icon.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Komuto Icons";
-    src: url("../../fonts/komuto-icon/komuto-icon.svg#web") format("svg"); } }
-
-[data-icon]:before {
-  content: attr(data-icon); }
-
-.icon-style, [data-icon]:before {
+.icon-style {
   display: inline-block;
   vertical-align: middle;
   line-height: 1;
@@ -83,9 +68,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  font-family: "Komuto Icons" !important;
   text-decoration: none; }
-  .icon-style:hover, [data-icon]:hover:before {
+  .icon-style:hover {
     text-decoration: none; }
 
 .icon-fb {
