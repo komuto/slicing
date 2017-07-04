@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main user">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span><span class="back"><span class="icon-arrow-left"></span></span> Kelola Akun</span>
+          </a>
+        </div>
+      </nav>
+      <div class="notification is-success">
+        <button class="delete"></button>
+        Berhasil memperbarui biodata Anda
+      </div>
+      <section class="content">
+        <div class="container is-fluid">
+          <form action="#" class="form edit">
+            <div class="photo-content has-text-centered">
+              <div class="photo">
+                <img src="../images/thumb.jpg" alt="">
+              </div>
+              <a>Ganti Foto Profil</a>
+            </div>
+            <div class="field">
+              <label class="label">Nama Lengkap</label>
+              <p class="control">
+                <input class="input" type="text" placeholder="Nama Lengkap">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Gender</label>
+              <p class="control">
+                <label class="radio">
+                  <input type="radio" name="question">
+                  Pria
+                </label>
+                <label class="radio">
+                  <input type="radio" name="question">
+                  Wanita
+                </label>
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Tempat Lahir</label>
+              <p class="control">
+                <span class="select">
+                  <select>
+                    <option>Yogyakarta</option>
+                    <option>With options</option>
+                  </select>
+                </span>
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Tanggal Lahir</label>
+              <p class="control">
+                <input class="input" type="text" placeholder="Tanggal Lahir">
+              </p>
+            </div>
+
+            <a class="button is-primary is-large is-fullwidth">Simpan Perubahan</a>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

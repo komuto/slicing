@@ -1,0 +1,40 @@
+.photo-content
+  margin-top: 0
+  margin-bottom: 20px
+  a
+    font-size: 14px
+    @extend .nunito-bold
+    display: block
+  .photo
+    @include size(99px, 99px)
+    @include borderRadius(700px)
+    border: 7px solid $color_border_seller
+    margin: 0 auto
+    margin-bottom: 20px
+    img
+      @include borderRadius(700px)
+
+.edit
+  .noted
+    width: 100%
+    max-width: 254px
+    margin: 0 auto 40px auto
+    p
+      font-size: 13px
+      line-height: 1.77
+      letter-spacing: 0.2px
+      color: $color_radio
+      strong
+        @extend .nunito-semibold
+  .text-ask
+    margin-top: 20px
+    a
+      @extend .nunito-bold
+  .rek
+    .field
+      &.is-grouped
+        justify-content: center
+        > .control
+          width: 35px
+          &:not(:last-child)
+            margin-right: 20px

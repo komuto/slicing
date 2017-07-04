@@ -38,15 +38,15 @@
   font-family: 'nunitolight', sans-serif;
   font-weight: 300; }
 
-.nunito-regular, .field .label, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .add-discussion .field label, .detail .detail-address .label {
+.nunito-regular, .field .label, .search-form .dropdown-search .main-search h3, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .add-discussion .field label, .detail .detail-address .label {
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .title, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .sort-option .sort-list p strong, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .level.nav-bottom .level-item {
+.nunito-semibold, .button.is-medium, .input, .title, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .sort-option .sort-list p strong, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .edit .noted p strong, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .notif-report h3, .level.header .nav-left .level-item > span, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price {
+.nunito-bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .notif-report h3, .level.header .nav-left .level-item > span, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .photo-content a, .edit .text-ask a {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -57,21 +57,6 @@
 .nunito-black {
   font-family: 'nunitoblack-black', sans-serif;
   font-weight: 900; }
-
-@font-face {
-  font-family: "Komuto Icons";
-  src: url("../../fonts/komuto-icon/komuto-icon.eot");
-  src: url("../../fonts/komuto-icon/komuto-icon.eot?#iefix") format("embedded-opentype"), url("../../fonts/komuto-icon/komuto-icon.svg#komuto") format("svg"), url("../../fonts/komuto-icon/komuto-icon.woff2") format("woff2"), url("../../fonts/komuto-icon/komuto-icon.woff") format("woff"), url("../../fonts/komuto-icon/komuto-icon.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: "Komuto Icons";
-    src: url("../../fonts/komuto-icon/komuto-icon.svg#web") format("svg"); } }
-
-[data-icon]:before {
-  content: attr(data-icon); }
 
 @font-face {
   font-family: "Komuto Icons";
@@ -5499,7 +5484,13 @@ body {
   height: 100%; }
   body.search-open {
     position: fixed;
-    overflow: hidden; }
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%; }
 
 .bg-grey {
   background-color: #f4f5f6; }
@@ -5575,7 +5566,7 @@ body {
   border: none;
   border-bottom: 1px solid #dedede;
   font-size: 13px;
-  color: #a0a3ae;
+  color: #41475e;
   margin-bottom: 0; }
   .input::-moz-placeholder {
     color: #a0a3ae;
@@ -5626,6 +5617,22 @@ body {
   .field .radio input {
     margin-right: 20px;
     visibility: hidden; }
+
+.field .select {
+  width: 100%; }
+  .field .select:after {
+    border-color: #cccccc;
+    width: 0.7em;
+    height: 0.7em;
+    right: 1px;
+    margin-top: -10px; }
+  .field .select select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #dedede;
+    border-radius: 0;
+    padding: 0;
+    font-size: 13px; }
 
 .search-form {
   width: 100%;
@@ -5948,6 +5955,8 @@ body {
     color: #e4172d; }
     .notification.is-danger > .delete:before, .notification.is-danger > .delete:after {
       background-color: #e4172d; }
+  .notification:not(:last-child) {
+    margin-bottom: 0; }
 
 .owl-stage {
   display: -webkit-box;
@@ -6082,7 +6091,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #ef5656;
-  z-index: 19;
+  z-index: 99;
   padding: 0 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -6192,18 +6201,54 @@ body {
 
 .search-form {
   background-color: #ef5656;
-  padding: 15px; }
+  padding: 15px;
+  position: relative;
+  z-index: 99; }
   .search-form.field:not(:last-child) {
     margin-bottom: 0; }
   .search-form .control.has-icons-left input {
     border-radius: 2px;
     box-shadow: 0 3px 4px 0 #da4b4b; }
+  .search-form .dropdown-search {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    z-index: 99;
+    padding: 0 15px;
+    margin-top: -15px; }
+    .search-form .dropdown-search .main-search {
+      background-color: #ffffff;
+      padding-bottom: 8px;
+      max-height: 450px;
+      overflow: auto;
+      padding: 0 15px; }
+      .search-form .dropdown-search .main-search ul li {
+        padding: 6px 0; }
+        .search-form .dropdown-search .main-search ul li span {
+          vertical-align: middle;
+          font-size: 12px;
+          letter-spacing: 0.2px; }
+        .search-form .dropdown-search .main-search ul li img {
+          border-radius: 700px;
+          display: inline-block;
+          max-width: 40px;
+          vertical-align: middle;
+          margin-right: 10px; }
+      .search-form .dropdown-search .main-search h3 {
+        text-transform: uppercase;
+        color: #a0a3ae;
+        margin-top: 20px;
+        margin-bottom: 5px; }
   .search-form.floating {
     background-color: transparent;
-    padding: 0; }
+    padding: 0;
+    margin-top: 0; }
     .search-form.floating .control.has-icons-left input {
       border-radius: 0;
       box-shadow: 0 5px 5px 0 rgba(64, 72, 82, 0.3); }
+    .search-form.floating .dropdown-search {
+      padding: 0; }
 
 .on-search {
   position: fixed;
@@ -6237,6 +6282,18 @@ body {
       letter-spacing: 0.2px;
       color: #404852; }
 
+.dropdown-overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 77; }
+
 .user.login .content .form .or {
   margin-top: 0; }
 
@@ -6249,6 +6306,8 @@ body {
 
 .user .content .form {
   padding-top: 20px; }
+  .user .content .form.edit {
+    padding-top: 0; }
   .user .content .form .field {
     margin-bottom: 35px; }
     .user .content .form .field:not(:last-child) {
@@ -7084,6 +7143,44 @@ body {
     .detail-discount.wholesaler h3 {
       width: 100%;
       max-width: 260px; }
+
+.photo-content {
+  margin-top: 0;
+  margin-bottom: 20px; }
+  .photo-content a {
+    font-size: 14px;
+    display: block; }
+  .photo-content .photo {
+    width: 99px;
+    height: 99px;
+    border-radius: 700px;
+    border: 7px solid rgba(183, 183, 183, 0.2);
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .photo-content .photo img {
+      border-radius: 700px; }
+
+.edit .noted {
+  width: 100%;
+  max-width: 254px;
+  margin: 0 auto 40px auto; }
+  .edit .noted p {
+    font-size: 13px;
+    line-height: 1.77;
+    letter-spacing: 0.2px;
+    color: #404852; }
+
+.edit .text-ask {
+  margin-top: 20px; }
+
+.edit .rek .field.is-grouped {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .edit .rek .field.is-grouped > .control {
+    width: 35px; }
+    .edit .rek .field.is-grouped > .control:not(:last-child) {
+      margin-right: 20px; }
 
 .level.nav-bottom {
   position: fixed;

@@ -76,23 +76,23 @@ $(document).ready(function () {
     sticky(bar);
   });
 
-  $('.search-form .control .input').click(function(){
-    var onSearch = $('.on-search');
-    var body = $('body');
-    var input = $('.input');
-    //onSearch.fadeIn(100);
-    onSearch.addClass('slide');
-    //body.addClass('search-open');
-    input.focus();
-    return false;
-  });
-  $('.back-on-seacrh').click(function(){
-    var onSearch = $('.on-search');
-    var body = $('body');
-    //onSearch.fadeOut(200);
-    onSearch.removeClass('slide');
-    body.removeClass('search-open');
-  });
+  // $('.search-form .control .input').click(function(){
+  //   var onSearch = $('.on-search');
+  //   var body = $('body');
+  //   var input = $('.input');
+  //   //onSearch.fadeIn(100);
+  //   onSearch.addClass('slide');
+  //   //body.addClass('search-open');
+  //   input.focus();
+  //   return false;
+  // });
+  // $('.back-on-seacrh').click(function(){
+  //   var onSearch = $('.on-search');
+  //   var body = $('body');
+  //   //onSearch.fadeOut(200);
+  //   onSearch.removeClass('slide');
+  //   body.removeClass('search-open');
+  // });
 
   $('.slide-banner').owlCarousel({
       margin:0,
