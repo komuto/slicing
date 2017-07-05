@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main detail edit-data bg-grey">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Isi Informasi Data Pengiriman</span>
+          </a>
+        </div>
+      </nav>
+      <section class="section is-paddingless has-shadow">
+        <div class="container is-fluid">
+          <div class="title">
+            <h3>Info Alamat</h3>
+          </div>
+        </div>
+        <div class="edit-data-delivery bg-white">
+          <form action="#" class="form edit">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="text" placeholder="Nama Alias">
+                <span class="eg">Contoh: Rumah Sendiri, Kantor</span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="text" placeholder="Nama Penerima">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="text" placeholder="Nomor Handphone">
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section is-paddingless has-shadow">
+        <div class="container is-fluid">
+          <div class="title">
+            <h3>Info Lokasi</h3>
+          </div>
+        </div>
+        <div class="edit-data-delivery bg-white">
+          <form action="#" class="form edit">
+            <div class="field">
+              <p class="control">
+                <input class="input" type="text" placeholder="Alamat Lengkap">
+              </p>
+            </div>
+            <div class="field">
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#province">Yogyakarta</span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#district">Kota/Kabupaten</span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#districts">Kecamatan</span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#village">Kelurahan</span>
+              </p>
+            </div>
+            <div class="field">
+              <p class="control">
+                <input class="input" type="text" placeholder="Kode Pos">
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="section is-paddingless">
+        <div class="edit-data-delivery">
+          <a class="button is-primary is-large is-fullwidth">Simpan Perubahan</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- option -->
+    <div class="sort-option" id="province">
+      <div class="sort-list">
+        <p><strong>Pilih Provinsi</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DKI Jakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DI Yogyakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Tengah
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Timur
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Selatan
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="district">
+      <div class="sort-list">
+        <p><strong>Pilih Kabupaten</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Bantul
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Seleman
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Kulon Progo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="districts">
+      <div class="sort-list">
+        <p><strong>Pilih Kecamatan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sedayu
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Wirobrajan
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- option -->
+    <div class="sort-option" id="province">
+      <div class="sort-list">
+        <p><strong>Pilih Provinsi</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DKI Jakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DI Yogyakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Tengah
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Timur
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Selatan
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="district">
+      <div class="sort-list">
+        <p><strong>Pilih Kabupaten</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Bantul
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Seleman
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Kulon Progo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="districts">
+      <div class="sort-list">
+        <p><strong>Pilih Kecamatan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sedayu
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Wirobrajan
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="village">
+      <div class="sort-list">
+        <p><strong>Pilih Kelurahan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                TegalRejo
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Tegalmulyo
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

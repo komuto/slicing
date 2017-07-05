@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main detail bg-grey">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Detail</span>
+          </a>
+        </div>
+        <div class="button-search js-option" data-target="#otherOption">
+          <span class="icon-dots"></span>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless has-shadow">
+        <div class="detail-product">
+          <div class="purchase">
+            <figure class="img-item">
+              <img src="../images/pict.jpg" alt="pict">
+            </figure>
+            <h3>Blue Training Kit Machester United</h3>
+            <span class="price">Rp 1.350.000</span>
+          </div>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="info-purchase">
+          <div class="detail-rate is-purchase">
+            <div class="columns detail-rating is-mobile is-multiline no-margin-bottom">
+              <div class="column is-half">
+                <div class="rating-content is-left">
+                  <strong>Jumlah Barang</strong>
+                </div>
+              </div>
+              <div class="column is-half">
+                <div class="rating-content item-qty">
+                  <a><span class="icon-qty-min"></span></a>
+                  <span class="qty">1</span>
+                  <a><span class="icon-qty-plus"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="info-purchase">
+          <div class="detail-purchase summary">
+            <h3>Informasi Data Pengiriman</h3>
+            <a class="btn-change js-option" data-target="#changeAddress">Ganti</a>
+            <div class="detail-result white">
+              <ul class="data-delivery">
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column">
+                      <strong>Nama Penerima</strong>
+                      <span>Dwinawan Hariwijaya</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column">
+                      <strong>Alamat Email</strong>
+                      <span>dwinawan@gmail.com</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column">
+                      <strong>No Handphone</strong>
+                      <span>0821-1310-1585</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column">
+                      <strong>Alamat</strong>
+                      <span>
+                        Kemanggisan Jakarta Barat,<br>
+                        Palmerah<br>
+                        Jakarta Barat<br>
+                        DKI Jakarta, Indonesia 55673
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="column is-paddingless">
+          <div class="see-all">
+            <span class="link black js-option" data-target="#kurir">Kurir Pengiriman <span class="kurir">JNE</span><span class="icon-arrow-down"></span></span>
+          </div>
+          <p class="error-msg">Mohon Pilih Kurir Pengiriman terlebih dahulu</p>
+        </div>
+        <div class="column is-paddingless">
+          <div class="see-all">
+            <span class="link black js-option" data-target="#deliveryPackage">Pilih Paket Pengiriman <span class="kurir">Reguler</span><span class="icon-arrow-down"></span></span>
+          </div>
+          <p class="error-msg">Mohon Pilih Paket Pengiriman terlebih dahulu</p>
+        </div>
+        <div class="column is-paddingless">
+          <div class="see-all">
+            <span class="link black js-option" data-target="#insurance">Asuransi <span class="kurir">Tidak</span><span class="icon-arrow-down"></span></span>
+          </div>
+          <p class="error-msg">Mohon Pilih Paket Pengiriman terlebih dahulu</p>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="info-purchase">
+          <div class="detail-purchase remark">
+            <h3>Catatan (Optional)</h3>
+            <div class="field">
+              <p class="control">
+                <textarea class="textarea" placeholder="Contoh: Saya pesan barang yang warna merah" rows="2"></textarea>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="info-purchase">
+          <div class="detail-purchase summary">
+            <h3>Ringkasan Pemesanan</h3>
+            <div class="detail-result white">
+              <ul>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><span>Harga Barang</span></div>
+                    <div class="column is-half has-text-right"><span>Rp 380.000</span></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><span>Ongkos Kirim</span></div>
+                    <div class="column is-half has-text-right"><span>-</span></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><span>Asuransi</span></div>
+                    <div class="column is-half has-text-right"><span>-</span></div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="total">
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><strong>Harga Barang</strong></div>
+                    <div class="column is-half has-text-right"><strong>Rp 380.000</strong></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="level nav-bottom nav-button purchase is-mobile">
+        <a class="button is-primary is-m-lg is-fullwidth btn-add-cart js-option" data-target="#addCartNotif">Masukan Ke Keranjang</a>
+      </div>
+    </div>
+
+    <!-- option -->
+    <div class="sort-option" id="deliveryPackage">
+      <div class="sort-list">
+        <p><strong>Pilih Paket Pengiriman dari JNE</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option package">
+              <label class="radio">
+                <input type="radio" name="reguler">
+                <span class="service-name">JNE Reguler</span>
+                <span>2-3 Hari</span>
+                <span>Rp 15.000</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="yes">
+                <span class="service-name">JNE Yes</span>
+                <span>2-3 Hari</span>
+                <span>Rp 15.000</span>
+              </label>
+              <label class="radio">
+                <input type="radio" name="oke">
+                <span class="service-name">JNE Oke</span>
+                <span>2-3 Hari</span>
+                <span>Rp 15.000</span>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="sort-option" id="insurance">
+      <div class="sort-list">
+        <p><strong>Anda ingin menggunakan Asuransi?</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="ya">
+                Ya
+              </label>
+              <label class="radio">
+                <input type="radio" name="tidak">
+                Tidak
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="kurir">
+      <div class="sort-list">
+        <p><strong>Pilih Ekspedisi Pengiriman</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option kurir">
+              <label class="radio">
+                <input type="radio" name="ya">
+                <img src="../images/jne.png" alt=""> TIKI
+              </label>
+              <label class="radio">
+                <input type="radio" name="tidak">
+                <img src="../images/jne.png" alt=""> JNE
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="changeAddress">
+      <div class="sort-list">
+        <p><strong>Pilih Alamat Pengiriman</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option change-address">
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>Rumah Jakarta</strong>
+                <p>Kemanggisan Jakarta Barat, Palmerah Jakarta Barat, DKI Jakarta, Indonesia 55673</p>
+              </label>
+              <a class="add-new-address">
+                + Tambah Alamat Baru
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="addCartNotif">
+      <div class="notif-report add-cart-notif">
+        <img src="../images/phone-account.svg" alt="">
+        <p>Produk telah berhasil dimasukkan ke Keranjang Belanja</p>
+        <button class="button is-primary is-large is-fullwidth">Lihat Keranjang Belanja</button>
+        <button class="button is-primary is-large is-fullwidth is-outlined">Lihat Keranjang Belanja</button>
+      </div>
+    </div>
+
+    <div class="sort-option" id="otherOption">
+      <div class="sort-list">
+        <ul class="other-option">
+          <li><a><span class="icon-share"></span>Bagikan</a></li>
+          <li><a><span class="icon-warning"></span>Laporkan Barang</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

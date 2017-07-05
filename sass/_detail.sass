@@ -30,6 +30,33 @@
       position: absolute
       top: 8px
       right: 14px
+    .remove-item
+      position: absolute
+      top: 24px
+      right: 14px
+      color: $red
+      @extend .nunito-bold
+    .purchase
+      padding-top: 20px
+      &:after
+        content: ""
+        display: table
+        clear: both
+      .img-item
+        @include size(30px, 30px)
+        float: left
+        margin-right: 10px
+      h3
+        font-size: 13px
+        @extend .nunito-semibold
+        letter-spacing: 0.2px
+        color: $color_radio
+        max-width: 80%
+      .price
+        font-size: 13px
+        letter-spacing: 0.2px
+        color: $color_input
+        @extend .nunito-regular
 
   .detail-rate
     border-bottom: 1px solid $color_border
@@ -39,6 +66,12 @@
           border-left: none
           .rating-content
             position: relative
+            &.item-qty
+              text-align: right
+              a, span
+                display: inline-block
+              .qty
+                border-bottom: 1px solid $color_border
             strong
               font-size: 14px
               @extend .nunito-semibold
@@ -120,7 +153,6 @@
             span
               color: $color_text_desc
   .desc-wrapp
-    width: 313px
     height: 92px
     background-image: $bg_linear
     font-size: 13px
@@ -157,10 +189,11 @@
         @include rotate(180deg)
   .qty
     width: 100%
-    max-width: 80px
+    max-width: 70px
     display: inline-block
     text-align: center
     font-size: 16px
+    margin: 0 8px
     letter-spacing: 0.3px
 
   .detail-address
@@ -216,3 +249,169 @@
     h3
       width: 100%
       max-width: 260px
+.info-purchase
+  background-color: $white
+  padding: 20px
+  .detail-purchase
+    h3
+      font-size: 13px
+      @extend .nunito-semibold
+      letter-spacing: 0.2px
+      color: $color_radio
+      margin-bottom: 5px
+    &.remark
+      .field
+        .control
+          .textarea
+            padding: 0
+            border: none
+            @include boxShadow(none)
+            font-size: 13px
+            +placeholder
+              color: $color_seller_grey
+              font-size: 13px
+    &.summary
+      position: relative
+      h3
+        margin-bottom: 20px
+      .btn-change
+        position: absolute
+        top: 0
+        right: 0
+        @extend .nunito-semibold
+        letter-spacing: 0.2px
+      .detail-result
+        padding: 0
+        margin: 0 -20px
+        ul
+          border-top: 0.5px solid $color_border
+          border-bottom: 0.5px solid $color_border
+          padding-top: 18px
+          padding-bottom: 18px
+          li
+            border-bottom: none
+            padding: 8px 20px
+          &.total
+            border-top: none
+            border-bottom: none
+            padding-bottom: 0
+            li
+              padding: 0 20px
+          &.data-delivery
+            border-bottom: none
+            padding-bottom: 0
+            li
+              strong
+                display: block
+
+.section
+  .error-msg
+    font-size: 12px
+    letter-spacing: 0.2px
+    color: $red
+    padding: 8px 20px
+    display: none
+  &.is-error
+    @include boxShadow(none)
+.is-error
+  >.error-msg
+    display: block
+  >.see-all
+    border-top: 1px solid $red
+    border-bottom: 1px solid $red
+    .link
+      color: $red
+
+.detail
+  .info-purchase
+    .detail-rate
+      &.is-purchase
+      border-bottom: none
+      .columns
+        &.detail-rating
+          padding: 0
+.edit-data-delivery
+  padding: 20px
+  > .button
+    margin-top: -20px
+  &.bg-white
+    background-color: $white
+  .field
+    margin-bottom: 30px
+    .control
+      &.detail-address
+        .location-label
+          border-bottom: 0.5px solid $color_border
+          padding-bottom: 8px
+          color: $color_input
+      .input
+        @extend .nunito-regular
+        +placeholder
+          color: $color_input
+  .eg
+    font-size: 12px
+    letter-spacing: 0.2px
+
+.edit-data
+  .title
+    margin-top: 20px
+
+.summary
+  &.at-cart
+    position: relative
+    border-top: 0.5px solid $color_border
+    border-bottom: 0.5px solid $color_border
+    .detail-result
+      .btn-change
+        position: absolute
+        top: 20px
+        right: 20px
+        @extend .nunito-bold
+      .data-delivery
+        li
+          padding-top: 20px
+          strong
+            display: block
+.note-remark
+  font-size: 13px
+  letter-spacing: 0.2px
+  color: $color_text_desc
+
+.detail
+  .detail-result
+    &.detail-price
+      padding-top: 20px
+      padding-bottom: 20px
+      border-top: 0.5px solid $color_border
+      h3
+        font-size: 13px
+        @extend .nunito-bold
+        letter-spacing: 0.2px
+        color: $color_text
+        margin-bottom: 10px
+      ul
+        li
+          padding: 6px 0
+          border: none
+
+.code-voucher
+  p
+    @extend .nunito-semibold
+
+.total-pay
+  .price-pay
+    font-size: 18px
+    @extend .nunito-bold
+    letter-spacing: 0.3px
+    color: $red
+
+.cancel-voucher
+  border-top: 0.5px solid $color_border
+  .cancel
+    @extend .nunito-bold
+    letter-spacing: 0.3px
+    color: $red
+  .voucher-credit
+    font-size: 13px
+    letter-spacing: 0.2px
+    color: $color_voucer

@@ -81,6 +81,9 @@ body
       margin-right: 15px
       &:before
         color: $white
+  &.btn-add-cart
+    @include borderRadius(0)
+    border: none
 
 .input
   padding-top: 0.475em
@@ -231,13 +234,27 @@ body
   color: $primary
   cursor: pointer
 
+
 .see-all
   background-color: $white
-  padding: 15px 20px
+  border-bottom: 1px solid $color_border
+  &:last-child
+    border-bottom: 0
   .link
     display: block
     position: relative
-    .icon-arrow-right
+    @extend .nunito-semibold
+    padding: 15px 20px
+    &.black
+      color: $color_text
+    .kurir
+      position: absolute
+      top: 50%
+      right: 30px
+      @include translateY(-50%)
+      color: $color_text_desc
+      @extend .nunito-regular
+    .icon-arrow-right, .icon-arrow-down
       position: absolute
       top: 50%
       right: 0
@@ -313,6 +330,12 @@ body
             position: absolute
             right: -14px
             bottom: -14px
+  &.list
+    .media
+      .media-left
+        .image
+          width: 100%
+          max-width: 140px
   &.grid
     .media
       display: block
@@ -336,7 +359,6 @@ body
               position: absolute
               right: 0
               bottom: 0
-
 
 
 .notif-akun
@@ -385,7 +407,12 @@ body
       padding: 18px 20px
       strong
         color: $color_text
-        @extend .nunito-semibold
+        @extend .nunito-regular
+        font-size: 14px
+    > p
+      strong
+        color: $color_text
+        @extend .nunito-bold
         font-size: 14px
     .checkbox
       padding: 18px 20px
@@ -416,6 +443,29 @@ body
     @include borderRadius(6px)
     background-color: $white
     text-align: center
+    &.add-voucher
+      text-align: left
+      .control
+        margin-bottom: 15px
+      .header-notif
+        background-color: $bg_voucer_header
+        position: relative
+        @include borderRadius(6px 6px 0 0)
+        padding: 20px
+        margin: -20px -20px 0 -20px
+        margin-bottom: 20px
+        h3
+          margin: 0
+          font-size: 14px
+          @extend .nunito-bold
+          letter-spacing: 0.2px
+          color: $color_radio
+        .icon-close
+          position: absolute
+          top: 50%
+          right: 20px
+          @include translateY(-50%)
+          cursor: pointer
     h3
       font-size: 14px
       @extend .nunito-bold
@@ -569,13 +619,13 @@ body
   padding: 20px
   display: block
 
-.province-option
-  padding: 0 20px
+.popup-option
+  padding: 0 0
   .radio
     display: block
     width: 100%
-    border-bottom: 1px solid $color_border
-    padding: 15px 0
+    border-top: 1px solid $color_border
+    padding: 15px 20px
     position: relative
     margin: 0;
     input
@@ -588,7 +638,7 @@ body
       content: ""
       position: absolute
       top: 50%
-      right: 0
+      right: 20px
       left: inherit
       @include translateY(-50%)
       border: none
@@ -597,7 +647,7 @@ body
         content: ""
         position: absolute
         top: 50%
-        right: 0px
+        right: 20px
         left: inherit
         @include size(24px, 24px)
         @include translateY(-50%)
@@ -614,3 +664,64 @@ body
       display: block
       span
         margin-right: 10px
+.package
+  .radio
+    padding-right: 75px
+    position: relative
+    text-align: right
+    span
+      margin-left: 28px
+      &.service-name
+        position: absolute
+        top: 50%
+        left: 20px
+        margin-left: 0
+        @include translateY(-50%)
+
+.kurir
+  .radio
+    img
+      max-width: 40px
+      vertical-align: middle
+      margin-right: 10px
+.change-address
+  .radio
+    color: $color_text_desc
+    strong
+      font-size: 13px
+      letter-spacing: 0.2px
+      color: $color_radio
+      font-weight: 400
+      display: block
+    p
+      margin: 0
+      padding: 0
+
+  .add-new-address
+    text-align: center
+    padding: 20px
+    display: block
+    font-size: 13px
+    border-top: 1px solid $color_border_check
+
+.add-cart-notif
+  img
+    margin-bottom: 20px
+  button
+    margin-bottom: 15px
+    &:last-child
+      margin-bottom: 0
+
+.icon-image
+  @include size(32px, 32px)
+  margin: 0 auto
+  img
+    max-width: 100%
+@media handheld, only screen and (max-width: 320px)
+  .box
+    &.list
+      .media
+        .media-left
+          .image
+            width: 100%
+            max-width: 80px

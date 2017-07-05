@@ -37,6 +37,14 @@
               left: 50%
               @include translateXY(-50%, -50%)
               display: block
+        .input
+          &.serach-result
+            position: absolute
+            top: 50%
+            left: inherit
+            @include translateY(-50%)
+            border-bottom: none
+            background-color: transparent
     &.bg-white
       background-color: $white
       border-bottom: 1px solid $color_border
