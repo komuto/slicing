@@ -38,7 +38,7 @@
   font-family: 'nunitolight', sans-serif;
   font-weight: 300; }
 
-.nunito-regular, .field .label, .see-all .link .kurir, .sort-option .sort-list p strong, .search-form .dropdown-search .main-search h3, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .add-discussion .field label, .detail .detail-product .purchase .price, .detail .detail-address .label, .edit-data-delivery .field .control .input {
+.nunito-regular, .button.is-thick, .field .label, .see-all .link .kurir, .sort-option .sort-list p strong, .search-form .dropdown-search .main-search h3, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .add-discussion .field label, .detail .detail-product .purchase .price, .detail .detail-address .label, .edit-data-delivery .field .control .input {
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
@@ -5518,6 +5518,10 @@ body {
   letter-spacing: 0.20px;
   border-radius: 5px;
   border: 1px solid #dedede; }
+  .button.is-thick {
+    font-size: 13px; }
+    .button.is-thick.md {
+      padding: 8px 20px; }
   .button.is-large {
     font-size: 14px;
     padding: 17px; }
@@ -7422,6 +7426,10 @@ body {
     font-size: 13px;
     letter-spacing: 0.2px;
     color: #489b66; }
+
+.see-detail-price p {
+  text-align: left;
+  margin-bottom: 10px; }
 
 .photo-content {
   margin-top: 0;

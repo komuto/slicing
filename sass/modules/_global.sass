@@ -59,6 +59,11 @@ body
   @extend .nunito-bold
   @include borderRadius(5px)
   border: 1px solid $color_border
+  &.is-thick
+    @extend .nunito-regular
+    font-size: 13px
+    &.md
+      padding: 8px 20px
   &.is-large
     font-size: 14px
     padding: 17px
