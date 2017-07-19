@@ -6812,6 +6812,19 @@ body {
         .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .sort-text {
           font-size: 11px; } }
 
+.filter-price {
+  position: relative; }
+  .filter-price .input {
+    border: none;
+    padding: 10px 10px 10px 25px; }
+    .filter-price .input:focus {
+      border-bottom: 1px solid #cccccc; }
+  .filter-price .currency {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: 2; }
+
 .main.categories {
   padding-bottom: 0; }
   .main.categories .title {
