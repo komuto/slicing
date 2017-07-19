@@ -1,0 +1,80 @@
+.box
+  &.notif-payment
+    padding: 15px
+    background-color: $notif_payment
+    margin-bottom: 0
+    .media
+      .media-content
+        p
+          color: $color_text
+          opacity: 0.7
+          strong
+            color: $yellow
+            @extend .nunito-semibold
+            font-size: 13px
+            opacity: 1
+
+.payment-detail
+  background-color: $white
+  padding: 0 20px
+  ul
+    li
+      padding: 20px 0
+      border-bottom: 1px solid $color_border_pay
+      &:last-child
+        border-bottom: none
+      .columns
+        .column
+          padding: 0
+          > span
+            color: $color_text_desc
+            letter-spacing: 0.2px
+          .label-text
+            > span
+              @extend .nunito-semibold
+          .detail-collapsed
+            @extend .nunito-semibold
+            margin-left: 10px
+            > span
+              margin-top: -4px
+          .pay-code
+            color: $green
+            @extend .nunito-semibold
+          .step-num
+            @include size(24px, 24px)
+            @include borderRadius(700px)
+            text-align: center
+            @extend .nunito-semibold
+            line-height: 24px
+            float: left
+            margin-right: 20px
+            display: block
+            background-color: $color_step
+          .step-val
+            display: block
+            overflow: hidden
+            @extend .nunito-regular
+            color: $color_text_desc
+            line-height: 1.62
+            -spacing: 0.2px
+  &.step-pay
+    padding: 0
+    ul
+      li
+        padding: 20px
+.btn-detail
+  position: absolute
+  top: -5px
+  right: 0
+
+.columns
+  &.notif-alfa
+    .column
+      padding: 20px
+      span
+        opacity: 0.7
+      .label-text
+        color: $color_text_desc
+        letter-spacing: 0.2px
+        opacity: 1
+        @extend .nunito-semibold
