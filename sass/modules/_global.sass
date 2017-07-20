@@ -260,6 +260,8 @@ body
       @include translateY(-50%)
       color: $color_text_desc
       @extend .nunito-regular
+      &.normal
+        right: 20px
     .icon-arrow-right, .icon-arrow-down
       position: absolute
       top: 50%
@@ -723,6 +725,11 @@ body
   margin: 0 auto
   img
     max-width: 100%
+
+.list-bullet
+  list-style: initial
+  list-style-position: outset
+
 @media handheld, only screen and (max-width: 320px)
   .box
     &.list

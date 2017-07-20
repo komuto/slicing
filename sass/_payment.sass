@@ -23,6 +23,11 @@
       border-bottom: 1px solid $color_border_pay
       &:last-child
         border-bottom: none
+      .list-bullet
+        padding-left: 15px
+        li
+          border-bottom: none
+          padding: 0 0 10px 10px
       .columns
         .column
           padding: 0
@@ -32,6 +37,8 @@
           .label-text
             > span
               @extend .nunito-semibold
+              i
+                margin-right: 10px
           .detail-collapsed
             @extend .nunito-semibold
             margin-left: 10px
@@ -59,9 +66,38 @@
             -spacing: 0.2px
   &.step-pay
     padding: 0
+    > ul
+      > li
+        padding: 20px
+        ul
+          li
+            padding: 0
+            margin-bottom: 15px
+            border-bottom: 1px solid $color_border_pay
+            .columns
+              padding-bottom: 15px
+            &:last-child
+              border-bottom: none
+              margin-bottom: 0
+              .columns
+                padding-bottom: 0
+  &.action
+    background-color: transparent
+    padding: 0 20px
     ul
       li
-        padding: 20px
+        padding: 0
+        span
+          font-size: 12px
+          line-height: 1.67
+          letter-spacing: 0.2px
+          color: $color_input
+          display: block
+          margin-bottom: 15px
+  &.other
+    ul
+      li
+        padding: 15px 0
 .btn-detail
   position: absolute
   top: -5px
@@ -71,6 +107,10 @@
   &.notif-alfa
     .column
       padding: 20px
+      &:first-child
+        padding-right: 0
+      &:last-child
+        padding-left: 0
       span
         opacity: 0.7
       .label-text

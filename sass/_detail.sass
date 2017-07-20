@@ -52,7 +52,7 @@
         letter-spacing: 0.2px
         color: $color_radio
         max-width: 80%
-      .price
+      .price, .detail-qty
         font-size: 13px
         letter-spacing: 0.2px
         color: $color_input
@@ -143,6 +143,8 @@
           letter-spacing: 0.2px
           strong
             @extend .nunito-semibold
+          .detail-address
+            opacity: 0.7
 
   .info-product
     .detail-rate
@@ -252,6 +254,7 @@
 .info-purchase
   background-color: $white
   padding: 20px
+  border-bottom: 0.5px solid $color_border
   .detail-purchase
     h3
       font-size: 13px
@@ -359,7 +362,6 @@
 .summary
   &.at-cart
     position: relative
-    border-top: 0.5px solid $color_border
     border-bottom: 0.5px solid $color_border
     .detail-result
       .btn-change
@@ -376,6 +378,7 @@
   font-size: 13px
   letter-spacing: 0.2px
   color: $color_text_desc
+  opacity: 0.7
 
 .detail
   .detail-result
@@ -393,6 +396,10 @@
         li
           padding: 6px 0
           border: none
+  .detail-purchase
+    .detail-result
+      &.detail-price
+        border-top: none
 
 .code-voucher
   p
