@@ -132,6 +132,13 @@
       background-color: $white
     &.estimation
       border-bottom: 1px solid $color_border
+    &.middle
+      ul
+        li
+          padding: 20px 0 20px 0
+          margin-bottom: 0
+          &:last-child
+            border-bottom: none
     .columns
       &.custom
         .column
@@ -413,7 +420,6 @@
     color: $red
 
 .cancel-voucher
-  border-top: 0.5px solid $color_border
   .cancel
     @extend .nunito-bold
     letter-spacing: 0.3px

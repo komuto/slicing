@@ -42,7 +42,7 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-alfa .column .label-text, .level.nav-bottom .level-item {
+.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
@@ -5519,6 +5519,8 @@ body {
     clear: both; }
   .section.bg-white {
     background-color: #ffffff; }
+  .section.payment {
+    padding: 0 20px; }
 
 .container.is-fluid {
   margin: 0 20px; }
@@ -5557,6 +5559,9 @@ body {
   .button.btn-add-cart {
     border-radius: 0;
     border: none; }
+  .button.full-rounded {
+    padding: 8px 20px;
+    border-radius: 700px; }
 
 .input {
   padding-top: 0.475em;
@@ -6186,6 +6191,35 @@ body {
 .list-bullet {
   list-style: initial;
   list-style-position: outset; }
+
+.list-inline li {
+  display: inline-block;
+  vertical-align: middle; }
+
+.list-inline.col2 li {
+  float: left;
+  width: 50%;
+  min-width: 150px; }
+
+.list-inline.col2w li {
+  float: left;
+  width: 50%; }
+
+.box-rounded {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px 0 #eaebeb;
+  border-radius: 3px; }
+  .box-rounded:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.title-content h3 {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: #41475e;
+  margin-bottom: 0;
+  padding-top: 40px; }
 
 @media handheld, only screen and (max-width: 320px) {
   .box.list .media .media-left .image {
@@ -7190,6 +7224,11 @@ body {
     background-color: #ffffff; }
   .detail .detail-result.estimation {
     border-bottom: 1px solid #dedede; }
+  .detail .detail-result.middle ul li {
+    padding: 20px 0 20px 0;
+    margin-bottom: 0; }
+    .detail .detail-result.middle ul li:last-child {
+      border-bottom: none; }
   .detail .detail-result .columns.custom .column {
     padding: 0;
     border-right: none;
@@ -7453,15 +7492,14 @@ body {
   letter-spacing: 0.3px;
   color: #ef5656; }
 
-.cancel-voucher {
-  border-top: 0.5px solid #dedede; }
-  .cancel-voucher .cancel {
-    letter-spacing: 0.3px;
-    color: #ef5656; }
-  .cancel-voucher .voucher-credit {
-    font-size: 13px;
-    letter-spacing: 0.2px;
-    color: #489b66; }
+.cancel-voucher .cancel {
+  letter-spacing: 0.3px;
+  color: #ef5656; }
+
+.cancel-voucher .voucher-credit {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: #489b66; }
 
 .see-detail-price p {
   text-align: left;
@@ -7594,18 +7632,133 @@ body {
   top: -5px;
   right: 0; }
 
-.columns.notif-alfa .column {
+.columns.notif-pay .column {
   padding: 20px; }
-  .columns.notif-alfa .column:first-child {
+  .columns.notif-pay .column:first-child {
     padding-right: 0; }
-  .columns.notif-alfa .column:last-child {
+  .columns.notif-pay .column:last-child {
     padding-left: 0; }
-  .columns.notif-alfa .column span {
+  .columns.notif-pay .column span {
     opacity: 0.7; }
-  .columns.notif-alfa .column .label-text {
+  .columns.notif-pay .column .label-text {
     color: #666666;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.2px; }
+    .columns.notif-pay .column .label-text span {
+      opacity: 1; }
+  .columns.notif-pay .column .list-inline {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+.columns.notif-pay.bg-white {
+  background-color: #ffffff;
+  border-bottom: 1px solid #efefef; }
+  .columns.notif-pay.bg-white .label-text span {
     opacity: 1; }
+
+.payment .box-rounded {
+  margin-top: 20px; }
+
+.payment .total-detail {
+  padding: 20px; }
+  .payment .total-detail ul:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .payment .total-detail ul li {
+    vertical-align: bottom; }
+    .payment .total-detail ul li span {
+      display: block;
+      color: #404852; }
+      .payment .total-detail ul li span.price {
+        font-size: 20px; }
+  .payment .total-detail .text-msg {
+    padding: 20px 20px 0 20px;
+    margin: 20px -20px 0 -20px;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    color: #a0a3ae;
+    clear: both;
+    text-align: left;
+    font-size: 12px;
+    border-top: 1px solid #efefef;
+    margin-top: 20px; }
+
+.payment .payment-method {
+  padding: 20px;
+  position: relative;
+  cursor: pointer; }
+  .payment .payment-method > .icon-arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.payment .pay-method-option {
+  padding: 10px 20px 10px 0;
+  border-top: 1px solid #efefef;
+  margin-right: -20px;
+  margin-left: 20px; }
+  .payment .pay-method-option li {
+    margin-right: 5px; }
+    .payment .pay-method-option li:last-child {
+      margin-right: 0; }
+
+.payment .msg-failed {
+  padding: 20px;
+  background-color: #f9fbfc;
+  line-height: 1.67;
+  letter-spacing: 0.2px;
+  color: #a0a3ae;
+  clear: both;
+  text-align: left;
+  font-size: 12px;
+  border-top: 1px solid #efefef;
+  margin-top: 20px; }
+
+.form-pay {
+  padding: 0 20px 0 20px; }
+  .form-pay .control {
+    padding-top: 10px;
+    margin-bottom: 20px; }
+    .form-pay .control:last-child {
+      margin-bottom: 0; }
+  .form-pay .input {
+    font-size: 13px; }
+    .form-pay .input::-moz-placeholder {
+      color: #a0a3ae; }
+    .form-pay .input::-webkit-input-placeholder {
+      color: #a0a3ae; }
+    .form-pay .input:-moz-placeholder {
+      color: #a0a3ae; }
+    .form-pay .input:-ms-input-placeholder {
+      color: #a0a3ae; }
+  .form-pay > p {
+    margin: 20px 0 0 0;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.2px;
+    color: #666666; }
+
+.token-msg {
+  padding: 20px;
+  background-color: #ebf2fb; }
+  .token-msg span {
+    color: #6ca2e8;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.2px; }
+
+.img-method {
+  position: relative;
+  top: -3px;
+  margin-bottom: -5px; }
+  .img-method img {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle; }
+    .img-method img:last-child {
+      margin-right: 0; }
 
 .level.nav-bottom {
   position: fixed;

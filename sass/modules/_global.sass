@@ -48,6 +48,8 @@ body
     clear: both
   &.bg-white
     background-color: $white
+  &.payment
+    padding: 0 20px
 
 .container
   &.is-fluid
@@ -90,6 +92,9 @@ body
   &.btn-add-cart
     @include borderRadius(0)
     border: none
+  &.full-rounded
+    padding: 8px 20px
+    @include borderRadius(700px)
 
 .input
   padding-top: 0.475em
@@ -730,6 +735,35 @@ body
   list-style: initial
   list-style-position: outset
 
+.list-inline
+  li
+    display: inline-block
+    vertical-align: middle
+  &.col2
+    li
+      float: left
+      width: 50%
+      min-width: 150px
+  &.col2w
+    li
+      float: left
+      width: 50%
+.box-rounded
+  background-color: $white
+  @include boxShadow($shadow_box)
+  @include borderRadius(3px)
+  &:after
+    content: ""
+    display: table
+    clear: both
+.title-content
+  h3
+    font-size: 14px
+    letter-spacing: 0.2px
+    color: $color_text
+    @extend .nunito-semibold
+    margin-bottom: 0
+    padding-top: 40px
 @media handheld, only screen and (max-width: 320px)
   .box
     &.list

@@ -104,7 +104,7 @@
   right: 0
 
 .columns
-  &.notif-alfa
+  &.notif-pay
     .column
       padding: 20px
       &:first-child
@@ -116,5 +116,112 @@
       .label-text
         color: $color_text_desc
         letter-spacing: 0.2px
-        opacity: 1
+        span
+          opacity: 1
         @extend .nunito-semibold
+      .list-inline
+        padding-left: 20px
+        padding-right: 20px
+    &.bg-white
+      background-color: $white
+      border-bottom: 1px solid $color_border_pay
+      .label-text
+        span
+          opacity: 1
+
+.payment
+  .box-rounded
+    margin-top: 20px
+  .total-detail
+    padding: 20px
+    ul
+      &:after
+        content: ""
+        display: table
+        clear: both
+      li
+        vertical-align: bottom
+        span
+          display: block
+          @extend .nunito-semibold
+          color: $color_radio
+          &.price
+            font-size: 20px
+    .text-msg
+      padding: 20px 20px 0 20px
+      margin: 20px -20px 0 -20px
+      line-height: 1.67
+      letter-spacing: 0.2px
+      color: $color_input
+      clear: both
+      text-align: left
+      font-size: 12px
+      border-top: 1px solid $color_border_pay
+      margin-top: 20px
+  .payment-method
+    padding: 20px
+    position: relative
+    cursor: pointer
+    >.icon-arrow-right
+      position: absolute
+      top: 50%
+      right: 20px
+      @include translateY(-50%)
+      @extend .nunito-semibold
+  .pay-method-option
+    padding: 10px 20px 10px 0
+    border-top: 1px solid $color_border_pay
+    margin-right: -20px
+    margin-left: 20px
+    li
+      margin-right: 5px
+      &:last-child
+        margin-right: 0
+  .msg-failed
+    padding: 20px
+    background-color: $color_bg_detail
+    line-height: 1.67
+    letter-spacing: 0.2px
+    color: $color_input
+    clear: both
+    text-align: left
+    font-size: 12px
+    border-top: 1px solid $color_border_pay
+    margin-top: 20px
+.form-pay
+  padding: 0 20px 0 20px
+  .control
+    padding-top: 10px
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+  .input
+    font-size: 13px
+    +placeholder
+      color: $color_seller_grey
+  > p
+    margin: 20px 0 0 0
+    font-size: 12px
+    line-height: 1.67
+    letter-spacing: 0.2px
+    color: $color_text_desc
+
+.token-msg
+  padding: 20px
+  background-color: $bg_msg_token
+  span
+    color: $color_msg_token
+    font-size: 12px
+    @extend .nunito-semibold
+    line-height: 1.67
+    letter-spacing: 0.2px
+.img-method
+  position: relative
+  top: -3px
+  margin-bottom: -5px
+  img
+    margin-right: 5px
+    display: inline-block
+    vertical-align: middle
+    &:last-child
+      margin-right: 0
