@@ -22,6 +22,7 @@ body
   padding-top: 64px
   padding-bottom: 46px
   min-height: 100%
+  overflow: hidden
   &.home
     padding-top: 119px
   &.seller-info
@@ -31,6 +32,8 @@ body
   &.bg-grey
     section
       margin-bottom: 20px
+  &.no-padding-bottom
+    padding-bottom: 10px
 .content
   padding: 20px 0
 .box
@@ -239,6 +242,8 @@ body
   color: $color_radio
   @extend .nunito-semibold
   margin-bottom: 15px
+  &.step-transfer
+    margin-top: 30px
 
 .link
   display: inline-block
@@ -451,11 +456,13 @@ body
     top: 50%
     left: 50%
     @include translateXY(-50%, -50%)
-    width: 90%
+    width: 80%
     padding: 20px
     @include borderRadius(6px)
     background-color: $white
     text-align: center
+    button
+      margin-top: 8px
     &.add-voucher
       text-align: left
       .control
@@ -764,7 +771,20 @@ body
     @extend .nunito-semibold
     margin-bottom: 0
     padding-top: 40px
-@media handheld, only screen and (max-width: 320px)
+
+.field-body
+  display: flex
+  flex-basis: 0
+  flex-grow: 5
+  flex-shrink: 1
+  > .field:not(:last-child)
+    margin-right: 30px
+  .field
+    flex-shrink: 1
+    width: 50%
+    margin-bottom: 0
+
+
   .box
     &.list
       .media
@@ -772,3 +792,8 @@ body
           .image
             width: 100%
             max-width: 80px
+
+@media handheld, only screen and (max-width: 320px)
+  .notif-report
+    .button
+      font-size: 12px

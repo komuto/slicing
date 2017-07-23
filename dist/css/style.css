@@ -42,11 +42,11 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .level.nav-bottom .level-item {
+.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .modal-filter .modal-card .modal-card-body .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .level.header .nav-left .level-item > span, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .photo-content a, .edit .text-ask a {
+.nunito-bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .level.header .nav-left .level-item > span, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .photo-content a, .edit .text-ask a, .price-unique {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -317,6 +317,8 @@
   vertical-align: middle; }
   .icon-arrow-down.blue {
     background-image: url("../../images/komuto-icon/060_arrow_down_blue.svg"); }
+  .icon-arrow-down.top {
+    background-image: url("../../images/komuto-icon/062_arrow_top_blue.svg"); }
 
 .icon-close {
   display: inline-block;
@@ -5492,7 +5494,8 @@ body {
 .main {
   padding-top: 64px;
   padding-bottom: 46px;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow: hidden; }
   .main.home {
     padding-top: 119px; }
   .main.seller-info {
@@ -5501,6 +5504,8 @@ body {
     padding-bottom: 66px; }
   .main.bg-grey section {
     margin-bottom: 20px; }
+  .main.no-padding-bottom {
+    padding-bottom: 10px; }
 
 .content {
   padding: 20px 0; }
@@ -5710,6 +5715,8 @@ body {
   letter-spacing: 0.2px;
   color: #404852;
   margin-bottom: 15px; }
+  .title.step-transfer {
+    margin-top: 30px; }
 
 .link {
   display: inline-block;
@@ -5920,11 +5927,13 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 80%;
     padding: 20px;
     border-radius: 6px;
     background-color: #ffffff;
     text-align: center; }
+    .sort-option .notif-report button {
+      margin-top: 8px; }
     .sort-option .notif-report.add-voucher {
       text-align: left; }
       .sort-option .notif-report.add-voucher .control {
@@ -6221,10 +6230,31 @@ body {
   margin-bottom: 0;
   padding-top: 40px; }
 
-@media handheld, only screen and (max-width: 320px) {
-  .box.list .media .media-left .image {
+.field-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  -ms-flex-negative: 1;
+      flex-shrink: 1; }
+  .field-body > .field:not(:last-child) {
+    margin-right: 30px; }
+  .field-body .field {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    width: 50%;
+    margin-bottom: 0; }
+  .field-body .box.list .media .media-left .image {
     width: 100%;
-    max-width: 80px; } }
+    max-width: 80px; }
+
+@media handheld, only screen and (max-width: 320px) {
+  .notif-report .button {
+    font-size: 12px; } }
 
 .level.header {
   position: fixed;
@@ -7576,9 +7606,17 @@ body {
       .payment-detail ul li .columns .column .label-text > span i {
         margin-right: 10px; }
       .payment-detail ul li .columns .column .detail-collapsed {
-        margin-left: 10px; }
+        margin-left: 10px;
+        position: relative;
+        display: inline-block;
+        padding-right: 51px; }
         .payment-detail ul li .columns .column .detail-collapsed > span {
-          margin-top: -4px; }
+          margin-top: -4px;
+          position: absolute;
+          top: 50%;
+          right: 0;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
       .payment-detail ul li .columns .column .pay-code {
         color: #47bf7e; }
       .payment-detail ul li .columns .column .step-num {
@@ -7719,7 +7757,7 @@ body {
 .form-pay {
   padding: 0 20px 0 20px; }
   .form-pay .control {
-    padding-top: 10px;
+    padding-top: 20px;
     margin-bottom: 20px; }
     .form-pay .control:last-child {
       margin-bottom: 0; }
@@ -7759,6 +7797,98 @@ body {
     vertical-align: middle; }
     .img-method img:last-child {
       margin-right: 0; }
+
+.payment-detail.bank-transfer {
+  padding: 0; }
+  .payment-detail.bank-transfer > ul li {
+    padding: 20px; }
+    .payment-detail.bank-transfer > ul li.collapsed {
+      background-color: #f9fbfc; }
+
+.payment-detail.step-pay .detail-transaction {
+  padding: 0 0; }
+  .payment-detail.step-pay .detail-transaction li {
+    padding: 0; }
+
+.payment-detail.step-transfer {
+  background-color: transparent; }
+  .payment-detail.step-transfer ul li {
+    background-color: #ffffff;
+    border-bottom: none;
+    box-shadow: 2px 4px 0 rgba(234, 234, 235, 0.3);
+    margin-bottom: 12px;
+    position: relative; }
+
+.price-unique {
+  font-size: 20px;
+  letter-spacing: 0.2px; }
+  .price-unique > span {
+    color: #d59515;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 20px; }
+    .price-unique > span:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 12px solid transparent;
+      border-bottom: 12px solid #fff2d7;
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%); }
+
+.digit.notif-payment {
+  margin: 0 -20px -20px -20px;
+  padding: 20px; }
+  .digit.notif-payment p {
+    color: #d59515; }
+
+.collapsed .payment-detail.step-pay {
+  background-color: transparent; }
+
+.payment-detail.step-transfer .list-bank {
+  border-bottom: solid 0.5px #dedede;
+  padding-bottom: 20px; }
+  .payment-detail.step-transfer .list-bank:last-child {
+    border-bottom: none;
+    padding-bottom: 0; }
+  .payment-detail.step-transfer .list-bank:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .payment-detail.step-transfer .list-bank ul {
+    content: "";
+    display: block;
+    clear: both; }
+    .payment-detail.step-transfer .list-bank ul li {
+      background-color: transparent;
+      box-shadow: none;
+      border: none; }
+  .payment-detail.step-transfer .list-bank .list-inline {
+    margin-top: 15px; }
+
+.rek-info li div {
+  display: inline-block; }
+  .rek-info li div.field-left {
+    width: 70px;
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    color: #a0a3ae; }
+  .rek-info li div.field-right span {
+    margin-right: 10px; }
+
+.rek-info li:first-child div.field-left.field-left {
+  font-size: 14px;
+  color: #41475e; }
+
+@media handheld, only screen and (max-width: 320px) {
+  .img-method img {
+    max-width: 29%; }
+  .list-bank .img-method img {
+    max-width: 50%; } }
 
 .level.nav-bottom {
   position: fixed;

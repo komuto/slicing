@@ -73,9 +73,65 @@
                 <div class="column">
                   <div class="rating-content is-left has-text-right">
                     <span>Rp 250.257</span>
-                    <a class="detail-collapsed">Detail <span class="icon-arrow-down blue"></span></a>
+                    <a class="detail-collapsed">Detail <span class="icon-arrow-down blue top"></span></a>
                   </div>
                 </div>
+              </div>
+            </li>
+            <li class="collapsed">
+              <div class="payment-detail step-pay">
+                <ul class="detail-transaction">
+                  <li>
+                    <ul class="total-pay">
+                      <li>
+                        <div class="columns is-mobile is-multiline no-margin-bottom">
+                          <div class="column">
+                            <div class="label-text is-left">
+                              <span>
+                                Total Belanja
+                              </span>
+                            </div>
+                          </div>
+                          <div class="column is-one-third">
+                            <div class="has-text-right">
+                              <span>Rp 320.000</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="columns is-mobile is-multiline no-margin-bottom">
+                          <div class="column">
+                            <div class="label-text is-left">
+                              <span class="pay-code">
+                                Kode Voucher BELANJAENAK
+                              </span>
+                            </div>
+                          </div>
+                          <div class="column is-one-third">
+                            <div class="has-text-right">
+                              <span class="pay-code"> - Rp 20.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="columns is-mobile is-multiline no-margin-bottom">
+                          <div class="column">
+                            <div class="label-text is-left">
+                              <span>
+                                Sisa Pembayaran
+                              </span>
+                            </div>
+                          </div>
+                          <div class="column is-one-third">
+                            <div class="has-text-right">
+                              <span>Rp 250.219</span>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -179,7 +235,7 @@
                       Lakukan konfirmasi agar pembayaran Anda dapat diproses.
                     </span>
                     <br>
-                    <a class="button is-primary is-large is-fullwidth">Proses Pembayaran</a>
+                    <a class="button is-primary is-large is-fullwidth js-sort">Proses Pembayaran</a>
                   </div>
                 </div>
               </div>
@@ -228,101 +284,13 @@
       </section>
     </div>
 
-    <!-- option -->
-    <div class="sort-option" id="province">
-      <div class="sort-list">
-        <p><strong>Pilih Provinsi</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option">
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                DKI Jakarta
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                DI Yogyakarta
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Jawa Barat
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Jawa Tengah
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Jawa Timur
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Sumatera Barat
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Sumatera Selatan
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="district">
-      <div class="sort-list">
-        <p><strong>Pilih Kabupaten</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option">
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Bantul
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Seleman
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Kulon Progo
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="districts">
-      <div class="sort-list">
-        <p><strong>Pilih Kecamatan</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option">
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Sedayu
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Wirobrajan
-              </label>
-              <label class="radio">
-                <input type="radio" name="provinsi">
-                Karangbendo
-              </label>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="otherOption">
-      <div class="sort-list">
-        <ul class="other-option">
-          <li><a><span class="icon-share"></span>Bagikan</a></li>
-          <li><a><span class="icon-warning"></span>Laporkan Barang</a></li>
-        </ul>
+    <!-- ===== -->
+    <div class="sort-option">
+      <div class="notif-report">
+        <img src="../images/transaksi-detail.png" alt="">
+        <h3>Ke Halaman Transaksi</h3>
+        <p>Kami akan mengarahkan Anda ke Daftar Transaksi Anda</p>
+        <button class="button is-primary is-large is-fullwidth">Ke Daftar Transaksi</button>
       </div>
     </div>
 
