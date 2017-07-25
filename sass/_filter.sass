@@ -71,78 +71,7 @@
                 letter-spacing: 0.2px
                 color: $color_radio
                 padding: 20px
-      .filter-option
-        position: absolute
-        top: 0
-        right: 0
-        padding-left: 30px
-        @include size(100%, 100%)
-        display: none
-        overflow: auto
-        &.active
-          display: block
-        .sort-list
-          background-color: $white
-          width: 100%
-          min-height: 450px
-          p
-            padding: 20px
-            strong
-              color: $color_text
-              @extend .nunito-semibold
-              font-size: 14px
-          .checkbox
-            padding: 20px
-            position: relative
-            display: block
-            border-bottom: 1px solid $color_border_tab
-            .input-wrapper
-              position: absolute
-              top: 50%
-              right: 20px
-              @include translateY(-50%)
-              @include size(30px, 30px)
-              border: 1px solid $color_border_tab
-              @include borderRadius(3px)
-              &.checked
-                background-image: url($icon-selected-sign)
-                background-position: 1px
-              input
-                visibility: hidden
-            .label
-              font-size: 13px
-              letter-spacing: 0.2px
-              color: $color_text
-              opacity: 0.5
-              display: block
-              @extend .nunito-regular
-            .sort-text
-              font-size: 13px
-              color: $color_text
-              &.active
-                color: $primary
-            .field
-              .control
-                padding: 0
-              .select
-                width: 100%
-                position: relative
-                select
-                  background: transparent
-                  width: 100%
-                  height: auto
-                  border: none
-                  padding-left: 0
-                  font-size: 13px
-                &:before
-                  content: ""
-                  @include size(24px, 24px)
-                  background-image: url($icon-arrow-down)
-                  position: absolute
-                  top: 0
-                  right: 0
-                &:after
-                  display: none
+
   &.categories
     .modal-card
       .modal-card-body
@@ -151,7 +80,78 @@
         .section
           .title
             padding-top: 20px
-
+.filter-option
+  position: absolute
+  top: 0
+  right: 0
+  padding-left: 30px
+  @include size(100%, 100%)
+  display: none
+  overflow: auto
+  &.active
+    display: block
+  .sort-list
+    background-color: $white
+    width: 100%
+    min-height: 450px
+    p
+      padding: 20px
+      strong
+        color: $color_text
+        @extend .nunito-semibold
+        font-size: 14px
+    .checkbox
+      padding: 20px
+      position: relative
+      display: block
+      border-bottom: 1px solid $color_border_tab
+      .input-wrapper
+        position: absolute
+        top: 50%
+        right: 20px
+        @include translateY(-50%)
+        @include size(30px, 30px)
+        border: 1px solid $color_border_tab
+        @include borderRadius(3px)
+        &.checked
+          background-image: url($icon-selected-sign)
+          background-position: 1px
+        input
+          visibility: hidden
+      .label
+        font-size: 13px
+        letter-spacing: 0.2px
+        color: $color_text
+        opacity: 0.5
+        display: block
+        @extend .nunito-regular
+      .sort-text
+        font-size: 13px
+        color: $color_text
+        &.active
+          color: $primary
+      .field
+        .control
+          padding: 0
+        .select
+          width: 100%
+          position: relative
+          select
+            background: transparent
+            width: 100%
+            height: auto
+            border: none
+            padding-left: 0
+            font-size: 13px
+          &:before
+            content: ""
+            @include size(24px, 24px)
+            background-image: url($icon-arrow-down)
+            position: absolute
+            top: 0
+            right: 0
+          &:after
+            display: none
 @media handheld, only screen and (max-width: $screen-xs-min)
   .modal-filter
     .modal-card

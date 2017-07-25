@@ -1,0 +1,182 @@
+.seller
+  .seller-bar
+    background-color: $white
+    border-bottom: 0.5px solid $color_border
+    padding: 20px 0
+    .seller-step
+      text-align: center
+      font-size: 0
+      div
+        display: inline-block
+        background-color: $white
+        font-size: 13px
+        @include size(30px, 30px)
+        vertical-align: middle
+        margin-right: 20px
+        position: relative
+        z-index: 2
+        &:after
+          content: ""
+          @include size(30px, 1px)
+          background-color: $color_border
+          position: absolute
+          top: 50%
+          right: -30px
+          @include translateY(-50%)
+          z-index: 1
+        &:last-child
+          margin-right: 0
+          &:after
+            display: none
+        span
+          @include size(25px, 25px)
+          @include borderRadius(700px)
+          display: block
+          margin: 2px auto
+          border: 0.5px solid $color_border
+          color: $color_border_ccc
+          text-align: center
+          line-height: 25px
+      &.active1
+        div
+          &.step1
+            span
+              background-color: $red
+              border: 0.5px solid $red
+              color: $white
+      &.active2
+        div
+          &.step1, &.step2
+            span
+              background-color: $red
+              border: 0.5px solid $red
+              color: $white
+      &.active3
+        div
+          &.step1, &.step2, &.step3
+            span
+              background-color: $red
+              border: 0.5px solid $red
+              color: $white
+      &.active4
+        div
+          &.step1, &.step2, &.step3, &.step4
+            span
+              background-color: $red
+              border: 0.5px solid $red
+              color: $white
+
+.filter-option
+  position: relative
+  top: inherit
+  left: inherit
+  padding-left: 0
+  .sort-list
+    min-height: inherit
+    padding-left: 20px
+    padding-right: 20px
+    position: relative
+    &.check-list
+      padding-top: 10px
+      padding-bottom: 10px
+      .checkbox
+        border-bottom: none
+        padding-top: 12px
+        padding-bottom: 12px
+    .checkbox
+      padding-left: 40px
+      padding-right: 0
+      .sort-text
+        @extend .nunito-semibold
+      .input-wrapper
+        left: 0
+        right: inherit
+        @include size(25px, 25px)
+.note
+  padding: 20px
+  font-size: 13px
+  line-height: 1.62
+  letter-spacing: 0.2px
+  color: $color_radio
+  margin-top: -1px
+.upload-pict
+  padding: 45px 0
+  .pict-wrapper
+    @include size(105px, 105px)
+    @include borderRadius(800px)
+    margin: 0 auto 20px auto
+    position: relative
+    background-color: $color_bg
+    img
+      position: absolute
+      top: 50%
+      left: 50%
+      @include translateXY(-50%, -50%)
+
+.form-seller
+  padding: 0 20px
+  .field
+    margin-bottom: 30px
+    label
+      letter-spacing: 0.2px
+      color: $color_input
+      @extend .nunito-regular
+      margin-bottom: 8px
+      display: block
+    .control
+      > span
+        letter-spacing: 0.2px
+        font-size: 12px
+        color: $color_input
+        @extend .nunito-regular
+        &.reg
+          color: $color_radio
+      .textarea
+        box-shadow: none
+        border-radius: 0
+        border: none
+        border-bottom: 1px solid #dedede
+        font-size: 13px
+        padding: 0
+        min-height: 67px
+      strong
+        font-size: 13px
+         @extend .nunito-semibold
+    .select
+      select
+        @extend .nunito-semibold
+  .btn-address
+    padding: 10px
+    background-color: $color_bg
+    border: 1px solid $color_border
+    @include borderRadius(5px)
+    display: block
+    position: relative
+    margin-bottom: 20px
+    @extend .nunito-bold
+    color: $primary
+    > span
+      position: absolute
+      top: 50%
+      right: 10px
+      @include translateY(-50%)
+
+.eks-name
+  position: absolute
+  top: 50%
+  right: 20px
+  @include translateY(-50%)
+  span
+    font-size: 12px
+    letter-spacing: 0.2px
+    @extend .nunito-bold
+    display: inline-block
+    vertical-align: middle
+    margin-left: 10px
+    img
+      max-width: 50px
+      margin-bottom: -4px
+
+.form-seller
+  &.info
+    padding-top: 20px
