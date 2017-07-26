@@ -497,6 +497,11 @@ body
       letter-spacing: 0.2px
       color: $color_text_desc
       margin-bottom: 30px
+    .cancel
+      @extend .nunito-bold
+      padding: 20px
+      display: block
+      margin-top: 10px
 .back
   position: absolute
   top: 0
@@ -673,6 +678,14 @@ body
         @include translateY(-50%)
         background-color: transparent
         background-image: url($icon-selected-sign)
+    .opt-title
+      @extend .nunito-semibold
+      letter-spacing: 0.2px
+      display: block
+    .address-value
+      line-height: 1.77
+      letter-spacing: 0.2px
+      color: $color_text_desc
 
 .other-option
   li

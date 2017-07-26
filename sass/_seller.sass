@@ -180,3 +180,48 @@
 .form-seller
   &.info
     padding-top: 20px
+
+.label-text
+  strong
+    @extend .nunito-semibold
+
+.verify-wrapp
+  padding: 20px
+  h4
+    @extend .nunito-bold
+    font-size: 14px
+    line-height: 1.36
+    letter-spacing: 0.2px
+    margin-bottom: 8px
+  p
+    line-height: 1.46
+    letter-spacing: 0.2px
+    color: $color_text_desc
+    margin-bottom: 10px
+
+.seller-akun
+  .profile-wrapp
+    background-color: $white
+    ul
+      li
+        border-bottom: none
+        position: relative
+        &:after
+          content: ""
+          position: absolute
+          bottom: 0
+          right: -40px
+          @include size(100%, 1px)
+          background-color: $color_border
+  .title
+    margin-top: 30px
+
+.user-info
+  padding: 20px
+  background-color: $color_grey
+  p
+    font-size: 13px
+    @extend .nunito-bold
+    line-height: 1.69
+    letter-spacing: 0.2px
+    color: $primary
