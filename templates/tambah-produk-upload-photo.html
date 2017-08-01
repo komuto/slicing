@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/slick-1.6.0/slick/slick.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main seller">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span><span class="back"><span class="icon-arrow-left"></span></span> Upload Foto</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless">
+        <div class="seller-bar">
+          <div class="seller-step active1"> <!-- Toggle active1, active2, active3, active4 -->
+            <div class="step1"><span>1</span></div>
+            <div class="step2"><span>2</span></div>
+            <div class="step3"><span>3</span></div>
+            <div class="step4"><span>4</span></div>
+          </div>
+        </div>
+
+        <div class="add-product">
+          <div class="container is-fluid">
+            <p>Masukkan Gambar Produk minimal satu foto. Gunakan 4 foto terbaik untuk gambar produk anda.</p>
+            <ul class="add-photo-list">
+              <li>
+                <div class="photo-product">
+                  <a class="del-photo"><span class="icon-cross-circle"></span></a>
+                  <div class="photo-wrapp">
+                    <img src="../images/thumb.jpg" alt="">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="add-photo"><span class="icon-add-big"></span></a>
+              </li>
+            </ul>
+            <div class="field">
+              <p class="control">
+                <button class="button is-primary is-large is-fullwidth">Lanjutkan</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+.add-product
+  padding-top: 30px
+  .add-option
+    li
+      position: relative
+      .box
+        padding: 20px
+        @include borderRadius(3px)
+        box-shadow: $shadow_add
+        margin-bottom: 10px
+        cursor: pointer
+        .media
+          .media-content
+            .content
+              p
+                font-size: 13px
+                line-height: 1.54
+                letter-spacing: 0.2px
+                color: $color_text_desc
+                strong
+                  @extend .nunito-semibold
+                  letter-spacing: 0.2px
+                  color: $color_text
+      > span
+        position: absolute
+        top: 20px
+        right: 20px
+  .add-photo-list
+    margin-top: 30px
+    margin-bottom: 130px
+    li
+      margin-right: 20px
+      display: inline-block
+      &:last-child
+        margin-right: 0
+      .add-photo
+        @include borderRadius(3px)
+        @include size(100px, 100px)
+        background-color: $color_add
+        position: relative
+        display: block
+        > span
+          position: absolute
+          top: 50%
+          left: 50%
+          @include translateXY(-50%, -50%)
+      .photo-product
+        position: relative
+        @include borderRadius(3px)
+        @include size(100px, 100px)
+        .del-photo
+          display: inline-block
+          position: absolute
+          top: -12px
+          right: -12px
+        .photo-wrapp
+          @include borderRadius(3px)
+          @include size(100px, 100px)
+          overflow: hidden

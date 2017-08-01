@@ -42,7 +42,7 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .level.nav-bottom .level-item {
+.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
@@ -535,6 +535,38 @@
   width: 24px;
   height: 24px;
   background-image: url("../../images/komuto-icon/069_icon_help.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-upload-product {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../images/komuto-icon/071_upload_produk_baru.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-upload-dropshipper {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../images/komuto-icon/072_upload_dropshipper.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-cross-circle {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/073_icon_cross_circle.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-add-big {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/komuto-icon/074_add_big_white.svg");
   background-repeat: no-repeat;
   vertical-align: middle; }
 
@@ -8174,6 +8206,65 @@ body {
     line-height: 1.69;
     letter-spacing: 0.2px;
     color: #56aaef; }
+
+.add-product {
+  padding-top: 30px; }
+  .add-product .add-option li {
+    position: relative; }
+    .add-product .add-option li .box {
+      padding: 20px;
+      border-radius: 3px;
+      box-shadow: 0 2px 6px 0 #ebeff3;
+      margin-bottom: 10px;
+      cursor: pointer; }
+      .add-product .add-option li .box .media .media-content .content p {
+        font-size: 13px;
+        line-height: 1.54;
+        letter-spacing: 0.2px;
+        color: #666666; }
+        .add-product .add-option li .box .media .media-content .content p strong {
+          letter-spacing: 0.2px;
+          color: #41475e; }
+    .add-product .add-option li > span {
+      position: absolute;
+      top: 20px;
+      right: 20px; }
+  .add-product .add-photo-list {
+    margin-top: 30px;
+    margin-bottom: 130px; }
+    .add-product .add-photo-list li {
+      margin-right: 20px;
+      display: inline-block; }
+      .add-product .add-photo-list li:last-child {
+        margin-right: 0; }
+      .add-product .add-photo-list li .add-photo {
+        border-radius: 3px;
+        width: 100px;
+        height: 100px;
+        background-color: #e3e7ea;
+        position: relative;
+        display: block; }
+        .add-product .add-photo-list li .add-photo > span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+      .add-product .add-photo-list li .photo-product {
+        position: relative;
+        border-radius: 3px;
+        width: 100px;
+        height: 100px; }
+        .add-product .add-photo-list li .photo-product .del-photo {
+          display: inline-block;
+          position: absolute;
+          top: -12px;
+          right: -12px; }
+        .add-product .add-photo-list li .photo-product .photo-wrapp {
+          border-radius: 3px;
+          width: 100px;
+          height: 100px;
+          overflow: hidden; }
 
 .level.nav-bottom {
   position: fixed;
