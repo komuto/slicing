@@ -5874,6 +5874,10 @@ body {
       line-height: 1.38;
       letter-spacing: 0.2px;
       color: #404852; }
+      .box .media .media-content .content h4 a {
+        color: #404852; }
+        .box .media .media-content .content h4 a:hover, .box .media .media-content .content h4 a:focus {
+          color: #56aaef; }
     .box .media .media-content .content .detail {
       position: relative; }
       .box .media .media-content .content .detail p, .box .media .media-content .content .detail .discount {
