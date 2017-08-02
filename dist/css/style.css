@@ -6354,19 +6354,23 @@ body {
 .modal {
   z-index: 999; }
 
-.is-loading {
-  position: absolute; }
-  .is-loading.center {
+.is-loading.self {
+  position: absolute;
+  border: none;
+  width: 25px;
+  height: 25px;
+  padding: 0; }
+  .is-loading.self.center {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-  .is-loading.left {
+  .is-loading.self.left {
     top: 50%;
     left: 20px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
-  .is-loading.right {
+  .is-loading.self.right {
     top: 50%;
     right: 20px;
     -webkit-transform: translateY(-50%);
@@ -6474,6 +6478,9 @@ body {
 
 .home .level.header {
   height: auto; }
+
+.header-search .control {
+  position: inherit; }
 
 @media screen and (max-width: 768px) {
   .nav-menu {
