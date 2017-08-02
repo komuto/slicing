@@ -57,3 +57,65 @@
           @include borderRadius(3px)
           @include size(100px, 100px)
           overflow: hidden
+
+.product-view
+  li
+    padding: 20px
+    .products-name
+      font-size: 12px
+      @extend .nunito-semibold
+      letter-spacing: 0.2px
+      color: $red
+      strong
+        font-size: 13px
+        letter-spacing: 0.2px
+        color: $color_text
+      span
+        line-height: 1.33
+        color: $green
+
+.form-product
+  padding: 0 20px
+  .field
+    margin-bottom: 15px
+    lebel
+      color: $color_radio
+      margin-bottom: 0
+    .input
+      color: $color_text
+      @extend .nunito-semibold
+    .select
+      select
+        color: $color_text
+        @extend .nunito-semibold
+    .textarea
+      @include borderRadius(0)
+      border: none
+      border-bottom: 1px solid $color_border
+      box-shadow: none
+      min-height: 80px
+  .filter-option
+    .sort-list
+      padding: 0
+      margin-top: -13px
+      .checkbox
+        border-bottom: none
+        padding-bottom: 18px
+        .sort-text
+          &.active
+            color: $color_text
+        .input-wrapper
+          &.checked
+            background-position: 0px
+            background-color: $primary
+.catalog-option
+  background-color: $white
+  .add-discussion
+    padding-top: 10px
+    padding-bottom: 10px
+.add-catalog
+  padding: 20px 20px 20px 0
+  color: $primary
+  border-bottom: 1px solid $color_border
+  margin-left: 20px
+  display: block
