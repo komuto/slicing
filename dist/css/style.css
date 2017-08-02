@@ -6354,6 +6354,24 @@ body {
 .modal {
   z-index: 999; }
 
+.is-loading {
+  position: absolute; }
+  .is-loading.center {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .is-loading.left {
+    top: 50%;
+    left: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .is-loading.right {
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 @media handheld, only screen and (max-width: 320px) {
   .notif-report .button {
     font-size: 12px; } }

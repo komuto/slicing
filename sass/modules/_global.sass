@@ -812,6 +812,21 @@ body
 .modal
   z-index: 999
 
+.is-loading
+  position: absolute
+  &.center
+    top: 50%
+    left: 50%
+    @include translateXY(-50%, -50%)
+  &.left
+    top: 50%
+    left: 20px
+    @include translateY(-50%)
+  &.right
+    top: 50%
+    right: 20px
+    @include translateY(-50%)
+
 @media handheld, only screen and (max-width: 320px)
   .notif-report
     .button
