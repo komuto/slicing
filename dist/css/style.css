@@ -7010,7 +7010,7 @@ strong.total {
         border-radius: 3px; }
         .filter-option .sort-list .checkbox .input-wrapper.checked {
           background-image: url("../../images/komuto-icon/031_selected_sign.svg");
-          background-position: -1px; }
+          background-position: 1px; }
         .filter-option .sort-list .checkbox .input-wrapper input {
           visibility: hidden; }
       .filter-option .sort-list .checkbox .label {
@@ -8163,7 +8163,8 @@ strong.total {
         width: 25px;
         height: 25px;
         -webkit-transform: translateY(0);
-        transform: translateY(0); }
+        transform: translateY(0);
+        background-position: 1px; }
   .filter-option.right-style .sort-list.top .checkbox {
     margin-right: -20px;
     padding-right: 20px; }
