@@ -119,3 +119,50 @@
   border-bottom: 1px solid $color_border
   margin-left: 20px
   display: block
+
+.spec-price
+  padding: 20px
+  background-color: $white
+  .columns
+    &:last-child
+      margin-bottom: 0
+    .column
+      padding: 0
+  .price
+    .input
+      padding-left: 30px
+    .currency
+      position: absolute
+      top: 3px
+      left: 0
+      font-size: 13px
+      z-index: 2
+      @extend .nunito-semibold
+  .discount
+    .input
+      padding-right: 30px
+    .disc
+      position: absolute
+      top: 3px
+      right: 0
+      font-size: 13px
+      z-index: 2
+      @extend .nunito-semibold
+  .field
+    &:not(:last-child)
+      margin-bottom: 20px
+  .is-horizontal
+    .field
+      &:not(:last-child)
+        margin-bottom: 0
+.detail
+  &.spec
+    border-top: 0.5px solid $color_border
+    h3
+      @extend .nunito-semibold
+      padding-top: 20px
+
+.radio-horizontal
+  .control
+    .radio
+      min-width: 100px

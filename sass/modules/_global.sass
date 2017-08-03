@@ -155,6 +155,14 @@ body
     input
       margin-right: 20px
       visibility: hidden
+    strong
+      letter-spacing: 0.2px
+      color: $color_radio
+      @extend .nunito-semibold
+    &.primary
+      &.checked
+        &:after
+          background-color: $primary
   .select
     width: 100%
     &:after
@@ -656,7 +664,7 @@ body
     border-top: 1px solid $color_border
     padding: 15px 20px
     position: relative
-    margin: 0;
+    margin: 0
     input
       position: absolute
       top: 0
@@ -818,6 +826,7 @@ body
     border: none
     @include size(25px, 25px)
     padding: 0
+    z-index: 88
     &.center
       top: 50%
       left: 50%
@@ -830,6 +839,50 @@ body
       top: 50%
       right: 20px
       @include translateY(-50%)
+strong
+  &.total
+    color: $green
+
+.switch
+  position: relative
+  display: inline-block
+  @include size(40px, 16px)
+  input
+    display: none
+
+  .slider
+    position: absolute
+    cursor: pointer
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ccc
+    @include transition(.4s)
+    &:before
+      position: absolute
+      content: ""
+      @include size(26px, 26px)
+      left: 0px
+      bottom: -5px
+      background-color: black
+      @include transition(.4s)
+    &.round
+      border-radius: 34px
+      &:before
+        border-radius: 50%
+
+
+  input
+    &:checked + .slider
+      background-color: #2196F3
+      &:before
+        @include translateX(15px)
+
+    &:focus  + .slider
+      box-shadow: 0 0 1px #2196F3
+
+
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report

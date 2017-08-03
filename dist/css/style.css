@@ -42,7 +42,7 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .input, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .level.nav-bottom .level-item {
+.nunito-semibold, .button.is-medium, .input, .field .radio strong, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .code-voucher p, .edit .noted p strong, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list.top .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .spec-price .price .currency, .spec-price .discount .disc, .detail.spec h3, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
@@ -5713,6 +5713,11 @@ body {
   .field .radio input {
     margin-right: 20px;
     visibility: hidden; }
+  .field .radio strong {
+    letter-spacing: 0.2px;
+    color: #404852; }
+  .field .radio.primary.checked:after {
+    background-color: #56aaef; }
 
 .field .select {
   width: 100%; }
@@ -6359,7 +6364,8 @@ body {
   border: none;
   width: 25px;
   height: 25px;
-  padding: 0; }
+  padding: 0;
+  z-index: 88; }
   .is-loading.self.center {
     top: 50%;
     left: 50%;
@@ -6375,6 +6381,46 @@ body {
     right: 20px;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
+
+strong.total {
+  color: #47bf7e; }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 16px; }
+  .switch input {
+    display: none; }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s; }
+    .switch .slider:before {
+      position: absolute;
+      content: "";
+      width: 26px;
+      height: 26px;
+      left: 0px;
+      bottom: -5px;
+      background-color: black;
+      transition: 0.4s; }
+    .switch .slider.round {
+      border-radius: 34px; }
+      .switch .slider.round:before {
+        border-radius: 50%; }
+  .switch input:checked + .slider {
+    background-color: #2196F3; }
+    .switch input:checked + .slider:before {
+      -webkit-transform: translateX(15px);
+      transform: translateX(15px); }
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3; }
 
 @media handheld, only screen and (max-width: 320px) {
   .notif-report .button {
@@ -6964,7 +7010,7 @@ body {
         border-radius: 3px; }
         .filter-option .sort-list .checkbox .input-wrapper.checked {
           background-image: url("../../images/komuto-icon/031_selected_sign.svg");
-          background-position: 1px; }
+          background-position: -1px; }
         .filter-option .sort-list .checkbox .input-wrapper input {
           visibility: hidden; }
       .filter-option .sort-list .checkbox .label {
@@ -8104,14 +8150,23 @@ body {
         border-bottom: none;
         padding-top: 12px;
         padding-bottom: 12px; }
-    .filter-option .sort-list .checkbox {
+    .filter-option .sort-list.top .checkbox {
       padding-left: 40px;
       padding-right: 0; }
-      .filter-option .sort-list .checkbox .input-wrapper {
+      .filter-option .sort-list.top .checkbox span {
+        display: block;
+        margin-bottom: 10px; }
+      .filter-option .sort-list.top .checkbox .input-wrapper {
+        top: 20px;
         left: 0;
         right: inherit;
         width: 25px;
-        height: 25px; }
+        height: 25px;
+        -webkit-transform: translateY(0);
+        transform: translateY(0); }
+  .filter-option.right-style .sort-list.top .checkbox {
+    margin-right: -20px;
+    padding-right: 20px; }
 
 .note {
   padding: 20px;
@@ -8350,6 +8405,42 @@ body {
   border-bottom: 1px solid #dedede;
   margin-left: 20px;
   display: block; }
+
+.spec-price {
+  padding: 20px;
+  background-color: #ffffff; }
+  .spec-price .columns:last-child {
+    margin-bottom: 0; }
+  .spec-price .columns .column {
+    padding: 0; }
+  .spec-price .price .input {
+    padding-left: 30px; }
+  .spec-price .price .currency {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 13px;
+    z-index: 2; }
+  .spec-price .discount .input {
+    padding-right: 30px; }
+  .spec-price .discount .disc {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    font-size: 13px;
+    z-index: 2; }
+  .spec-price .field:not(:last-child) {
+    margin-bottom: 20px; }
+  .spec-price .is-horizontal .field:not(:last-child) {
+    margin-bottom: 0; }
+
+.detail.spec {
+  border-top: 0.5px solid #dedede; }
+  .detail.spec h3 {
+    padding-top: 20px; }
+
+.radio-horizontal .control .radio {
+  min-width: 100px; }
 
 .level.nav-bottom {
   position: fixed;
