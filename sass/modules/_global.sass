@@ -274,7 +274,7 @@ body
     .kurir
       position: absolute
       top: 50%
-      right: 30px
+      right: 55px
       @include translateY(-50%)
       color: $color_text_desc
       @extend .nunito-regular
@@ -283,7 +283,7 @@ body
     .icon-arrow-right, .icon-arrow-down
       position: absolute
       top: 50%
-      right: 0
+      right: 20px
       @include translateY(-50%)
 .pin
   @include size(42px, 42px)
@@ -846,7 +846,7 @@ strong
 .switch
   position: relative
   display: inline-block
-  @include size(40px, 16px)
+  @include size(34px, 14px)
   input
     display: none
 
@@ -857,32 +857,62 @@ strong
     left: 0
     right: 0
     bottom: 0
-    background-color: #ccc
+    background-color: $color_border_ccc
     @include transition(.4s)
+    opacity: 0.5
     &:before
       position: absolute
       content: ""
-      @include size(26px, 26px)
+      @include size(20px, 20px)
       left: 0px
-      bottom: -5px
-      background-color: black
+      bottom: -3px
+      background-color: $color_bg_slide
       @include transition(.4s)
+      box-shadow: $shadow_toggle
     &.round
       border-radius: 34px
       &:before
         border-radius: 50%
 
-
   input
     &:checked + .slider
-      background-color: #2196F3
+      background-color: $color_bg_toggleslide
+      opacity: 1
       &:before
         @include translateX(15px)
 
     &:focus  + .slider
-      box-shadow: 0 0 1px #2196F3
+      box-shadow: $shadow_toggle
+  &.right
+    position: absolute
+    top: 20px
+    right: 20px
 
+.title-content
+  font-size: 13px
+  @extend .nunito-semibold
+  letter-spacing: 0.2px
+  color: $color_text
+  margin-bottom: 8px
 
+.remove-wrapp
+  text-align: right
+  .remove
+    color: $red
+    @extend .nunito-semibold
+.remove
+  color: $red
+  @extend .nunito-semibold
+  &.rightTop
+    position: absolute
+    top: 20px
+    right: 20px
+.rating-content
+  strong
+    font-size: 14px
+    @extend .nunito-semibold
+    letter-spacing: 0.2px
+    color: $color_radio
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report

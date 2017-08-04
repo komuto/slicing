@@ -1,70 +1,70 @@
-.seller
-  .seller-bar
-    background-color: $white
-    border-bottom: 0.5px solid $color_border
-    padding: 20px 0
-    .seller-step
-      text-align: center
-      font-size: 0
-      div
-        display: inline-block
-        background-color: $white
-        font-size: 13px
-        @include size(30px, 30px)
-        vertical-align: middle
-        margin-right: 20px
-        position: relative
-        z-index: 2
+.seller-bar
+  background-color: $white
+  border-bottom: 0.5px solid $color_border
+  padding: 20px 0
+  .seller-step
+    text-align: center
+    font-size: 0
+    div
+      display: inline-block
+      background-color: $white
+      font-size: 13px
+      @include size(30px, 30px)
+      vertical-align: middle
+      margin-right: 20px
+      position: relative
+      z-index: 2
+      &:after
+        content: ""
+        @include size(30px, 1px)
+        background-color: $color_border
+        position: absolute
+        top: 50%
+        right: -30px
+        @include translateY(-50%)
+        z-index: 1
+      &:last-child
+        margin-right: 0
         &:after
-          content: ""
-          @include size(30px, 1px)
-          background-color: $color_border
-          position: absolute
-          top: 50%
-          right: -30px
-          @include translateY(-50%)
-          z-index: 1
-        &:last-child
-          margin-right: 0
-          &:after
-            display: none
-        span
-          @include size(25px, 25px)
-          @include borderRadius(700px)
-          display: block
-          margin: 2px auto
-          border: 0.5px solid $color_border
-          color: $color_border_ccc
-          text-align: center
-          line-height: 25px
-      &.active1
-        div
-          &.step1
-            span
-              background-color: $red
-              border: 0.5px solid $red
-              color: $white
-      &.active2
-        div
-          &.step1, &.step2
-            span
-              background-color: $red
-              border: 0.5px solid $red
-              color: $white
-      &.active3
-        div
-          &.step1, &.step2, &.step3
-            span
-              background-color: $red
-              border: 0.5px solid $red
-              color: $white
-      &.active4
-        div
-          &.step1, &.step2, &.step3, &.step4
-            span
-              background-color: $red
-              border: 0.5px solid $red
-              color: $white
+          display: none
+      span
+        @include size(25px, 25px)
+        @include borderRadius(700px)
+        display: block
+        margin: 2px auto
+        border: 0.5px solid $color_border
+        color: $color_border_ccc
+        text-align: center
+        line-height: 25px
+    &.active1
+      div
+        &.step1
+          span
+            background-color: $red
+            border: 0.5px solid $red
+            color: $white
+    &.active2
+      div
+        &.step1, &.step2
+          span
+            background-color: $red
+            border: 0.5px solid $red
+            color: $white
+    &.active3
+      div
+        &.step1, &.step2, &.step3
+          span
+            background-color: $red
+            border: 0.5px solid $red
+            color: $white
+    &.active4
+      div
+        &.step1, &.step2, &.step3, &.step4
+          span
+            background-color: $red
+            border: 0.5px solid $red
+            color: $white
+.seller
 
 .filter-option
   position: relative
@@ -76,6 +76,8 @@
     padding-left: 20px
     padding-right: 20px
     position: relative
+    a
+      @extend .nunito-semibold
     &.check-list
       padding-top: 10px
       padding-bottom: 10px
@@ -99,7 +101,25 @@
           @include size(25px, 25px)
           @include translateY(0)
           &.checked
-          background-position: 1px
+          background-position: -1px
+    &.left
+      .checkbox
+        padding-left: 40px
+        padding-right: 0
+        span
+          display: block
+          margin-bottom: 10px
+        .sort-text
+          @extend .nunito-semibold
+        .input-wrapper
+          top: 8px
+          left: 0
+          right: inherit
+          @include size(25px, 25px)
+          @include translateY(0)
+          &.checked
+          background-position: -1px
+
   &.right-style
     .sort-list
       &.top
