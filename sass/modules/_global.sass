@@ -34,6 +34,8 @@ body
       margin-bottom: 20px
   &.no-padding-bottom
     padding-bottom: 10px
+.media-content
+  position: relative
 .content
   padding: 20px 0
 .box
@@ -321,6 +323,7 @@ body
     .media-content
       .content
         padding-bottom: 0
+        margin-bottom: 0
         h4
           font-size: 13px
           line-height: 1.38
@@ -330,6 +333,10 @@ body
             color: $color_radio
             &:hover, &:focus
               color: $primary
+        .commission
+          display: block
+          color: $green
+          margin-top: -10px
         .detail
           position: relative
           p, .discount
@@ -913,6 +920,106 @@ strong
     @extend .nunito-semibold
     letter-spacing: 0.2px
     color: $color_radio
+.dropship-worldsports
+  background-color: $dropship_bg_color
+  color: $dropship_color
+  @extend .nunito-semibold
+  padding: 4px 6px
+  min-height: 26px
+  display: table
+  padding-right: 30px
+  overflow: hidden
+  position: relative
+  &:after
+    content: ""
+    @inlcude size(0px, 0px)
+    border: 15px solid transparent
+    border-right: 15px solid $white
+    position: absolute
+    top: -1px
+    right: 0
+.dropship-item
+  background-color: $dropship_bg_color_item
+  color: $dropship_color_item
+  @extend .nunito-semibold
+  padding: 4px 6px
+  min-height: 26px
+  display: table
+  padding-right: 30px
+  overflow: hidden
+  position: relative
+  &:after
+    content: ""
+    @inlcude size(0px, 0px)
+    border: 15px solid transparent
+    border-right: 15px solid $white
+    position: absolute
+    top: -1px
+    right: 0
+
+.main-collapse
+  .collpase-content
+    border-bottom: solid 0.5px $color_border
+    margin-right: -20px
+    padding-right: 15px
+    .collapse-title
+      font-size: 13px
+      letter-spacing: 0.2px
+      color: $color_text
+      @extend .nunito-semibold
+      position: relative
+      display: block
+      padding: 15px 0
+      padding-right: 60px
+      > span
+        position: absolute
+        top: 12px
+        right: 0
+    &:last-child
+      border-bottom: none
+    .collapse-body
+      .collapse-in
+        @include transition(700ms all linear)
+        padding-bottom: 20px
+        display: none
+        color: $color_text_desc
+      &.collapsed
+        .collapse-in
+          @include transition(700ms all linear)
+          display: block
+    &.active
+      .collapse-title
+        > span
+          @include rotate(180deg)
+
+.option-content
+  text-align: center
+  > span
+    @include size(5px, 5px)
+    @include borderRadius(100px)
+    background-color: $color_bullet
+    display: inline-block
+    margin-right: 3px
+    &:last-child
+      margin-right: 0
+
+.nav-tabs
+  background-color: $red
+  font-size: 0
+  text-align: center
+  a
+    color: $white
+    opacity: 0.6
+    font-size: 13px
+    @extend .nunito-semibold
+    padding: 10px 20px
+    border-bottom: 2px solid transparent
+    text-align: center
+    display: inline-block
+    width: 50%
+    &.active
+      opacity: 1
+      border-bottom-color: $white
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report

@@ -119,6 +119,25 @@
           @include translateY(0)
           &.checked
           background-position: -1px
+    &.middle
+      .checkbox
+        padding-left: 40px
+        padding-right: 0
+        span
+          display: block
+          margin-bottom: 10px
+        .sort-text
+          @extend .nunito-semibold
+          margin-bottom: 0
+        .input-wrapper
+          top: 50%
+          left: 0
+          right: inherit
+          @include size(25px, 25px)
+          @include translateY(-50%)
+          margin-bottom: 0
+          &.checked
+          background-position: -1px
 
   &.right-style
     .sort-list

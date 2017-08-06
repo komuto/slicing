@@ -156,6 +156,20 @@ $(document).ready(function () {
     descWrapp.toggleClass('open');
     $this.toggleClass('close');
   });
+
+  //collpased
+  $('.js-collapse').click(function(){
+    var thisParent = $(this).parents('.main-collapse');
+    var thisParentSecond = $(this).parent();
+    var dataTarget = $(this).data('target');
+
+    // thisParent.find('.active').removeClass('active');
+    // thisParent.find('.collapsed').removeClass('collapsed');
+
+    thisParentSecond.toggleClass('active');
+    $(dataTarget).toggleClass('collapsed');
+    //alert(dataTarget);
+  });
 // var textarea = document.querySelector('.text-discus');
 
 // textarea.addEventListener('keydown', autosize);

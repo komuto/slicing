@@ -46,6 +46,13 @@
         @include size(30px, 30px)
         float: left
         margin-right: 10px
+        &.xx
+          @include size(45px, 45px)
+          @include borderRadius(3px)
+          img
+            @include borderRadius(3px)
+      .content-product
+        overflow: hidden
       h3
         font-size: 13px
         @extend .nunito-semibold
@@ -57,6 +64,8 @@
         letter-spacing: 0.2px
         color: $color_input
         @extend .nunito-regular
+      p
+        margin-top: 10px
 
   .detail-rate
     border-bottom: 1px solid $color_border

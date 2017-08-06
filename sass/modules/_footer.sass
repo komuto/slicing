@@ -106,7 +106,7 @@
       opacity: 1
 
 .sticky-button
-  position: absolute
+  position: fixed
   right: 20px
   bottom: 30px
   @include size(56px, 56px)
@@ -118,6 +118,9 @@
     top: 50%
     left: 50%
     @include translateXY(-50%,-50%)
+    color: $white
+    &.txt
+      font-size: 30px
 
 .catalog-button
   color: $white

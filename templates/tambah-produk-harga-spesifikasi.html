@@ -142,7 +142,7 @@
             <label class="checkbox" for="#addBrand">
               <span class="sort-text">Jadikan Dropshipping</span>
               <span>Memungkinkan penjual lain untuk menjual barang ini di toko mereka</span>
-              <a>Pelajari Lebih Lanjut tentang dropshipping</a>
+              <a class="modal-button" data-target="#modalDropship">Pelajari Lebih Lanjut tentang dropshipping</a>
               <span class="input-wrapper">
               <input type="checkbox" id="addBrand">
               </span>
@@ -175,7 +175,7 @@
                 </select>
               </span>
             </p><br>
-            <a>+ Tambah Katalog</a>
+            <a class="js-option" data-target="#addCatalog">+ Tambah Katalog</a>
           </div>
         </div>
       </section>
@@ -256,6 +256,67 @@
           </ul>
         </div>
       </section>
+    </div>
+    <div class="sort-option" id="addCatalog">
+      <div class="notif-report add-voucher">
+        <div class="header-notif">
+          <h3>Buat Katalog Baru</h3>
+          <span class="icon-close"></span>
+        </div>
+        <div class="field">
+          <p class="control">
+            <input class="input" type="text" placeholder="Masukkan nama katalog">
+          </p>
+        </div>
+        <button class="button is-primary is-large is-fullwidth">Buat Katalog Baru</button>
+      </div>
+    </div>
+
+     <!-- modal categories -->
+    <div class="modal modal-filter modal-dropship" id="modalDropship">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Tentang Dropshipping</p>
+          <button class="delete icon-close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="main-collapse">
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse1">Apa itu Dropshipping? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse1">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse2">Berapa persen komisi yang reseller dapat? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse2">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse3">Bagaimana jika ada yang bertanya tentang produk ini. siapa yang akan menjawab?. pemilik barang atau reseller? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse3">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse4">Bagaimana jika terjadi refund? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse4">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- js -->
