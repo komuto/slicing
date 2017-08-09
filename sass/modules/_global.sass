@@ -179,6 +179,11 @@ body
       @include borderRadius(0)
       padding: 0
       font-size: 13px
+  .ex
+    font-size: 12px
+    @extend .nunito-regular
+    letter-spacing: 0.2px
+    margin-top: 3px
 
 .search-form
   width: 100%
@@ -250,10 +255,13 @@ body
   font-size: 13px
   letter-spacing: 0.2px
   color: $color_radio
+  padding-top: 10px
   @extend .nunito-semibold
   margin-bottom: 15px
   &.step-transfer
     margin-top: 30px
+  &.padding-top
+    padding-top: 25px
 
 .link
   display: inline-block
@@ -314,6 +322,7 @@ body
   @include borderRadius(0)
   .media
     .media-left
+      align-self: center
       .image
         position: relative
         .pin
@@ -333,6 +342,10 @@ body
             color: $color_radio
             &:hover, &:focus
               color: $primary
+          p
+            a
+              display: block
+              color: $color_radio
         .commission
           display: block
           color: $green
@@ -1020,6 +1033,9 @@ strong
     &.active
       opacity: 1
       border-bottom-color: $white
+.account-wrapper
+  background-color: $white
+  padding: 20px
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report
