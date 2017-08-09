@@ -154,6 +154,10 @@ body
         @include size(17px, 17px)
         @include borderRadius(700px)
         background-color: $black
+    &.blue-color
+      &.checked
+        &:after
+          background-color: $primary
     input
       margin-right: 20px
       visibility: hidden
@@ -1036,6 +1040,14 @@ strong
 .account-wrapper
   background-color: $white
   padding: 20px
+
+.list-city
+  margin-right: -20px
+  li
+    border-bottom: 1px solid $color_border
+    padding: 20px 20px 20px 0
+    &:last-child
+      border-bottom: none
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report

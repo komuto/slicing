@@ -244,6 +244,8 @@
         top: 50%
         right: 0
         @include translateY(-50%)
+      &.edit
+        color: $color_text
 
 .detail-discount
   margin-top: 10px
@@ -376,10 +378,31 @@
           border-bottom: 0.5px solid $color_border
           padding-bottom: 8px
           color: $color_input
+          display: block
+          font-size: 13px
+          &:after
+            content: "";
+            @include size(24px, 24px)
+            background-image: url($icon-arrow-down)
+            position: absolute
+            top: 50%
+            right: 0
+            @include translateY(-50%)
+
       .input
         @extend .nunito-regular
         +placeholder
           color: $color_input
+  &.edit
+    .field
+      .control
+        &.detail-address
+          .location-label
+            @extend .nunito-semibold
+            color: $color_text
+            font-size: 13px
+        .input
+          @extend .nunito-semibold
   .eg
     font-size: 12px
     letter-spacing: 0.2px

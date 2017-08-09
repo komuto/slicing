@@ -8,6 +8,8 @@
     <title>Komuto</title>
 
     <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -17,36 +19,36 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main user no-padding-bottom bg-grey">
+    <div class="main detail edit-data bg-grey">
       <nav class="level header is-fullwidth">
         <div class="nav-left">
           <a class="level-item">
-            <span><span class="back"><span class="icon-arrow-left"></span></span> Edit Alamat</span>
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Edit Alamat</span>
           </a>
         </div>
       </nav>
       <section class="section is-paddingless has-shadow">
         <div class="container is-fluid">
-          <div class="title padding-top">
+          <div class="title">
             <h3>Info Alamat</h3>
           </div>
         </div>
-        <div class="account-wrapper">
+        <div class="edit-data-delivery bg-white edit">
           <form action="#" class="form edit">
-            <div class="field ">
+            <div class="field">
               <label class="label">Nama Alias</label>
               <p class="control">
                 <input class="input" type="text" value="Rumah">
+                <span class="eg">Contoh: Rumah Sendiri, Kantor</span>
               </p>
-              <span class="ex">Contoh: Rumah Sendiri, Kantor</span>
             </div>
-            <div class="field ">
-              <label class="label">Nama Penerima</label>
+            <div class="field">
+              <label class="label">Nomor Handphone</label>
               <p class="control">
                 <input class="input" type="text" value="Dwinawan Hari Wijaya">
               </p>
             </div>
-            <div class="field ">
+            <div class="field">
               <label class="label">Nomor Handphone</label>
               <p class="control">
                 <input class="input" type="text" value="082113101585">
@@ -62,92 +64,172 @@
             <h3>Info Lokasi</h3>
           </div>
         </div>
-        <div class="account-wrapper">
+        <div class="edit-data-delivery bg-white edit">
           <form action="#" class="form edit">
-            <div class="field ">
+            <div class="field">
               <label class="label">Alamat Lengkap</label>
               <p class="control">
                 <input class="input" type="text" value="Perumahan Sedayu Permai C.20">
               </p>
             </div>
-            <div class="field ">
+            <div class="field">
               <label class="label">Provinsi</label>
-              <p class="control">
-                <span class="select">
-                  <select>
-                    <option>D.I.Yogyakarta</option>
-                    <option>With options</option>
-                  </select>
-                </span>
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#province">Yogyakarta</span>
               </p>
             </div>
             <div class="field">
-              <label class="label">Kota / kabupaten</label>
-              <p class="control">
-                <span class="select">
-                  <select>
-                    <option>Bantul</option>
-                    <option>With options</option>
-                  </select>
-                </span>
+              <label class="label">Kota/Kabupaten</label>
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#district">Kota/Kabupaten</span>
               </p>
             </div>
             <div class="field">
               <label class="label">Kecamatan</label>
-              <p class="control">
-                <span class="select">
-                  <select>
-                    <option>Argorejo</option>
-                    <option>With options</option>
-                  </select>
-                </span>
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#districts">Kecamatan</span>
               </p>
             </div>
             <div class="field">
               <label class="label">Kelurahan</label>
-              <p class="control">
-                <span class="select">
-                  <select>
-                    <option>Sedayu</option>
-                    <option>With options</option>
-                  </select>
-                </span>
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#village">Kelurahan</span>
               </p>
             </div>
-            <div class="field ">
+            <div class="field">
               <label class="label">Kode Pos</label>
               <p class="control">
                 <input class="input" type="text" value="55752">
               </p>
             </div>
-            <div class="field">
-              <div class="filter-option active">
-                <div class="sort-list check-list left no-pdleft">
-                  <label class="checkbox" for="#primaryAddress">
-                    <span class="sort-text">Jadikan Alamat Utama</span>
-                    <span class="input-wrapper">
-                    <input type="checkbox" id="primaryAddress">
-                    </span>
-                  </label>
-                </div>
-              </div>
-            </div>
           </form>
         </div>
       </section>
+
       <section class="section is-paddingless">
-        <div class="payment-detail action">
-          <ul>
-            <li>
-              <a class="button is-primary is-large is-fullwidth">Simpan Alamat</a>
-            </li>
-          </ul>
+        <div class="edit-data-delivery">
+          <a class="button is-primary is-large is-fullwidth">Simpan Perubahan</a>
         </div>
       </section>
     </div>
 
+    <!-- option -->
+    <div class="sort-option" id="province">
+      <div class="sort-list">
+        <p><strong>Pilih Provinsi</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DKI Jakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DI Yogyakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Tengah
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Timur
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Selatan
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="district">
+      <div class="sort-list">
+        <p><strong>Pilih Kabupaten</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Bantul
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Seleman
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Kulon Progo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="districts">
+      <div class="sort-list">
+        <p><strong>Pilih Kecamatan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sedayu
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Wirobrajan
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="village">
+      <div class="sort-list">
+        <p><strong>Pilih Kelurahan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                TegalRejo
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Tegalmulyo
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
 </html>

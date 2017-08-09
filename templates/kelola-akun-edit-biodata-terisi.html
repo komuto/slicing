@@ -37,11 +37,11 @@
         <a>Ganti Foto Profil</a>
       </div>
         <form action="#" class="form edit">
-          <div class="edit-data-delivery bg-white">
+          <div class="edit-data-delivery bg-white edit">
             <div class="field">
             <label class="label">Nama Lengkap</label>
             <p class="control">
-              <input class="input" type="text" placeholder="Dwinawan Hariwijaya">
+              <input class="input" type="text" value="Dwinawan Hariwijaya">
             </p>
           </div>
             <form action="#" class="form edit">
@@ -59,13 +59,15 @@
             </p>
           </div>
           <div class="field">
+            <label class="label">Tempat Lahir</label>
             <p class="control detail-address">
-              <span class="location-label modal-button" data-target="#birthPlace">Tempat Lahir Anda</span>
+              <span class="location-label js-option" data-target="#province">Yogyakarta</span>
             </p>
           </div>
           <div class="field">
+            <label class="label">Tanggal Lahir</label>
             <p class="control detail-address">
-              <span class="location-label js-option" data-target="#birthDay">Tanggal Anda</span>
+              <span class="location-label js-option" data-target="#birthDay">24 Januari 1988</span>
             </p>
           </div>
           <div class="field">
@@ -75,36 +77,43 @@
       </section>
     </div>
     <!-- option -->
-    <!-- modal categories -->
-    <div class="modal modal-filter modal-dropship" id="birthPlace">
-      <div class="modal-background"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Pilih Kota Kelahiran</p>
-          <button class="delete icon-close"></button>
-        </header>
-        <section class="section is-paddingless">
-        <div class="field search-form paddingless">
-          <p class="control has-icons-left">
-            <input class="input is-medium" type="text" placeholder="Cari barang atau toko">
-            <span class="icon is-left">
-              <span class="icon-search black"></span>
-            </span>
-          </p>
-        </div>
-      </section>
-        <div class="modal-card-body">
-          <ul class="list-city">
-            <li>Yogyakarta</li>
-            <li>Bantul</li>
-            <li>Gunung Kidul</li>
-            <li>Kulon Progo</li>
-            <li>Jakarta Pusat</li>
-            <li>Jakarta Selatan</li>
-            <li>Jakarta Barat</li>
-            <li>Jakarta utara</li>
-          </ul>
-        </div>
+    <div class="sort-option" id="province">
+      <div class="sort-list">
+        <p><strong>Pilih Provinsi</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DKI Jakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DI Yogyakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Tengah
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Timur
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Selatan
+              </label>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <div class="sort-option" id="birthDay">
