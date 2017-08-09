@@ -873,7 +873,6 @@ strong
   @include size(34px, 14px)
   input
     display: none
-
   .slider
     position: absolute
     cursor: pointer
@@ -897,7 +896,6 @@ strong
       border-radius: 34px
       &:before
         border-radius: 50%
-
   input
     &:checked + .slider
       background-color: $color_bg_toggleslide
@@ -909,8 +907,16 @@ strong
       box-shadow: $shadow_toggle
   &.right
     position: absolute
-    top: 20px
+    top: 22px
     right: 20px
+  &.grey-style
+    .slider
+      &:before
+        background-color: $slide-grey
+    input
+      &:checked + .slider
+        &:before
+          background-color: $color_bg_slide
 
 .title-content
   font-size: 13px
@@ -1048,7 +1054,35 @@ strong
     padding: 20px 20px 20px 0
     &:last-child
       border-bottom: none
+.menu-top
+  position: relative
+  .option-dropdown
+    display: none
+    position: absolute
+    top: 10px
+    right: 0
+    box-shadow: $shadow-option-dropdown
+    li
+      background-color: $white
+      border-bottom: 0.5px solid $color_border
+      min-width: 110px
+      &:last-child
+        border-bottom: none
+      a
+        padding: 15px 20px
+        color: $color_text
+        display: block
+        @extend .nunito-semibold
+  &.open
+    .option-dropdown
+      display: block
 
+.tag
+  @include borderRadius(3px)
+  @extend .nunito-bold
+  &.is-primary
+    background-color: $tag-info
+    color: $primary
 @media handheld, only screen and (max-width: 320px)
   .notif-report
     .button

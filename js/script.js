@@ -170,6 +170,11 @@ $(document).ready(function () {
     $(dataTarget).toggleClass('collapsed');
     //alert(dataTarget);
   });
+
+  $('.option-content').click(function(){
+    var thisParent = $(this).parent();
+    thisParent.toggleClass('open')
+  });
 // var textarea = document.querySelector('.text-discus');
 
 // textarea.addEventListener('keydown', autosize);

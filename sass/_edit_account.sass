@@ -42,3 +42,46 @@
           width: 35px
           &:not(:last-child)
             margin-right: 20px
+
+.data-wrapper
+  background-color: $white
+  position: relative
+  padding: 0 20px
+  .head-panel
+    border-bottom: 0.5px solid $color_border_check
+    padding: 20px 20px 20px 0
+    margin-right: -20px
+    position: relative
+    h3
+      @extend .nunito-bold
+      .tag
+        margin-left: 10px
+        vertical-align: middle
+  .menu-top
+    position: absolute
+    top: 50%
+    right: 20px
+    @include translateY(-50%)
+  .data-content
+    padding: 20px 0
+    font-size: 13px
+    letter-spacing: 0.2px
+    color: $color_text_desc
+    .title-content
+      margin-bottom: 0
+      h3
+        padding-top: 0
+
+.title-head
+  padding: 20px
+  border-bottom: 0.5px solid $color_border_check
+  @extend .nunito-semibold
+  letter-spacing: 0.2px
+
+.set-notify
+  margin-right: -20px
+  margin-bottom: 20px
+  li
+    position: relative
+    padding: 20px 80px 20px 0
+    border-bottom: 0.5px solid $color_border_check
