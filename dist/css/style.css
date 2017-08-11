@@ -6685,6 +6685,16 @@ strong.total {
     background-color: rgba(86, 170, 239, 0.15);
     color: #56aaef; }
 
+.middle-content {
+  position: relative; }
+  .middle-content > .content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
 @media handheld, only screen and (max-width: 320px) {
   .notif-report .button {
     font-size: 12px; } }

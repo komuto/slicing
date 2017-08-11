@@ -1083,6 +1083,15 @@ strong
   &.is-primary
     background-color: $tag-info
     color: $primary
+
+.middle-content
+  position: relative
+  >.content
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    @include translateY(-50%)
 @media handheld, only screen and (max-width: 320px)
   .notif-report
     .button
