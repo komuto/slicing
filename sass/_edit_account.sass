@@ -52,16 +52,28 @@
     padding: 20px 20px 20px 0
     margin-right: -20px
     position: relative
+    &.list
+      padding: 20px
+      margin-left: -20px
     h3
       @extend .nunito-bold
+      position: relative
+      z-index: 2
       .tag
         margin-left: 10px
         vertical-align: middle
+    > p
+      opacity: 0.5
+      position: relative
+      z-index: 1
   .menu-top
     position: absolute
     top: 50%
     right: 20px
     @include translateY(-50%)
+    z-index: 1
+    &.open
+      z-index: 3
   .data-content
     padding: 20px 0
     font-size: 13px
@@ -85,3 +97,26 @@
     position: relative
     padding: 20px 80px 20px 0
     border-bottom: 0.5px solid $color_border_check
+.note-head
+  font-size: 13px
+  line-height: 1.62
+  letter-spacing: 0.2px
+  background-color: $color_grey_bg
+  padding: 20px
+
+.info-address
+  .columns
+    &.detail-rating
+      .column
+        padding-left: 0
+        padding-right: 0
+        .lable
+          color: $color_input
+          letter-spacing: 0.2px
+
+.detail
+  .info-address
+    .info-product
+      .detail-rate
+        &:nth-last-child(2)
+          border-bottom: none !important

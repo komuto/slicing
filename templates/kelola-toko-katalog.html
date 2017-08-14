@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main detail edit-data">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Data Alamat</span>
+          </a>
+        </div>
+      </nav>
+      <section class="section is-paddingless bg-white">
+        <div class="data-wrapper">
+          <div class="head-panel list">
+            <h3>All About Manchester United</h3>
+            <p>5 Produk</p>
+            <div class="menu-top open"> <!-- toggle class open -->
+              <a class="option-content"><span></span><span></span><span></span></a>
+              <ul class="option-dropdown">
+                <li><a class="js-option" data-target="#cancleVerifikasi">Edit</a></li>
+                <li><a class="js-option" data-target="#verifikasi">Hapus</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="head-panel list">
+            <h3>Sepatu Futsal</h3>
+            <p>5 Produk</p>
+            <div class="menu-top"> <!-- toggle class open -->
+              <a class="option-content"><span></span><span></span><span></span></a>
+              <ul class="option-dropdown">
+                <li><a>Edit</a></li>
+                <li><a class="js-option" data-target="#verifikasi">Hapus</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="head-panel list">
+            <h3>Kaos Sepakbola Klasik</h3>
+            <p>5 Produk</p>
+            <div class="menu-top"> <!-- toggle class open -->
+              <a class="option-content"><span></span><span></span><span></span></a>
+              <ul class="option-dropdown">
+                <li><a>Edit</a></li>
+                <li><a class="js-option" data-target="#verifikasi">Hapus</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="head-panel list">
+            <h3>Action Figure Premier League</h3>
+            <p>5 Produk</p>
+            <div class="menu-top"> <!-- toggle class open -->
+              <a class="option-content"><span></span><span></span><span></span></a>
+              <ul class="option-dropdown">
+                <li><a>Edit</a></li>
+                <li><a class="js-option" data-target="#verifikasi">Hapus</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="sticky-button"><span class="txt">+</span></a>
+    </div>
+
+    <!-- == -->
+
+    <div class="sort-option" id="verifikasi">
+      <div class="notif-report">
+        <img src="../images/kelolatoko-prompthapus.svg" alt="">
+        <h3>Anda Yakin akan menghapus Katalog "Sepatu Futsal"?</h3>
+        <button class="button is-primary is-large is-fullwidth">Ya, Hapus Katalog ini</button>
+        <a class="cancel">Batal</a>
+      </div>
+    </div>
+
+    <div class="sort-option" id="cancleVerifikasi">
+      <div class="notif-report">
+        <img src="../images/cancle-verify.svg" alt="">
+        <h3>Anda harus memverifikasi Alamat baru Anda dengan kode yang akan kami kirim ke Alamat baru</h3>
+        <p>Anda harus memverifikasi Alamat baru Anda dengan kode yang akan kami kirim ke Alamat baru</p>
+        <button class="button is-primary is-large is-fullwidth">Batal</button>
+        <a class="cancel">Lanjutkan Ubah Alamat</a>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

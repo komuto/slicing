@@ -16,6 +16,11 @@ body
     right: 0
     bottom: 0
     @include size(100%, 100%)
+strong
+  @extend .nunito-semibold
+  letter-spacing: 0.2px
+.ex
+  font-size: 12px
 .bg-grey
   background-color: $color_bg
 .main
@@ -117,6 +122,18 @@ body
   +placeholder
     color: $color_input
     opacity: 1
+.textarea
+  padding-top: 0.475em
+  padding-left: 0
+  padding-right: 0
+  padding-bottom: 0.475em
+  @include boxShadow(none)
+  @include borderRadius(0)
+  border: none
+  border-bottom: 1px solid $color_border
+  font-size: 13px
+  color: $color_text
+  margin-bottom: 0
 
 .control
   &.has-icons-left
@@ -169,6 +186,12 @@ body
       &.checked
         &:after
           background-color: $primary
+  .form-note
+    font-size: 13px
+    letter-spacing: 0.2px
+    opacity: 0.5
+    margin-top: 8px
+    display: block
   .select
     width: 100%
     &:after
@@ -271,6 +294,8 @@ body
   display: inline-block
   color: $primary
   cursor: pointer
+  &.bold
+    @extend .nunito-semibold
 
 
 .see-all
@@ -327,6 +352,8 @@ body
   .media
     .media-left
       align-self: center
+      &.top
+        align-self: inherit
       .image
         position: relative
         .pin
@@ -1076,6 +1103,8 @@ strong
   &.open
     .option-dropdown
       display: block
+    .option-content
+      visibility: hidden
 
 .tag
   @include borderRadius(3px)
@@ -1092,6 +1121,7 @@ strong
     left: 0
     width: 100%
     @include translateY(-50%)
+
 @media handheld, only screen and (max-width: 320px)
   .notif-report
     .button

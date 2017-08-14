@@ -42,7 +42,7 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, .button.is-medium, .input, .field .radio strong, .title, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .title-content, .remove-wrapp .remove, .remove, .rating-content strong, .dropship-worldsports, .dropship-item, .main-collapse .collpase-content .collapse-title, .nav-tabs a, .menu-top .option-dropdown li a, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .user.user-success .content .desc .no-hp-verify, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .edit-data-delivery.edit .field .control.detail-address .location-label, .edit-data-delivery.edit .field .control .input, .code-voucher p, .edit .noted p strong, .title-head, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list a, .filter-option .sort-list.top .checkbox .sort-text, .filter-option .sort-list.left .checkbox .sort-text, .filter-option .sort-list.middle .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .spec-price .price .currency, .spec-price .discount .disc, .spec-price .prod-qty span, .spec-price a, .detail.spec h3, .level.nav-bottom .level-item {
+.nunito-semibold, strong, .button.is-medium, .input, .field .radio strong, .title, .link.bold, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .title-content, .remove-wrapp .remove, .remove, .rating-content strong, .dropship-worldsports, .dropship-item, .main-collapse .collpase-content .collapse-title, .nav-tabs a, .menu-top .option-dropdown li a, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .user.user-success .content .desc .no-hp-verify, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .edit-data-delivery.edit .field .control.detail-address .location-label, .edit-data-delivery.edit .field .control .input, .code-voucher p, .edit .noted p strong, .title-head, .box.notif-payment .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list a, .filter-option .sort-list.top .checkbox .sort-text, .filter-option .sort-list.left .checkbox .sort-text, .filter-option .sort-list.middle .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .spec-price .price .currency, .spec-price .discount .disc, .spec-price .prod-qty span, .spec-price a, .detail.spec h3, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
@@ -639,6 +639,38 @@
   width: 24px;
   height: 24px;
   background-image: url("../../images/komuto-icon/083_biodata.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-info-toko {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/084_informasi_toko.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-ekspedisi {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/085_icon_ekspedisi.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-katalog {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/086_icon_katalog.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-tc {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/087_icon_tc.svg");
   background-repeat: no-repeat;
   vertical-align: middle; }
 
@@ -5644,6 +5676,12 @@ body {
     width: 100%;
     height: 100%; }
 
+strong {
+  letter-spacing: 0.2px; }
+
+.ex {
+  font-size: 12px; }
+
 .bg-grey {
   background-color: #f4f5f6; }
 
@@ -5752,6 +5790,19 @@ body {
     color: #a0a3ae;
     opacity: 1; }
 
+.textarea {
+  padding-top: 0.475em;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0.475em;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #dedede;
+  font-size: 13px;
+  color: #41475e;
+  margin-bottom: 0; }
+
 .control.has-icons-left input.is-medium {
   font-size: 13px;
   height: 43px;
@@ -5795,6 +5846,13 @@ body {
     color: #404852; }
   .field .radio.primary.checked:after {
     background-color: #56aaef; }
+
+.field .form-note {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  opacity: 0.5;
+  margin-top: 8px;
+  display: block; }
 
 .field .select {
   width: 100%; }
@@ -5955,6 +6013,10 @@ body {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center; }
+    .box .media .media-left.top {
+      -ms-flex-item-align: inherit;
+          -ms-grid-row-align: inherit;
+          align-self: inherit; }
     .box .media .media-left .image {
       position: relative; }
       .box .media .media-left .image .pin {
@@ -6678,6 +6740,8 @@ strong.total {
         display: block; }
   .menu-top.open .option-dropdown {
     display: block; }
+  .menu-top.open .option-content {
+    visibility: hidden; }
 
 .tag {
   border-radius: 3px; }
@@ -7128,7 +7192,8 @@ strong.total {
         letter-spacing: 0.4px;
         font-size: 13px;
         margin-top: 10px;
-        padding: 9px 15px; }
+        padding: 9px 15px;
+        display: table; }
 
 .wishlist .search-form {
   margin-bottom: 20px; }
@@ -8115,15 +8180,28 @@ strong.total {
     padding: 20px 20px 20px 0;
     margin-right: -20px;
     position: relative; }
-    .data-wrapper .head-panel h3 .tag {
-      margin-left: 10px;
-      vertical-align: middle; }
+    .data-wrapper .head-panel.list {
+      padding: 20px;
+      margin-left: -20px; }
+    .data-wrapper .head-panel h3 {
+      position: relative;
+      z-index: 2; }
+      .data-wrapper .head-panel h3 .tag {
+        margin-left: 10px;
+        vertical-align: middle; }
+    .data-wrapper .head-panel > p {
+      opacity: 0.5;
+      position: relative;
+      z-index: 1; }
   .data-wrapper .menu-top {
     position: absolute;
     top: 50%;
     right: 20px;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    z-index: 1; }
+    .data-wrapper .menu-top.open {
+      z-index: 3; }
   .data-wrapper .data-content {
     padding: 20px 0;
     font-size: 13px;
@@ -8146,6 +8224,23 @@ strong.total {
     position: relative;
     padding: 20px 80px 20px 0;
     border-bottom: 0.5px solid #dadada; }
+
+.note-head {
+  font-size: 13px;
+  line-height: 1.62;
+  letter-spacing: 0.2px;
+  background-color: #f4f5f6;
+  padding: 20px; }
+
+.info-address .columns.detail-rating .column {
+  padding-left: 0;
+  padding-right: 0; }
+  .info-address .columns.detail-rating .column .lable {
+    color: #a0a3ae;
+    letter-spacing: 0.2px; }
+
+.detail .info-address .info-product .detail-rate:nth-last-child(2) {
+  border-bottom: none !important; }
 
 .box.notif-payment {
   padding: 15px;
