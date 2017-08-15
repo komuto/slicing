@@ -13,10 +13,58 @@
             @extend .nunito-semibold
             font-size: 13px
             opacity: 1
+  &.notif-payment-expiry
+    padding: 15px
+    background-color: $notif_payment_expiry
+    margin-bottom: 0
+    .media
+      .media-content
+        p
+          color: $red
+          letter-spacing: 0.2px
+          margin-top: 6px
+          strong
+            color: $yellow
+            @extend .nunito-semibold
+            font-size: 13px
+            opacity: 1
+  &.notif-payment-waiting
+    padding: 15px
+    background-color: $color_grey
+    margin-bottom: 0
+    .media
+      .media-content
+        p
+          color: $color_msg_token
+          letter-spacing: 0.2px
+          margin-top: 6px
+          strong
+            color: $color_msg_token
+            @extend .nunito-semibold
+            font-size: 13px
+            opacity: 1
+  &.notif-payment-success
+    padding: 15px
+    background-color: $success_bg
+    margin-bottom: 0
+    .media
+      .media-content
+        p
+          color: $success_text
+          letter-spacing: 0.2px
+          margin-top: 6px
+          strong
+            color: $success_text
+            @extend .nunito-semibold
+            font-size: 13px
+            opacity: 1
+
 
 .payment-detail
   background-color: $white
   padding: 0 20px
+  .box
+    background-color: transparent
   ul
     li
       padding: 20px 0
@@ -72,6 +120,17 @@
             color: $color_text_desc
             line-height: 1.62
             -spacing: 0.2px
+      &.item-active
+        position: relative
+        overflow: hidden
+        background-color: $item_active
+        &:before
+          content: ""
+          @include size(2px, 100%)
+          background-color: $primary
+          position: absolute
+          top: 0
+          left: 0
   &.step-pay
     padding: 0
     > ul

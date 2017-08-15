@@ -72,3 +72,21 @@
   width: $w
   height: $h
 
+=iconCheck($w, $h, $weight, $color)
+  display:inline-block
+  &:after
+    /*Add another block-level blank space*/
+    content: '';
+    display: block
+    /*Make it a small rectangle so the border will create an L-shape*/
+    width: $w
+    height: $h
+    /*Add a white border on the bottom and left, creating that 'L' */
+    border: solid $color
+    border-width: 0 $weight $weight 0
+    /*Rotate the L 45 degrees to turn it into a checkmark*/
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+    transform: rotate(45deg)
+

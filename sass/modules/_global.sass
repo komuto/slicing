@@ -356,11 +356,20 @@ strong
         align-self: inherit
       .image
         position: relative
+        &.list-detail
+          width: 100%
+          max-width: 65px
+          @include borderRadius(3px)
+          img
+            @include borderRadius(3px)
         .pin
           position: absolute
           top: -15px
           left: -15px
     .media-content
+      &.is-right-content
+        .content
+          padding-right: 100px
       .content
         padding-bottom: 0
         margin-bottom: 0
@@ -369,6 +378,7 @@ strong
           line-height: 1.38
           letter-spacing: 0.2px
           color: $color_radio
+          margin-bottom: 5px;
           a
             color: $color_radio
             &:hover, &:focus
@@ -440,7 +450,6 @@ strong
               position: absolute
               right: 0
               bottom: 0
-
 
 .notif-akun
   @include size(25px, 25px)
@@ -1121,6 +1130,39 @@ strong
     left: 0
     width: 100%
     @include translateY(-50%)
+.right-top
+  position: absolute
+  top: 0
+  right: 0
+
+.item-status
+  position: relative
+  padding-left: 18px
+  font-size: 12px
+  letter-spacing: 0.2px
+  color: $color_input
+  &:before
+    content: ""
+    @include size(10px, 10px)
+    @include borderRadius(100px)
+    position: absolute
+    top: 4px
+    left: 0
+  &.reject
+    &:before
+      background-color: $red
+  &.waiting
+    &:before
+      background-color: $waiting
+  &.process
+    &:before
+      background-color: $purple
+  &.delivered
+    &:before
+      background-color: $primary
+  &.accepted
+    &:before
+      background-color: $green
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report
