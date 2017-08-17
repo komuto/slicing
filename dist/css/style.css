@@ -6778,15 +6778,23 @@ strong.total {
   padding-left: 18px;
   font-size: 12px;
   letter-spacing: 0.2px;
-  color: #a0a3ae; }
+  color: #a0a3ae;
+  display: table; }
   .item-status:before {
     content: "";
     width: 10px;
     height: 10px;
     border-radius: 100px;
     position: absolute;
-    top: 4px;
-    left: 0; }
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .item-status.md {
+    font-size: 13px;
+    color: #666666; }
+  .item-status.right {
+    float: right; }
   .item-status.reject:before {
     background-color: #ef5656; }
   .item-status.waiting:before {
@@ -6797,6 +6805,11 @@ strong.total {
     background-color: #56aaef; }
   .item-status.accepted:before {
     background-color: #47bf7e; }
+
+.no-resi {
+  color: #ef5656;
+  font-size: 15px;
+  letter-spacing: 1px; }
 
 @media handheld, only screen and (max-width: 320px) {
   .notif-report .button {
@@ -7050,7 +7063,7 @@ strong.total {
     line-height: 1.77;
     color: #666666; }
   .user .content .desc img {
-    margin-bottom: 30px; }
+    margin-bottom: 0; }
 
 .user .content .columns {
   padding-top: 20px; }

@@ -1141,13 +1141,20 @@ strong
   font-size: 12px
   letter-spacing: 0.2px
   color: $color_input
+  display: table
   &:before
     content: ""
     @include size(10px, 10px)
     @include borderRadius(100px)
     position: absolute
-    top: 4px
+    top: 50%
     left: 0
+    @include translateY(-50%)
+  &.md
+    font-size: 13px
+    color: $color_text_desc
+  &.right
+    float: right
   &.reject
     &:before
       background-color: $red
@@ -1163,6 +1170,11 @@ strong
   &.accepted
     &:before
       background-color: $green
+.no-resi
+  color: $red
+  font-size: 15px
+  letter-spacing: 1px
+
 
 @media handheld, only screen and (max-width: 320px)
   .notif-report
