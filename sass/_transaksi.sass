@@ -1,0 +1,117 @@
+.transaction
+  .payment-detail
+    .box
+      &.notif-payment
+        background-color: $notif_payment
+        @include borderRadius(3px)
+        margin-top: 15px
+.list-transaction
+  @include size(45px, 45px)
+  @include borderRadius(3px)
+  position: relative
+  overflow: hidden
+  img
+    @include borderRadius(3px)
+  &.plus3
+    &:after
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      @include size(100%, 100%)
+      background-color: $overlay
+      z-index: 1
+    &>span
+      color: $white
+      position: absolute
+      top: 50%
+      left: 50%
+      @include translateXY(-50%, -50%)
+      z-index: 2
+      @extend .nunito-semibold
+.price-items
+  display: inline-block
+  vertical-align: top
+  p
+    font-size: 12px
+    letter-spacing: 0.2px
+    color: $color_text_desc
+    opacity: 0.5
+
+.confirm-transaction
+  p
+    padding-top: 40px
+    margin-bottom: 40px
+
+  .list-inline
+    li
+      margin-right: 20px
+      padding-bottom: 80px
+      position: relative
+      &:last-child
+        margin-right: 0
+      .confirm-btn
+        @include size(113px, 113px)
+        @include borderRadius(100%)
+        background-color: $white
+        box-shadow: $shadow_confirm
+        position: relative
+        > div
+          position: absolute
+          top: 50%
+          left: 50%
+          @include translateXY(-50%, -50%)
+          span
+            display: block
+            font-size: 15px
+            @extend .nunito-bold
+            letter-spacing: 0.2px
+            margin-bottom: 10px
+            &:last-child
+              margin-bottom: 0
+        &.confirm-no
+          color: $red
+        &.confirm-yes
+          color: $green
+
+      &.active
+        &:after
+          content: ""
+          position: absolute
+          left: 50%
+          bottom: 0
+          @include translateX(-50%)
+          @include size(0px, 0px)
+          border: 20px solid transparent
+          border-bottom: 20px solid $white
+        .confirm-btn
+          &.confirm-no
+            color: $white
+            background-color: $red
+            .icon-tidak
+              background-image: url($icon-tidak-white)
+          &.confirm-yes
+            color: $white
+            background-color: $green
+            .icon-ya
+              background-image: url($icon-ya-white)
+
+    .edit-data-delivery
+      .detail-rating
+        box-shadow: none
+      .columns
+        &.detail-rating
+          .column
+            padding: 0
+            .rating-content
+              position: relative
+              padding-bottom: 20px
+              border-bottom: 0.5px solid $color_border
+              .star-rating
+                @include size(121px, 24px)
+              .review-result
+                color: $green
+                letter-spacing: 0.2px
+                position: absolute
+                right: 0
+                bottom: 20px
