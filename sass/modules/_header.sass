@@ -19,6 +19,8 @@
         justify-content: left;
         padding: 20px 0
         cursor: inherit
+        &:not(:last-child)
+          margin-bottom: 0
         > span
           color: $white
           font-size: 14px
@@ -85,8 +87,12 @@
       top: 0
       right: 0
       cursor: pointer
-    .box
       background-color: transparent
+      &.menu-top
+        .option-dropdown
+          right: 20px
+          li
+            line-height: 13px
       .media-left
         width: 30px
         img

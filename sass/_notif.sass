@@ -16,4 +16,87 @@
 .info-purchase
   &.no-border
     border-bottom: none
+.notif-discuss
+  .box
+    .media
+      .media-content
+        border-bottom: 0.5px solid $color_border
+        padding-bottom: 20px
+        margin-bottom: -20px
+        .time-discuss
+          top: 0
+
+.discuss
+  .notif-detail
+    li
+      .box
+        .media
+          .media-content
+            .content
+              margin-right: 0
+              .invoice-link
+                color: $primary
+                line-height: 22px
+                letter-spacing: 0.2px
+                text-decoration: underline
+              p
+                width: auto
+                color: $color_text
+                strong
+                  display: block
+                  margin-bottom: 0
+                  @extend .nunito-bold
+            .time-discuss
+              right: 0
+              top: 2px
+  .conversation
+    margin-right: 0
+    li
+      border-bottom: 0.5px solid $color_border
+      .box
+        .media
+          .media-left
+            &.sm
+              .user-pict
+                @include size(30px, 30px)
+          .media-content
+            .content
+              margin-right: 0
+              .invoice-link
+                color: $primary
+                line-height: 22px
+                letter-spacing: 0.2px
+                text-decoration: underline
+              p
+                letter-spacing: 0.2px
+                width: auto
+                strong
+                  display: block
+                  margin-bottom: 0
+                  @extend .nunito-bold
+                span
+                  font-size: 12px
+                  opacity: 0.5
+            .time-discuss
+              right: 0
+              top: 2px
+.discuss-title
+  padding: 20px
+  font-size: 13px
+  letter-spacing: 0.2px
+  line-height: 1.69
+  @extend .nunito-bold
+  border-bottom: 0.5px solid $color_border
+
+@media handheld, only screen and (max-width: 600px)
+  .discuss
+    .notif-detail, .conversation
+      li
+        .box
+          .media
+            .media-content
+              .content
+                p
+                  strong
+                    max-width: 68%
 

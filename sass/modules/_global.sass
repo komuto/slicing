@@ -595,6 +595,8 @@ strong
 .notification
   @include borderRadius(0)
   padding: 20px
+  @extend .nunito-bold
+  letter-spacing: 0.2px
   >.delete
     @include size(24px, 24px)
     background-color: transparent
@@ -1103,16 +1105,17 @@ strong
     top: 10px
     right: 0
     box-shadow: $shadow-option-dropdown
+    min-width: 110px
     li
       background-color: $white
       border-bottom: 0.5px solid $color_border
-      min-width: 110px
       &:last-child
         border-bottom: none
       a
         padding: 15px 20px
         color: $color_text
         display: block
+        white-space: nowrap
         @extend .nunito-semibold
   &.open
     .option-dropdown
