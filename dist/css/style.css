@@ -7444,7 +7444,8 @@ strong.total {
       .modal-filter .modal-card .modal-card-body .filter-option .sort-list {
         background-color: #ffffff;
         width: 100%;
-        right: -20px; }
+        right: -20px;
+        padding-left: 0; }
 
 .modal-filter.categories .modal-card .modal-card-body {
   margin-left: 0;
@@ -7538,16 +7539,15 @@ strong.total {
 
 @media handheld, only screen and (max-width: 480px) {
   .modal-filter .modal-card .modal-card-body {
-    margin-left: 139px; }
+    padding-left: 145px; }
     .modal-filter .modal-card .modal-card-body .fiter-side {
-      left: -139px;
-      width: 139px; }
+      width: 145px; }
       .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a {
         font-size: 11px; }
       .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li.is-active:after {
         right: 8px; }
-    .modal-filter .modal-card .modal-card-body .filter-option {
-      padding-left: 20px; }
+    .modal-filter .modal-card .modal-card-body .filter-option .sort-list {
+      padding-left: 0; }
       .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox {
         padding: 20px 10px; }
         .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .sort-text {
