@@ -4,6 +4,7 @@
     min-height: 100%
     margin: 0
     width: 100%
+    padding-bottom: 102px
     .modal-card-head
       background-color: $white
       @include borderRadius(0)
@@ -21,6 +22,10 @@
       @include borderRadius(0)
       padding: 10px
       background-color: $white
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
       .columns
         width: 100%
         &:last-child
@@ -30,19 +35,18 @@
           letter-spacing: 0.2px
           font-size: 14px
     .modal-card-body
-      padding: 0 0 0 0
-      margin-left: 180px
+      padding: 0 0 0 180px
       position: relative
-      overflow: initial
+      overflow: none
       .fiter-side
         position: absolute
         top: 0
-        left: -180px
+        left: 0
         @include size(180px, 100%)
         background-color: $color_grey_bg
         overflow: auto;
         .tabs
-          min-height: 450px
+          min-height: 350px
           ul
             align-items: normal
             border-bottom: none
@@ -71,7 +75,14 @@
                 letter-spacing: 0.2px
                 color: $color_radio
                 padding: 20px
-
+      .filter-option
+        right: 0
+        overflow-y: auto
+        overflow-x: hidden
+        .sort-list
+          background-color: $white
+          width: 100%
+          right: -20px
   &.categories
     .modal-card
       .modal-card-body

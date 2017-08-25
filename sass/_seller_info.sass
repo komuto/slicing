@@ -88,6 +88,9 @@
         li
           .box
             .media
+              .media-left
+                .image
+                  @include size(45px, 45px)
               .media-content
                 .content
                   p
@@ -103,6 +106,20 @@
                     @include size(45px, 45px)
           .icon-arrow-right
             right: 0
+
+        &.left-margin
+          li
+            margin-right: -20px
+            padding-right: 40px
+            .item-status
+              &.md
+                padding-left: 20px
+                &:before
+                  @include size(15px, 15px)
+            &:last-child
+              border-bottom: none
+            .icon-arrow-right
+              right: 20px
 .detail-rating
   @include boxShadow($shadow_detail)
   &:last-child
