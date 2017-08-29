@@ -328,6 +328,11 @@
             li
               strong
                 display: block
+  .detail
+    .detail-result
+      padding-top: 20px
+      margin-left: -20px
+      margin-right: -20px
 
 .section
   &.is-error
@@ -397,6 +402,18 @@
         @extend .nunito-regular
         +placeholder
           color: $color_input
+      &.with-currency
+        position: relative
+        .cur-val
+          position: absolute
+          top: 40%
+          left: 0
+          @include translateY(-40%)
+          @extend .nunito-semibold
+          color: $color_radio
+          z-index: 2
+        .input
+          padding-left: 28px
   &.edit
     .field
       .control

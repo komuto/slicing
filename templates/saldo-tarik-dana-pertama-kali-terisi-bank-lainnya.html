@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main no-padding-bottom bg-white saldo">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Tarik Saldo</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless">
+        <div class="detail">
+          <div class="detail-purchase summary">
+            <div class="detail-result detail-price">
+              <ul>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><span>Saldo Per 29 Maret 2017</span></div>
+                    <div class="column is-half has-text-right"><span>Rp 1.280.000</span></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="edit-data-delivery bg-white edit">
+          <form action="#" class="form">
+            <div class="field">
+              <label class="label">Nominal Penarikan Dana</label>
+              <p class="control with-currency">
+                <span class="cur-val">Rp</span>
+                <input class="input" type="text" value="500.000">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Bank Tujuan</label>
+              <p class="control detail-address">
+                <span class="location-label js-option" data-target="#bank">Bank Lainnya</span>
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Nama Bank</label>
+              <p class="control">
+                <input class="input" type="text" value="Bank Mayapada">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Cabang Bank</label>
+              <p class="control">
+                <input class="input" type="text" value="Yogyakarta">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Nomor Rekening</label>
+              <p class="control">
+                <input class="input" type="text" value="0987-7564-9857">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Pemilik Akun</label>
+              <p class="control">
+                <input class="input" type="text" value="Dwinawan Hari Wijaya">
+              </p>
+            </div>
+            <div class="field">
+              <a class="button is-primary is-large is-fullwidth js-option" data-target="#aditAddress">Tarik Saldo</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== -->
+    <div class="sort-option" id="bank">
+      <div class="sort-list">
+        <p><strong>Pilih Rekening Tujuan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option change-address">
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>Mandiri</strong>
+              </label>
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>BCA</strong>
+              </label>
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>BNI</strong>
+              </label>
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>CIMB Niaga</strong>
+              </label>
+              <label class="radio">
+                <input type="radio" name="address">
+                <strong>BRI</strong>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

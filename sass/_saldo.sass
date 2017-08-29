@@ -1,0 +1,68 @@
+.saldo
+  .saldo-panel
+    background-color: $red
+    padding: 10px 0 25px 47px
+    color: $white
+    span
+      font-size: 14px
+      letter-spacing: 0.2px
+    p
+      font-size: 25px;
+      letter-spacing: 0.4px
+      @extend .nunito-bold
+  .payment-detail
+    ul
+      li
+        .label-text
+          > span
+            margin-right: 8px
+            vertical-align: middle
+        .text-green
+          vertical-align: middle
+        .columns
+          .column
+            .detail-collapsed
+              > span
+                margin-top: 0
+    &.bank-transfer
+      padding: 0 20px
+      ul
+        li
+          padding-left: 0
+          padding-right: 0
+          &:nth-child(2)
+            border-bottom: none
+          &.collapsed
+            margin-left: -20px
+            margin-right: -20px
+            padding-left: 20px
+            padding-right: 20px
+            border-top: 0.5px solid $color_border_pay
+    &.saldo-history
+      ul
+        li
+          border-bottom: none
+          .invoice-saldo
+            margin-right: -20px
+            .columns
+              border-bottom: 0.5px solid $color_border
+              padding-top: 15px
+              padding-right: 20px
+              padding-bottom: 15px
+              &:last-child
+                border-bottom: none
+              span
+                font-size: 12px
+                letter-spacing: 0.2px
+                color: $color_input
+            &.detail-transactoin
+              margin-right: 0
+              .columns
+                .column
+                  .is-left
+                    span
+                      color: $color_text_desc
+  .detail
+    .detail-result
+      &.detail-price
+        background-color: $saldo_bg_detail

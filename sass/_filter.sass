@@ -103,6 +103,12 @@
         .section
           .title
             padding-top: 20px
+  &.modal-dropship
+    .modal-card
+      padding-bottom: 0
+    .modal-card-body
+      .edit-data-delivery
+        padding: 0
 .filter-option
   position: absolute
   top: 0
@@ -175,7 +181,7 @@
             right: 0
           &:after
             display: none
-@media handheld, only screen and (max-width: $screen-xs-min)
++until($screen-xs-min)
   .modal-filter
     .modal-card
       .modal-card-body

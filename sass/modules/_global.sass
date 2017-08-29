@@ -23,6 +23,12 @@ strong
   font-size: 12px
 .bg-grey
   background-color: $color_bg
+.text-green
+  color: $green
+.text-red
+  color: $red
+.label-semi
+  @extend .nunito-semibold
 .main
   padding-top: 64px
   padding-bottom: 46px
@@ -805,9 +811,11 @@ strong
       color: $color_radio
       font-weight: 400
       display: block
+      line-height: 24px
     p
       margin: 0
       padding: 0
+      line-height: 24px
 
   .add-new-address
     text-align: center
@@ -1106,9 +1114,11 @@ strong
     right: 0
     box-shadow: $shadow-option-dropdown
     min-width: 110px
+    z-index: 2
     li
       background-color: $white
       border-bottom: 0.5px solid $color_border
+      text-align: left
       &:last-child
         border-bottom: none
       a
@@ -1183,8 +1193,7 @@ strong
   font-size: 15px
   letter-spacing: 1px
 
-
-@media handheld, only screen and (max-width: 320px)
++until(320px)
   .notif-report
     .button
       font-size: 12px
