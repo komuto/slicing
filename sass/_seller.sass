@@ -87,6 +87,17 @@
         border-bottom: none
         padding-top: 12px
         padding-bottom: 12px
+    .box
+      margin-bottom: 0
+      .media
+        .media-left
+          .image
+            @include size(35px, 35px)
+        .media-content
+          .content
+            p
+              padding-left: 0
+              padding-right: 0
     &.top
       .checkbox
         padding-left: 40px
@@ -114,13 +125,14 @@
         .sort-text
           @extend .nunito-semibold
         .input-wrapper
-          top: 8px
+          top: 6px
           left: 0
           right: inherit
           @include size(25px, 25px)
           @include translateY(0)
           &.checked
           background-position: -1px
+
     &.middle
       .checkbox
         padding-left: 40px
@@ -140,6 +152,15 @@
           margin-bottom: 0
           &.checked
           background-position: -1px
+    &.item-select
+      .checkbox
+        border-bottom: 0.5px solid $color_border
+        margin-right: -20px
+      .input-wrapper
+        &.checked
+          background-color: $primary
+          border-color: $primary
+          +iconCheck(8px, 14px, 2px, $white)
 
   &.right-style
     .sort-list
@@ -154,6 +175,7 @@
   letter-spacing: 0.2px
   color: $color_radio
   margin-top: -1px
+  background-color: $color_grey_bg
 .upload-pict
   padding: 45px 0
   .pict-wrapper

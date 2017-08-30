@@ -123,6 +123,18 @@
     background-color: $white
     width: 100%
     min-height: 450px
+    &.check-all
+      &.top
+        .checkbox
+          .sort-text
+            margin-top: 4px
+            margin-bottom: 4px
+    &.bg-grey
+      background-color: $color_grey_bg
+      border-top: 0.5px solid $color_border
+      label
+      .input-wrapper
+        background-color: $white
     p
       padding: 20px
       strong
@@ -181,6 +193,7 @@
             right: 0
           &:after
             display: none
+
 +until($screen-xs-min)
   .modal-filter
     .modal-card

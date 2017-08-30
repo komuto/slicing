@@ -6095,6 +6095,12 @@ strong {
         left: -15px; }
   .box .media .media-content.is-right-content .content {
     padding-right: 100px; }
+  .box .media .media-content.middle {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center; }
+    .box .media .media-content.middle .content {
+      padding-top: 0; }
   .box .media .media-content .content {
     padding-bottom: 0;
     margin-bottom: 0; }
@@ -7521,6 +7527,14 @@ strong.total {
     background-color: #ffffff;
     width: 100%;
     min-height: 450px; }
+    .filter-option .sort-list.check-all.top .checkbox .sort-text {
+      margin-top: 4px;
+      margin-bottom: 4px; }
+    .filter-option .sort-list.bg-grey {
+      background-color: #f4f5f6;
+      border-top: 0.5px solid #dedede; }
+      .filter-option .sort-list.bg-grey .input-wrapper {
+        background-color: #ffffff; }
     .filter-option .sort-list p {
       padding: 20px; }
       .filter-option .sort-list p strong {
@@ -8886,6 +8900,14 @@ strong.total {
         border-bottom: none;
         padding-top: 12px;
         padding-bottom: 12px; }
+    .filter-option .sort-list .box {
+      margin-bottom: 0; }
+      .filter-option .sort-list .box .media .media-left .image {
+        width: 35px;
+        height: 35px; }
+      .filter-option .sort-list .box .media .media-content .content p {
+        padding-left: 0;
+        padding-right: 0; }
     .filter-option .sort-list.top .checkbox {
       padding-left: 40px;
       padding-right: 0; }
@@ -8908,7 +8930,7 @@ strong.total {
         display: block;
         margin-bottom: 0; }
       .filter-option .sort-list.left .checkbox .input-wrapper {
-        top: 8px;
+        top: 6px;
         left: 0;
         right: inherit;
         width: 25px;
@@ -8934,6 +8956,28 @@ strong.total {
         transform: translateY(-50%);
         margin-bottom: 0;
         background-position: -1px; }
+    .filter-option .sort-list.item-select .checkbox {
+      border-bottom: 0.5px solid #dedede;
+      margin-right: -20px; }
+    .filter-option .sort-list.item-select .input-wrapper.checked {
+      background-color: #56aaef;
+      border-color: #56aaef; }
+      .filter-option .sort-list.item-select .input-wrapper.checked:after {
+        /*Add another block-level blank space*/
+        content: '';
+        display: block;
+        /*Make it a small rectangle so the border will create an L-shape*/
+        width: 8px;
+        height: 14px;
+        /*Add a white border on the bottom and left, creating that 'L' */
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        /*Rotate the L 45 degrees to turn it into a checkmark*/
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: 3px;
+        left: 7px; }
   .filter-option.right-style .sort-list.top .checkbox {
     margin-right: -20px;
     padding-right: 20px; }
@@ -8944,7 +8988,8 @@ strong.total {
   line-height: 1.62;
   letter-spacing: 0.2px;
   color: #404852;
-  margin-top: -1px; }
+  margin-top: -1px;
+  background-color: #f4f5f6; }
 
 .upload-pict {
   padding: 45px 0; }
