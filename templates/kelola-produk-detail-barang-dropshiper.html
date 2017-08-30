@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/slick-1.6.0/slick/slick.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main seller bg-grey">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span><span class="back"><span class="icon-arrow-left"></span></span> Tempatkan di Katalog</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless has-shadow bg-white">
+        <ul class="product-view">
+          <li>
+            <div class="box is-paddingless">
+              <article class="media">
+                <div class="media-left is-bordered">
+                  <figure class="image product-pict">
+                    <img src="../images/pict.jpg" alt="pict">
+                  </figure>
+                </div>
+                <div class="media-content">
+                  <div class="content">
+                    <p class="products-name">
+                      <strong>Blue Training Kit Machester United</strong>
+                      <br>
+                      Rp 1.685.000 <span>- Komisi 10%</span>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section is-paddingless has-shadow">
+        <div class="container is-fluid">
+          <div class="title">
+            <h3>Pilih Katalog yang sesuai dengan produk Anda</h3>
+          </div>
+        </div>
+        <div class="catalog-option">
+          <a class="add-catalog js-option" data-target="#addCatalog">+ Buat Katalog Baru</a>
+
+          <div class="add-discussion report">
+            <div class="field">
+              <form action="#" class="form">
+                <div class="field">
+                  <p class="control">
+                    <label class="radio">
+                      <input type="radio" name="report">
+                      Salah Kategori
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="report">
+                      Iklan Situs Luar
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="report">
+                      Pornografi
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="report">
+                      Pelanggaran Merk Dagang
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="lainnya">
+                      Lainnya
+                    </label>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section is-paddingless">
+        <div class="payment-detail action">
+          <ul>
+            <li>
+              <a class="button is-primary is-large is-fullwidth">Lanjutkan</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="sort-option" id="addCatalog">
+      <div class="notif-report add-voucher">
+        <div class="header-notif">
+          <h3>Buat Katalog Baru</h3>
+          <span class="icon-close"></span>
+        </div>
+        <div class="field">
+          <p class="control">
+            <input class="input" type="text" placeholder="Masukkan nama katalog">
+          </p>
+        </div>
+        <button class="button is-primary is-large is-fullwidth">Buat Katalog Baru</button>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

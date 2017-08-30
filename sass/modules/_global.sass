@@ -964,6 +964,11 @@ strong
     position: absolute
     top: 22px
     right: 20px
+  &.middle
+    position: absolute
+    top: 50%
+    right: 20px
+    @include translateY(-50%)
   &.grey-style
     .slider
       &:before
@@ -1196,6 +1201,12 @@ strong
   color: $red
   font-size: 15px
   letter-spacing: 1px
+.form
+  &.stock-item
+    padding-top: 20px
+    .field
+      &:not(:last-child)
+        margin-bottom: 20px
 
 +until(320px)
   .notif-report

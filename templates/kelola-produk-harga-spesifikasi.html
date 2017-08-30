@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/slick-1.6.0/slick/slick.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main seller bg-white">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span><span class="back"><span class="icon-arrow-left"></span></span> Harga dan Spesifikasi</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless">
+        <div class="profile-content rating">
+          <div class="profile-wrapp is-paddingless">
+            <ul class="detail-seller left-margin">
+              <li>
+                <div class="box is-paddingless">
+                  <article class="media">
+                    <div class="media-left is-bordered">
+                      <figure class="image">
+                        <img src="../images/thumb.jpg" alt="pict">
+                      </figure>
+                    </div>
+                    <div class="media-content middle">
+                      <div class="content">
+                        <p>
+                          <strong>Sepatu Jogging Nike Hitam </strong>
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="spec-price no-margin-bottom">
+          <div class="field is-horizontal">
+            <div class="field-body columns is-mobile">
+              <div class="field column">
+                <label class="label">Harga Produk</label>
+                <p class="control is-expanded price">
+                  <span class="currency">Rp</span>
+                  <input class="input" type="text" value="1.650.000">
+                </p>
+              </div>
+              <div class="field column is-one-quarter">
+                <label class="label">Diskon</label>
+                <p class="control is-expanded discount">
+                  <span class="disc">%</span>
+                  <input class="input" type="text" value="0" >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail spec">
+          <div class="detail-result">
+            <h3>Rincian Penerimaan</h3>
+            <ul>
+              <li>
+                <div class="columns custom is-mobile">
+                  <div class="column is-half">Harga Jual</div>
+                  <div class="column is-half has-text-right"><strong>Rp 1.650.000</strong></div>
+                </div>
+              </li>
+              <li>
+                <div class="columns custom is-mobile">
+                  <div class="column is-half">Komisi  (10%  dari Rp 1.650.000)</div>
+                  <div class="column is-half has-text-right"><strong>Rp 16.500</strong></div>
+                </div>
+              </li>
+              <li>
+                <div class="columns custom is-mobile">
+                  <div class="column is-half">Uang yang akan Anda terima</div>
+                  <div class="column is-half has-text-right"><strong class="total">Rp 1.633.500</strong></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="spec-price ">
+          <div class="field">
+            <label class="label">Berat Produk</label>
+            <p class="control is-expanded discount">
+              <span class="disc">Kg</span>
+              <input class="input" type="text" value="0.5" >
+            </p>
+          </div>
+          <div class="field">
+            <label class="label">Stock Produk</label>
+            <p class="control is-expanded">
+              <input class="input" type="text" value="0.5">
+            </p>
+          </div>
+          <div class="field radio-horizontal">
+            <label class="label">Jenis Produk</label>
+            <p class="control">
+              <label class="radio primary">
+                <input type="radio" name="report">
+                <strong>Baru</strong>
+              </label>
+              <label class="radio primary">
+                <input type="radio" name="report">
+                <strong>Bekas</strong>
+              </label>
+            </p>
+          </div>
+          <div class="field">
+            <label class="label">Asuransi Produk</label>
+            <p class="control">
+              <label class="radio primary">
+                <input type="radio" name="report">
+                <strong>Optional</strong>
+              </label>
+              <label class="radio primary">
+                <input type="radio" name="report">
+                <strong>Wajib</strong>
+              </label>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section is-paddingless">
+        <div class="payment-detail action">
+          <ul>
+            <li>
+              <a class="button is-primary is-large is-fullwidth">Simpan Perubahan</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="sort-option" id="addCatalog">
+      <div class="notif-report add-voucher">
+        <div class="header-notif">
+          <h3>Buat Katalog Baru</h3>
+          <span class="icon-close"></span>
+        </div>
+        <div class="field">
+          <p class="control">
+            <input class="input" type="text" placeholder="Masukkan nama katalog">
+          </p>
+        </div>
+        <button class="button is-primary is-large is-fullwidth">Buat Katalog Baru</button>
+      </div>
+    </div>
+
+    <!-- modal categories -->
+    <div class="modal modal-filter modal-dropship" id="modalDropship">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Tentang Dropshipping</p>
+          <button class="delete icon-close"></button>
+        </header>
+        <section class="modal-card-body">
+          <div class="main-collapse">
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse1">Apa itu Dropshipping? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse1">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse2">Berapa persen komisi yang reseller dapat? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse2">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse3">Bagaimana jika ada yang bertanya tentang produk ini. siapa yang akan menjawab?. pemilik barang atau reseller? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse3">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+            <div class="collpase-content">
+              <a class="js-collapse collapse-title" data-target="#collapse4">Bagaimana jika terjadi refund? <span class="icon-arrow-down"></span></a>
+              <div class="collapse-body" id="collapse4">
+                <div class="collapse-in">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
