@@ -495,10 +495,13 @@ strong
     width: 100%
     &.catalog-list
       max-width: 235px
+      overflow-y: hidden
       left: 20px
       bottom: 75px
       @include borderRadius(5px)
       ul
+        max-height: 241px
+        overflow-y: scroll
         li
           border-bottom: 1px solid $color_border
           &:last-child

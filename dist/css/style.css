@@ -6212,17 +6212,21 @@ strong {
     width: 100%; }
     .sort-option .sort-list.catalog-list {
       max-width: 235px;
+      overflow-y: hidden;
       left: 20px;
       bottom: 75px;
       border-radius: 5px; }
-      .sort-option .sort-list.catalog-list ul li {
-        border-bottom: 1px solid #dedede; }
-        .sort-option .sort-list.catalog-list ul li:last-child {
-          border-bottom: none; }
-        .sort-option .sort-list.catalog-list ul li a {
-          padding: 20px;
-          display: block;
-          color: #404852; }
+      .sort-option .sort-list.catalog-list ul {
+        max-height: 241px;
+        overflow-y: scroll; }
+        .sort-option .sort-list.catalog-list ul li {
+          border-bottom: 1px solid #dedede; }
+          .sort-option .sort-list.catalog-list ul li:last-child {
+            border-bottom: none; }
+          .sort-option .sort-list.catalog-list ul li a {
+            padding: 20px;
+            display: block;
+            color: #404852; }
     .sort-option .sort-list p {
       padding: 18px 20px; }
       .sort-option .sort-list p strong {
