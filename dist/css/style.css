@@ -6902,6 +6902,9 @@ strong.total {
   .form.stock-item .field:not(:last-child) {
     margin-bottom: 20px; }
 
+.modal-filter.modal-dropship .modal-card .modal-card-body .log-reg {
+  padding: 60px 30px 20px 30px; }
+
 @media screen and (max-width: 319px) {
   .notif-report .button {
     font-size: 12px; } }
