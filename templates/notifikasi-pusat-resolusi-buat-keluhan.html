@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/slick-1.6.0/slick/slick.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main seller">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span><span class="back"><span class="icon-arrow-left"></span></span> Kirim Keluhan</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless">
+        <form action="#" class="form edit">
+          <div class="edit-data-delivery bg-white">
+            <div class="field">
+              <label class="label">Prioritas</label>
+              <div class="filter-option active">
+                <div class="sort-list check-list left">
+                  <label class="checkbox" for="#high">
+                    <span class="sort-text">High</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="high">
+                    </span>
+                  </label>
+                  <label class="checkbox" for="#medium">
+                    <span class="sort-text">Medium</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="medium">
+                    </span>
+                  </label>
+                  <label class="checkbox" for="#low">
+                    <span class="sort-text">Low</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="low">
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Topik Keluhan</label>
+              <div class="filter-option active">
+                <div class="sort-list check-list left">
+                  <label class="checkbox" for="#umum">
+                    <span class="sort-text">Umum</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="umum">
+                    </span>
+                  </label>
+                  <label class="checkbox" for="#info">
+                    <span class="sort-text">Info</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="info">
+                    </span>
+                  </label>
+                  <label class="checkbox" for="#transaksi">
+                    <span class="sort-text">Transaksi</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="transaksi">
+                    </span>
+                  </label>
+                  <label class="checkbox" for="#lainnya">
+                    <span class="sort-text">Lainnya</span>
+                    <span class="input-wrapper">
+                    <input type="checkbox" id="lainnya">
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Judul Keluhan</label>
+              <p class="control">
+                <input class="input" type="text" value="Mau tanya tentang sepatu">
+              </p>
+            </div>
+            <div class="field">
+              <label class="label">Pesan Keluhan</label>
+              <p class="control">
+              <textarea class="textarea sm" rows="1">Halo Gan, mau tanya neh. Sepatu ini kan ringan banget kayaknya. Ngerawat nya susah enggak ya?</textarea>
+            </p>
+            </div>
+            <div class="add-product">
+              <h3 class="title-content">Upload Foto</h3>
+              <ul class="add-photo-list">
+                <li>
+                  <div class="photo-product">
+                    <a class="del-photo"><span class="icon-cross-circle"></span></a>
+                    <div class="photo-wrapp">
+                      <img src="../images/thumb.jpg" alt="">
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a class="add-photo"><span class="icon-add-big"></span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="field">
+              <a class="button is-primary is-large is-fullwidth">Simpan Perubahan</a>
+            </div>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/slick-1.6.0/slick/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
