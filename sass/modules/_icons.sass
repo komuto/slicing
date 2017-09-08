@@ -589,3 +589,21 @@
   background-image: url($icon-tarik-saldo)
   background-repeat: no-repeat
   vertical-align: middle
+
+.icon-notif-admin
+  display: inline-block
+  @include size(20px, 20px)
+  background-color: $bg_icon_notif_admin
+  @include borderRadius(700px)
+  vertical-align: middle
+  position: relative
+  &:before
+    content: "i"
+    font-size: 12px
+    letter-spacing: 0.2px
+    @extend .nunito-bold
+    position: absolute
+    top: 50%
+    left: 50%
+    @include translateXY(-50%, -50%)
+    color: $green

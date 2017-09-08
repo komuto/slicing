@@ -1096,17 +1096,19 @@ strong
   text-align: center
   a
     color: $white
-    opacity: 0.6
     font-size: 13px
     @extend .nunito-semibold
     padding: 10px 20px
     border-bottom: 2px solid transparent
     text-align: center
     display: inline-block
-    width: 50%
+    @include size(50%, 41px)
+    .text
+      opacity: 0.6
     &.active
-      opacity: 1
       border-bottom-color: $white
+      .text
+        opacity: 1
 .account-wrapper
   background-color: $white
   padding: 20px
