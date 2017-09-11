@@ -9340,7 +9340,7 @@ strong.total {
   .field .add-product ul {
     margin-bottom: 0; }
 
-.transaction .payment-detail .box.notif-payment {
+.transaction-page .payment-detail .box.notif-payment {
   background-color: #fff2d7;
   border-radius: 3px;
   margin-top: 15px; }
