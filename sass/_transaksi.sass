@@ -1,4 +1,8 @@
 .transaction-page
+  .box
+    .media
+      &.list-item
+        position: relative
   .payment-detail
     .box
       &.notif-payment
@@ -10,6 +14,8 @@
   @include borderRadius(3px)
   position: relative
   overflow: hidden
+  &.sm
+    @include size(35px, 35px)
   img
     @include borderRadius(3px)
   &.plus3
@@ -115,3 +121,11 @@
                 position: absolute
                 right: 0
                 bottom: 20px
+
++until(767px)
+  .box
+    .media
+      &.list-item
+        display: block
+        .media-left
+          display: inline-block

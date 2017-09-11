@@ -5777,6 +5777,8 @@ strong {
     padding-bottom: 66px; }
   .main.bg-grey section {
     margin-bottom: 20px; }
+    .main.bg-grey section.sm-margin {
+      margin-bottom: 15px; }
   .main.no-padding-bottom {
     padding-bottom: 10px; }
 
@@ -8521,7 +8523,7 @@ strong.total {
     letter-spacing: 0.2px;
     margin-top: 6px; }
     .box.notif-payment-expiry .media .media-content p strong {
-      color: #ea8c2f;
+      color: #ef5656;
       font-size: 13px;
       opacity: 1; }
 
@@ -8571,6 +8573,9 @@ strong.total {
       .payment-detail ul li .columns .column > span {
         color: #666666;
         letter-spacing: 0.2px; }
+      .payment-detail ul li .columns .column .label-text.top-middle {
+        margin-top: -10px;
+        margin-bottom: 10px; }
       .payment-detail ul li .columns .column .label-text > span i {
         margin-right: 10px; }
       .payment-detail ul li .columns .column .detail-collapsed {
@@ -9340,6 +9345,9 @@ strong.total {
   .field .add-product ul {
     margin-bottom: 0; }
 
+.transaction-page .box .media.list-item {
+  position: relative; }
+
 .transaction-page .payment-detail .box.notif-payment {
   background-color: #fff2d7;
   border-radius: 3px;
@@ -9351,6 +9359,9 @@ strong.total {
   border-radius: 3px;
   position: relative;
   overflow: hidden; }
+  .list-transaction.sm {
+    width: 35px;
+    height: 35px; }
   .list-transaction img {
     border-radius: 3px; }
   .list-transaction.plus3:after {
@@ -9454,6 +9465,12 @@ strong.total {
       position: absolute;
       right: 0;
       bottom: 20px; }
+
+@media screen and (max-width: 766px) {
+  .box .media.list-item {
+    display: block; }
+    .box .media.list-item .media-left {
+      display: inline-block; } }
 
 .list-items {
   margin-top: 15px; }

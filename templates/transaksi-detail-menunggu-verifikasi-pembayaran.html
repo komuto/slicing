@@ -19,222 +19,135 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main transaction-page bg-white">
+    <div class="main no-padding-bottom bg-grey">
       <nav class="level header is-fullwidth">
         <div class="nav-left">
           <a class="level-item">
-            <span class="is-paddingless">Transaksi</span>
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Detail Transaksi</span>
           </a>
         </div>
       </nav>
 
-      <section class="section is-paddingless">
-        <div class="payment-detail step-pay">
+      <section class="section is-paddingless has-shadow">
+        <div class="box notif-payment-waiting">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image user-pict ">
+                <img src="../images/icon-waiting-verification.svg" alt="pict">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Menunggu Verifikasi Pembayaran</strong>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="payment-detail">
           <ul>
             <li>
               <div class="columns is-mobile is-multiline no-margin-bottom">
-                <div class="column">
-                  <div class="box">
-                    <div class="media">
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-content is-right-content">
-                        <div class="content">
-                          <h4>Sepatu Jogging Nike Hitam </h4>
-                          <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                            </div>
-                            <span class="icon-arrow-right"></span>
-                          </div>
-                          <div class="detail">
-                            <p>Sports Stations Shop</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="column is-one-third">
+                  <div class="rating-content is-left">
+                    <span>Total Tagihan</span>
                   </div>
                 </div>
-              </div>
-              <div class="box notif-payment">
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Menunggu Pembayaran</strong>
-                        <br>
-                        1 hari  :  20 jam  :  30 menit
-                      </p>
-                    </div>
+                <div class="column">
+                  <div class="rating-content is-left has-text-right">
+                    <span>Rp 250.257</span>
+                    <a class="detail-collapsed">Detail <span class="icon-arrow-down blue"></span></a>
                   </div>
-                </article>
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section is-paddingless">
+      <section class="section is-paddingless has-shadow sm-margin">
+        <div class="container is-fluid">
+          <div class="title">
+            <h3>Daftar Barang Yang Dibeli</h3>
+          </div>
+        </div>
         <div class="payment-detail step-pay">
           <ul>
-            <li class="item-active">
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="label-text is-left top-middle">
+                    <span>Goku Sports</span>
+                  </div>
+                </div>
+              </div>
               <div class="columns is-mobile is-multiline no-margin-bottom">
                 <div class="column">
                   <div class="box">
                     <div class="media list-item">
                       <div class="media-left">
-                        <figure class="image list-transaction">
+                        <figure class="image list-transaction sm">
                           <a><img src="../images/thumb.jpg" alt="Image"></a>
                         </figure>
                       </div>
                       <div class="media-left">
-                        <figure class="image list-transaction">
+                        <figure class="image list-transaction sm">
                           <a><img src="../images/thumb.jpg" alt="Image"></a>
                         </figure>
                       </div>
                       <div class="media-left">
-                        <figure class="image list-transaction plus3">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm plus3">
                           <span>+3</span>
                           <a><img src="../images/thumb.jpg" alt="Image"></a>
                         </figure>
                       </div>
-                      <div class="media-content is-right-content">
-                        <div class="content">
-                          <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                              <p>Verifikasi</p>
-                            </div>
-                            <span class="icon-arrow-right"></span>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow sm-margin">
+        <div class="payment-detail step-pay">
+          <ul>
             <li>
               <div class="columns is-mobile is-multiline no-margin-bottom">
                 <div class="column">
-                  <div class="box">
-                    <div class="media list-item">
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-content is-right-content">
-                        <div class="content">
-                          <h4>Sepatu Jogging Nike Hitam </h4>
-                          <div class="detail">
-                            <p>Sports Stations Shop</p>
-                          </div>
-                          <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                              <p>Kadaluarsa</p>
-                            </div>
-                            <span class="icon-arrow-right"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="label-text is-left top-middle">
+                    <span>Sports Station</span>
                   </div>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="columns is-mobile is-multiline no-margin-bottom">
-                <div class="column">
-                  <div class="box">
-                    <div class="media list-item">
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-left">
-                        <figure class="image list-transaction plus3">
-                          <span>+3</span>
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-content is-right-content">
-                        <div class="content">
-                          <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                              <p>Sudah Dibayar</p>
-                            </div>
-                            <span class="icon-arrow-right"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="columns is-mobile is-multiline no-margin-bottom">
-                <div class="column">
-                  <div class="box">
-                    <div class="media list-item">
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-left">
-                        <figure class="image list-transaction">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-content is-right-content">
-                        <div class="content">
-                          <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                              <p>Kadaluarsa</p>
-                            </div>
-                            <span class="icon-arrow-right"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
               <div class="columns is-mobile is-multiline no-margin-bottom">
                 <div class="column">
                   <div class="box">
                     <div class="media">
                       <div class="media-left">
-                        <figure class="image list-transaction">
+                        <figure class="image list-transaction sm">
                           <a><img src="../images/thumb.jpg" alt="Image"></a>
                         </figure>
                       </div>
-                      <div class="media-content is-right-content">
+                      <div class="media-content middle">
                         <div class="content">
-                          <h4>Sepatu Jogging Nike Hitam </h4>
-                          <div class="detail">
-                            <p>Sports Stations Shop</p>
-                          </div>
+                          <h4>Kaos Training Kit Manchester United</h4>
                           <div class="right-top">
-                            <div class="price-items">
-                              <strong>Rp 250.257</strong>
-                              <p>Sudah Dibayar</p>
-                            </div>
                             <span class="icon-arrow-right"></span>
                           </div>
                         </div>
@@ -247,12 +160,6 @@
           </ul>
         </div>
       </section>
-      <div class="level nav-bottom is-mobile">
-        <a class="level-item has-text-centered"><span class="icon-home"></span>Home</a>
-        <a class="level-item has-text-centered is-active"><span class="icon-bag"></span>Transaksi</a>
-        <a class="level-item has-text-centered"><span class="icon-bell"></span>Notifikasi</a>
-        <a class="level-item has-text-centered"><span class="icon-user"></span>Profil</a>
-      </div>
     </div>
 
     <!-- option -->
