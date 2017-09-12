@@ -361,13 +361,18 @@ strong
   @include boxShadow(none)
   @include borderRadius(0)
   .media
+    position: relative
     .media-left
       align-self: center
       &.top
         align-self: inherit
+        margin-top: 0
       &.is-bordered
         img
           @include borderRadius(3px)
+      &.is-full-bordered
+        img
+          @include borderRadius(700px)
       .image
         position: relative
         &.list-detail
@@ -383,7 +388,7 @@ strong
     .media-content
       &.is-right-content
         .content
-          padding-right: 100px
+          padding-right: 130px
       &.middle
         align-self: center
         .content
@@ -1205,10 +1210,15 @@ strong
   &.accepted
     &:before
       background-color: $green
+  &.has-complaint
+    &:before
+      background-color: $has_complaint
 .no-resi
   color: $red
   font-size: 15px
   letter-spacing: 1px
+  &.is-delivered
+    color: $primary
 .form
   &.stock-item
     padding-top: 20px
@@ -1221,6 +1231,8 @@ strong
       .modal-card-body
         .log-reg
           padding: 60px 30px 20px 30px
+.address
+  line-height: 1.69
 +until(320px)
   .notif-report
     .button

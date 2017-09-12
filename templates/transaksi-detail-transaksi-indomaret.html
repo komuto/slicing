@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Komuto</title>
+
+    <link href="../dist/css/style.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../component/OwlCarousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="main no-padding-bottom bg-grey">
+      <nav class="level header is-fullwidth">
+        <div class="nav-left">
+          <a class="level-item">
+            <span class="is-paddingless"><span class="icon-arrow-left"></span> Detail Transaksi</span>
+          </a>
+        </div>
+      </nav>
+
+      <section class="section is-paddingless has-shadow">
+        <div class="box notif-payment">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image user-pict">
+                <img src="../images/icon-waiting.svg" alt="pict">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Menunggu Pembayaran</strong>
+                  <br>
+                  1 hari  :  20 jam  :  30 menit
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="payment-detail">
+          <ul>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column is-one-third">
+                  <div class="label-text is-left">
+                    <span>No Invoice</span>
+                  </div>
+                </div>
+                <div class="column ">
+                  <div class="is-left">
+                    <span>Invoice-83273847492/04/2017</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column is-one-third">
+                  <div class="rating-content is-left">
+                    <span>Total Tagihan</span>
+                  </div>
+                </div>
+                <div class="column">
+                  <div class="rating-content is-left">
+                    <span>Rp 250.257</span>
+                    <a class="detail-collapsed">Detail <span class="icon-arrow-down blue"></span></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="payment-detail">
+          <ul>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column is-half">
+                  <div class="label-text is-left">
+                    <span>Kode Pembayaran</span>
+                  </div>
+                </div>
+                <div class="column is-half">
+                  <div class="is-left">
+                    <span class="pay-code">88858593902948</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="payment-detail step-pay">
+          <ul>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="label-text is-left">
+                    <span>Cara Pembayaran</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">1</span>
+                    <span class="step-val">
+                      Catat Kode Pembayaran Anda dan pergilah ke Indomaret terdekat
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">2</span>
+                    <span class="step-val">
+                      Bilang pada Kasir bahwa anda ingin melakukan pembayaran DOKU
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">3</span>
+                    <span class="step-val">
+                      Jika Kasir belum familiar dengan  DOKU, maka beritahu bahwa kode transaksinya adalah 2 lalu 2 lalu 2
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">4</span>
+                    <span class="step-val">
+                      Kasir akan meminta kode pembayaran Anda. Sebutkan kode pembayaran Anda 88858593902948
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">5</span>
+                    <span class="step-val">
+                      Lakukan pembayaran sesuai dengan total bayar Anda ditambah dengan biaya transaksi dari Indomaret
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">6</span>
+                    <span class="step-val">
+                      Dapatkan bukti pembayaran dari kasir. Dan Merchant akan diberikan notifikasi mengenai status pembayaran Anda
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="is-left">
+                    <span class="step-num">7</span>
+                    <span class="step-val">
+                      Selesai
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="container is-fluid">
+          <div class="title">
+            <h3>Daftar Barang Yang Dibeli</h3>
+          </div>
+        </div>
+        <div class="payment-detail step-pay">
+          <ul>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="label-text is-left top-middle">
+                    <span>Goku Sports</span>
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="box">
+                    <div class="media list-item">
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-left">
+                        <figure class="image list-transaction sm plus3">
+                          <span>+3</span>
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="right-top">
+                        <span class="icon-arrow-right"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="payment-detail step-pay">
+          <ul>
+            <li>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="label-text is-left top-middle">
+                    <span>Sports Station</span>
+                  </div>
+                </div>
+              </div>
+              <div class="columns is-mobile is-multiline no-margin-bottom">
+                <div class="column">
+                  <div class="box">
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image list-transaction sm">
+                          <a><img src="../images/thumb.jpg" alt="Image"></a>
+                        </figure>
+                      </div>
+                      <div class="media-content middle">
+                        <div class="content">
+                          <h4>Kaos Training Kit Manchester United</h4>
+                          <div class="right-top">
+                            <span class="icon-arrow-right"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- option -->
+    <div class="sort-option" id="province">
+      <div class="sort-list">
+        <p><strong>Pilih Provinsi</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DKI Jakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                DI Yogyakarta
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Tengah
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Jawa Timur
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Barat
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sumatera Selatan
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="district">
+      <div class="sort-list">
+        <p><strong>Pilih Kabupaten</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Bantul
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Seleman
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Kulon Progo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="districts">
+      <div class="sort-list">
+        <p><strong>Pilih Kecamatan</strong></p>
+        <form action="#" class="form">
+          <div class="field">
+            <div class="control popup-option">
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Sedayu
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Wirobrajan
+              </label>
+              <label class="radio">
+                <input type="radio" name="provinsi">
+                Karangbendo
+              </label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="sort-option" id="otherOption">
+      <div class="sort-list">
+        <ul class="other-option">
+          <li><a><span class="icon-share"></span>Bagikan</a></li>
+          <li><a><span class="icon-warning"></span>Laporkan Barang</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
