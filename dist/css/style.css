@@ -6924,6 +6924,8 @@ strong.total {
     background-color: #47bf7e; }
   .item-status.has-complaint:before {
     background-color: #ff5f9d; }
+  .item-status.has-trouble:before {
+    background-color: #fe8224; }
 
 .no-resi {
   color: #ef5656;
@@ -6942,6 +6944,13 @@ strong.total {
 
 .address {
   line-height: 1.69; }
+
+.block-status {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-top: 1px solid #dedede; }
+  .block-status .item-status {
+    color: #a0a3ae; }
 
 @media screen and (max-width: 319px) {
   .notif-report .button {

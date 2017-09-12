@@ -1213,6 +1213,9 @@ strong
   &.has-complaint
     &:before
       background-color: $has_complaint
+  &.has-trouble
+    &:before
+      background-color: $has_trouble
 .no-resi
   color: $red
   font-size: 15px
@@ -1233,6 +1236,13 @@ strong
           padding: 60px 30px 20px 30px
 .address
   line-height: 1.69
+
+.block-status
+  background-color: $white
+  padding: 10px 20px
+  border-top: 1px solid $color_border
+  .item-status
+    color: $color_input
 +until(320px)
   .notif-report
     .button
