@@ -104,25 +104,43 @@
             .icon-ya
               background-image: url($icon-ya-white)
 
-    .edit-data-delivery
-      .detail-rating
-        box-shadow: none
-      .columns
-        &.detail-rating
-          .column
-            padding: 0
-            .rating-content
-              position: relative
-              padding-bottom: 20px
-              border-bottom: 0.5px solid $color_border
-              .star-rating
-                @include size(121px, 24px)
-              .review-result
-                color: $green
-                letter-spacing: 0.2px
-                position: absolute
-                right: 0
-                bottom: 20px
+.edit-data-delivery
+  .box
+    margin-bottom: 0
+  .add-discussion
+    padding: 0
+    .radio
+      @extend .nunito-bold
+  .detail-rating
+    box-shadow: none
+  .columns
+    &.detail-rating
+      .column
+        padding: 0
+        .rating-content
+          position: relative
+          padding-bottom: 20px
+          border-bottom: 0.5px solid $color_border
+          .star-rating
+            @include size(121px, 24px)
+          .review-result
+            color: $green
+            letter-spacing: 0.2px
+            position: absolute
+            right: 0
+            bottom: 20px
+  .filter-option
+    .sort-list
+      &.middle
+        .checkbox
+          padding-top: 10px
+          padding-bottom: 10px
+    &.issue
+      .sort-list
+        &.middle
+          .checkbox
+            padding-top: 0
+            padding-bottom: 0
 .list-trans-product
   li
     border-bottom: 0.5px solid $color_border
@@ -155,7 +173,15 @@
     &:last-child
       .detail-rate, .box
         border-bottom: none
-
+.mark
+  padding: 20px
+  border-bottom: 0.5px solid $color_border
+  background-color: $white
+  p
+    margin-bottom: 0
+    font-size: 13px
+    line-height: 1.77
+    letter-spacing: 0.5px
 +until(767px)
   .box
     .media

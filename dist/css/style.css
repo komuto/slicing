@@ -46,7 +46,7 @@
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .icon-notif-admin:before, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .sort-option .notif-report .cancel, .notification, .tag, .level.header .nav-left .level-item > span, .user .content .desc strong.bold, .user.user-success .content .btn-action, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .photo-content a, .edit .text-ask a, .data-wrapper .head-panel h3, .price-unique, .form-seller .btn-address, .eks-name span, .verify-wrapp h4, .user-info p, .confirm-transaction .list-inline li .confirm-btn > div span, .list-trans-product li .media .media-content h4, .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong, .discuss-title, .saldo .saldo-panel p, .notif-complaint > span {
+.nunito-bold, .icon-notif-admin:before, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .sort-option .notif-report .cancel, .notification, .tag, .level.header .nav-left .level-item > span, .user .content .desc strong.bold, .user.user-success .content .btn-action, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .photo-content a, .edit .text-ask a, .data-wrapper .head-panel h3, .price-unique, .form-seller .btn-address, .eks-name span, .verify-wrapp h4, .user-info p, .confirm-transaction .list-inline li .confirm-btn > div span, .edit-data-delivery .add-discussion .radio, .list-trans-product li .media .media-content h4, .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong, .discuss-title, .saldo .saldo-panel p, .notif-complaint > span {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -9478,24 +9478,38 @@ strong.total {
     .confirm-transaction .list-inline li.active .confirm-btn.confirm-yes .icon-ya {
       background-image: url("../../images/komuto-icon/090_icon_ya_white.png"); }
 
-.confirm-transaction .list-inline .edit-data-delivery .detail-rating {
+.edit-data-delivery .box {
+  margin-bottom: 0; }
+
+.edit-data-delivery .add-discussion {
+  padding: 0; }
+
+.edit-data-delivery .detail-rating {
   box-shadow: none; }
 
-.confirm-transaction .list-inline .edit-data-delivery .columns.detail-rating .column {
+.edit-data-delivery .columns.detail-rating .column {
   padding: 0; }
-  .confirm-transaction .list-inline .edit-data-delivery .columns.detail-rating .column .rating-content {
+  .edit-data-delivery .columns.detail-rating .column .rating-content {
     position: relative;
     padding-bottom: 20px;
     border-bottom: 0.5px solid #dedede; }
-    .confirm-transaction .list-inline .edit-data-delivery .columns.detail-rating .column .rating-content .star-rating {
+    .edit-data-delivery .columns.detail-rating .column .rating-content .star-rating {
       width: 121px;
       height: 24px; }
-    .confirm-transaction .list-inline .edit-data-delivery .columns.detail-rating .column .rating-content .review-result {
+    .edit-data-delivery .columns.detail-rating .column .rating-content .review-result {
       color: #47bf7e;
       letter-spacing: 0.2px;
       position: absolute;
       right: 0;
       bottom: 20px; }
+
+.edit-data-delivery .filter-option .sort-list.middle .checkbox {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.edit-data-delivery .filter-option.issue .sort-list.middle .checkbox {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .list-trans-product li {
   border-bottom: 0.5px solid #dedede; }
@@ -9524,6 +9538,16 @@ strong.total {
     border-bottom: 0.5px solid #dedede; }
   .info-purchase.space-left:last-child .detail-rate, .info-purchase.space-left:last-child .box {
     border-bottom: none; }
+
+.mark {
+  padding: 20px;
+  border-bottom: 0.5px solid #dedede;
+  background-color: #ffffff; }
+  .mark p {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.77;
+    letter-spacing: 0.5px; }
 
 @media screen and (max-width: 766px) {
   .box .media.list-item {
