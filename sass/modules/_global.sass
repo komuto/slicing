@@ -27,8 +27,12 @@ strong
   color: $green
 .text-red
   color: $red
+.text-grey
+  color: $color_text_desc
 .label-semi
   @extend .nunito-semibold
+.bold
+  @extend .nunito-bold
 .main
   padding-top: 64px
   padding-bottom: 46px
@@ -45,6 +49,12 @@ strong
       margin-bottom: 20px
       &.sm-margin
         margin-bottom: 15px
+      &.xs-margin
+        margin-bottom: 10px
+      &.list-order
+        margin: 10px 10px 0 10px
+        @include borderRadius(3px)
+        overflow: hidden
   &.no-padding-bottom
     padding-bottom: 10px
 .media-content
@@ -360,10 +370,17 @@ strong
   padding: 0
   @include boxShadow(none)
   @include borderRadius(0)
+  position: relative
   .media
     position: relative
+    &.list-item
+      line-height: 0
+    &.is-right-content
+      padding-right: 130px
     .media-left
       align-self: center
+      &.sm-margin
+        margin-right: 1px
       &.top
         align-self: inherit
         margin-top: 0
@@ -410,6 +427,10 @@ strong
             a
               display: block
               color: $color_radio
+        &.reseller
+          .products-name
+            span
+              color: $color_text_desc
         .commission
           display: block
           color: $green
@@ -1042,6 +1063,9 @@ strong
   padding-right: 30px
   overflow: hidden
   position: relative
+  &.sold-label
+    background-color: $sold_label
+    color: $color_text_desc
   &:after
     content: ""
     @inlcude size(0px, 0px)
@@ -1174,6 +1198,13 @@ strong
   position: absolute
   top: 0
   right: 0
+.right-middle
+  position: absolute
+  top: 50%
+  right: 0
+  @include translateY(-50%)
+  strong
+    @extend .nunito-bold
 
 .item-status
   position: relative
@@ -1243,6 +1274,38 @@ strong
   border-top: 1px solid $color_border
   .item-status
     color: $color_input
+
+.note
+  padding: 20px
+  p
+    font-size: 13px
+    line-height: 1.69
+    letter-spacing: 0.2px
+  &.bg-white
+    background-color: $white
+
+.txt-overflow
+  max-width: 150px
+  text-overflow: ellipsis
+  white-space: nowrap
+  overflow: hidden
+
+.block-add-resi
+  border-top: 1px solid $color_border
+  background-color: $white
+  a
+    padding: 8px 20px
+    @extend .nunito-bold
+    display: block
+    letter-spacing: 0.2px
+    &.waiting
+      color: $color_input
+      @extend .nunito-semibold
+.separator-dashed
+  @include size(100%, 1px)
+  border-bottom: 1px dashed $color_border_ccc
+  margin: 10px 0 20px 0
+
 +until(320px)
   .notif-report
     .button

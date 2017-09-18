@@ -28,51 +28,48 @@
         </div>
       </nav>
       <div class="nav-tabs">
-        <a class="active"><span class="text">Status</span></a>
-        <a><span class="text">Data Pembelian</span></a>
+        <a class="active"><span class="text">Status Pengiriman</span></a>
+        <a><span class="text">Detail</span></a>
       </div>
 
       <section class="section is-paddingless has-shadow">
-        <div class="container is-fluid">
-          <div class="title">
-            <br>
-            <h3>Info Penjual</h3>
-          </div>
+        <div class="box notif-payment-waiting">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image user-pict">
+                <img src="../images/icon-info-blue.svg" alt="pict">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Terdapat barang yang bermasalah. Silahkan menyelesaikan masalah terlebih dahulu setelah masalah selesai, uang dari buyer akan kami kirimkan ke Anda.</strong>
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="payment-detail step-pay">
-          <ul>
-            <li>
-              <div class="columns is-mobile is-multiline no-margin-bottom">
-                <div class="column">
-                  <div class="box">
-                    <div class="media">
-                      <div class="media-left is-full-bordered">
-                        <figure class="image list-transaction sm">
-                          <a><img src="../images/thumb.jpg" alt="Image"></a>
-                        </figure>
-                      </div>
-                      <div class="media-content middle is-right-content">
-                        <div class="content">
-                          <h4>Dropshop Quality</h4>
-                        </div>
-                      </div>
-                      <div class="right-top">
-                        <a class="button is-primary is-outlined">Kirim Pesan</a>
-                      </div>
-                    </div>
-                  </div>
+        <div class="info-purchase">
+          <div class="detail-rate is-purchase">
+            <div class="columns total-items is-mobile is-multiline no-margin-bottom">
+              <div class="column">
+                <div class="rating-content is-left">
+                  <strong>Jonathan Hope</strong>
                 </div>
               </div>
-            </li>
-          </ul>
+              <ul class="seller-items">
+                <li>
+                  <a><img src="../images/pict.jpg" alt="komuto"></a>
+                </li>
+                <li>
+                  <a><img src="../images/pict.jpg" alt="komuto"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section is-paddingless has-shadow">
-        <div class="container is-fluid">
-          <div class="title">
-            <h3>Info Status</h3>
-          </div>
-        </div>
         <div class="info-purchase">
           <div class="detail-rate is-purchase">
             <div class="columns total-items is-mobile is-multiline no-margin-bottom">
@@ -92,14 +89,32 @@
         <div class="info-purchase">
           <div class="detail-rate is-purchase">
             <div class="columns total-items is-mobile is-multiline no-margin-bottom">
+              <div class="column is-one-quarter">
+                <div class="rating-content is-left">
+                  <strong>Status Barang</strong>
+                </div>
+              </div>
+              <div class="column">
+                <div class="rating-content item-qty has-text-right">
+                  <div class="item-status md right delivered">Menunggu Konfirmasi Pembeli</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section is-paddingless has-shadow">
+        <div class="info-purchase">
+          <div class="detail-rate is-purchase">
+            <div class="columns total-items is-mobile is-multiline no-margin-bottom">
               <div class="column is-half">
                 <div class="rating-content is-left">
-                  <strong>Tanggal Transaksi</strong>
+                  <strong>Nomor Resi</strong>
                 </div>
               </div>
               <div class="column is-half">
                 <div class="rating-content item-qty has-text-right">
-                  <span class="has-text-left">15 Agustus 2017</span>
+                  <span class="has-text-left">123412341234</span> &nbsp;<a class="js-option" data-target="#resiCode">Ubah</a>
                 </div>
               </div>
             </div>
@@ -110,18 +125,33 @@
             <div class="columns total-items is-mobile is-multiline no-margin-bottom">
               <div class="column is-half">
                 <div class="rating-content is-left">
-                  <strong>Status Barang</strong>
+                  <strong>Status Resi</strong>
                 </div>
               </div>
-              <div class="column">
+              <div class="column is-half">
                 <div class="rating-content item-qty has-text-right">
-                  <div class="item-status md right process">Diproses oleh Seller</div>
+                  <span class="has-text-left">On Progress</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+    </div>
+
+    <div class="sort-option" id="resiCode">
+      <div class="notif-report add-voucher">
+        <div class="header-notif">
+          <h3>Masukan Nomor Resi Baru</h3>
+          <span class="icon-close"></span>
+        </div>
+        <div class="field">
+          <p class="control">
+            <input class="input" type="text" placeholder="No Resi">
+          </p>
+        </div>
+        <button class="button is-primary is-large is-fullwidth">Perbarui No Resi</button>
+      </div>
     </div>
 
 

@@ -91,6 +91,8 @@
               .media-left
                 .image
                   @include size(45px, 45px)
+                  &.sm
+                    @include size(30px, 30px)
               .media-content
                 .content
                   p
@@ -104,6 +106,8 @@
                 .media-left
                   .image
                     @include size(45px, 45px)
+                    &.sm
+                      @include size(30px, 30px)
           .icon-arrow-right
             right: 0
 
@@ -120,6 +124,10 @@
               border-bottom: none
             .icon-arrow-right
               right: 20px
+          &.is-border
+            li
+              &:last-child
+                border-bottom: 1px solid $color_border
 .detail-rating
   @include boxShadow($shadow_detail)
   &:last-child
