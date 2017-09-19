@@ -518,3 +518,57 @@
   p
     text-align: left
     margin-bottom: 10px
+.content-header
+  background-color: $white
+  border-bottom: 0.5px solid $color_border
+  position: relative
+  padding: 20px
+  .btn-change
+    position: absolute
+    top: 50%
+    right: 20px
+    @include translateY(-50%)
+    @extend .nunito-semibold
+  h3
+    font-size: 13px
+    @extend .nunito-bold
+    letter-spacing: 0.2px
+    color: $color_text
+    margin: 0
+.content-body
+  background-color: $white
+  padding: 20px
+  strong
+    @extend .nunito-semibold
+  .list
+    li
+      color: $color_text_desc
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+  .columns
+    border-top: 0.5px solid $color_border
+    padding-top: 20px
+    margin-top: 20px
+    &:first-child
+      border-top: none
+      margin-top: 0
+      padding-top: 0
+    &:last-child
+      margin-bottom: 0
+      padding-bottom: 0
+      border-bottom: none
+    .column
+      padding: 0
+    &.left-style
+      padding-right: 20px
+      margin-right: -20px
+    &.no-border
+      border-top: 0
+  .info-purchase
+    border-bottom: none
+    padding: 0
+    margin-bottom: -20px
+    .detail-result
+      border-top: 0.5px solid $color_border
+      border-bottom: 0.5px solid $color_border

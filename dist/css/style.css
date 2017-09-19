@@ -42,11 +42,11 @@
   font-family: 'nunitoregular', sans-serif;
   font-weight: 400; }
 
-.nunito-semibold, strong, .label-semi, .button.is-medium, .input, .field .radio strong, .title, .link.bold, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .title-content, .remove-wrapp .remove, .remove, .rating-content strong, .dropship-worldsports, .dropship-item, .main-collapse .collpase-content .collapse-title, .nav-tabs a, .menu-top .option-dropdown li a, .block-add-resi a.waiting, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .user.user-success .content .desc .no-hp-verify, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .edit-data-delivery .field .control.with-currency .cur-val, .edit-data-delivery.edit .field .control.detail-address .location-label, .edit-data-delivery.edit .field .control .input, .code-voucher p, .edit .noted p strong, .title-head, .box.notif-payment .media .media-content p strong, .box.notif-payment-expiry .media .media-content p strong, .box.notif-payment-waiting .media .media-content p strong, .box.notif-payment-success .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list a, .filter-option .sort-list.top .checkbox .sort-text, .filter-option .sort-list.left .checkbox .sort-text, .filter-option .sort-list.middle .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .spec-price .price .currency, .spec-price .discount .disc, .spec-price .prod-qty span, .spec-price a, .detail.spec h3, .list-transaction.plus3 > span, .transaction, .notif-admin, .level.nav-bottom .level-item {
+.nunito-semibold, strong, .label-semi, .button.is-medium, .input, .field .radio strong, .title, .link.bold, .see-all .link, .notif-akun, .sort-option .sort-list.catalog-list ul li a, .popup-option .radio .opt-title, .title-content h3, .title-content, .remove-wrapp .remove, .remove, .rating-content strong, .dropship-worldsports, .dropship-item, .main-collapse .collpase-content .collapse-title, .nav-tabs a, .menu-top .option-dropdown li a, .block-add-resi a.waiting, .search-form .dropdown-search .main-search ul li span, .on-search .body-search .search-list ul li, .user.user-success .content .desc .no-hp-verify, .profile-wrapp ul li .box .content p strong, .discuss ul li .box .content p strong, .notif-verify .box .media .media-content p, .notif-verify .box .media .media-content p strong, .notif-verify .box .media .media-content p .button, .modal-filter .modal-card .modal-card-foot .columns .button, .modal-filter .modal-card .modal-card-body .fiter-side .tabs ul li a, .filter-option .sort-list p strong, .seller-info .box.seller .media .media-content .content h4, .nav-seller .nav-info .nav-item.is-active a, .detail-rating h3, .columns.detail-rating .column .rating-content h3, .columns.detail-rating .column .rating-content .value-rate, .detail .detail-product h3, .detail .detail-product .purchase h3, .detail .detail-rate .columns.detail-rating .column .rating-content strong, .detail .detail-result.solid strong, .detail .detail-result .columns.custom .column strong, .info-purchase .detail-purchase h3, .info-purchase .detail-purchase.summary .btn-change, .edit-data-delivery .field .control.with-currency .cur-val, .edit-data-delivery.edit .field .control.detail-address .location-label, .edit-data-delivery.edit .field .control .input, .code-voucher p, .content-header .btn-change, .content-body strong, .edit .noted p strong, .title-head, .box.notif-payment .media .media-content p strong, .box.notif-payment-expiry .media .media-content p strong, .box.notif-payment-waiting .media .media-content p strong, .box.notif-payment-success .media .media-content p strong, .payment-detail ul li .columns .column .label-text > span, .payment-detail ul li .columns .column .detail-collapsed, .payment-detail ul li .columns .column .pay-code, .payment-detail ul li .columns .column .step-num, .columns.notif-pay .column .label-text, .payment .total-detail ul li span, .payment .payment-method > .icon-arrow-right, .token-msg span, .digit.notif-payment p, .filter-option .sort-list a, .filter-option .sort-list.top .checkbox .sort-text, .filter-option .sort-list.left .checkbox .sort-text, .filter-option .sort-list.middle .checkbox .sort-text, .form-seller .field .control strong, .form-seller .field .select select, .label-text strong, .add-product .add-option li .box .media .media-content .content p strong, .product-view li .products-name, .form-product .field .input, .form-product .field .select select, .spec-price .price .currency, .spec-price .discount .disc, .spec-price .prod-qty span, .spec-price a, .detail.spec h3, .list-transaction.plus3 > span, .transaction, .notif-admin, .level.nav-bottom .level-item {
   font-family: 'nunitosemibold', sans-serif;
   font-weight: 600; }
 
-.nunito-bold, .icon-notif-admin:before, .bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .sort-option .notif-report .cancel, .notification, .tag, .right-middle strong, .block-add-resi a, .level.header .nav-left .level-item > span, .user .content .desc strong.bold, .user.user-success .content .btn-action, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .photo-content a, .edit .text-ask a, .data-wrapper .head-panel h3, .price-unique, .form-seller .btn-address, .eks-name span, .verify-wrapp h4, .user-info p, .confirm-transaction .list-inline li .confirm-btn > div span, .edit-data-delivery .add-discussion .radio, .list-trans-product li .media .media-content h4, .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong, .discuss-title, .saldo .saldo-panel p, .notif-complaint > span {
+.nunito-bold, .icon-notif-admin:before, .bold, .button, .view-all p, .view-all span, .pin span, .box .media .media-content .content .detail .price, .sort-option .sort-list > p strong, .sort-option .notif-report.add-voucher .header-notif h3, .sort-option .notif-report h3, .sort-option .notif-report .cancel, .notification, .tag, .right-middle strong, .block-add-resi a, .level.header .nav-left .level-item > span, .user .content .desc strong.bold, .user.user-success .content .btn-action, .modal-filter .modal-card .modal-card-head .modal-card-title, .detail .detail-product .price, .detail .detail-product .remove-item, .summary.at-cart .detail-result .btn-change, .detail .detail-result.detail-price h3, .total-pay .price-pay, .cancel-voucher .cancel, .content-header h3, .photo-content a, .edit .text-ask a, .data-wrapper .head-panel h3, .price-unique, .form-seller .btn-address, .eks-name span, .verify-wrapp h4, .user-info p, .confirm-transaction .list-inline li .confirm-btn > div span, .edit-data-delivery .add-discussion .radio, .list-trans-product li .media .media-content h4, .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong, .discuss-title, .saldo .saldo-panel p, .notif-complaint > span {
   font-family: 'nunitobold', sans-serif;
   font-weight: 700; }
 
@@ -8481,6 +8481,58 @@ strong.total {
 .see-detail-price p {
   text-align: left;
   margin-bottom: 10px; }
+
+.content-header {
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #dedede;
+  position: relative;
+  padding: 20px; }
+  .content-header .btn-change {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .content-header h3 {
+    font-size: 13px;
+    letter-spacing: 0.2px;
+    color: #41475e;
+    margin: 0; }
+
+.content-body {
+  background-color: #ffffff;
+  padding: 20px; }
+  .content-body .list li {
+    color: #666666;
+    margin-bottom: 10px; }
+    .content-body .list li:last-child {
+      margin-bottom: 0; }
+  .content-body .columns {
+    border-top: 0.5px solid #dedede;
+    padding-top: 20px;
+    margin-top: 20px; }
+    .content-body .columns:first-child {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0; }
+    .content-body .columns:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none; }
+    .content-body .columns .column {
+      padding: 0; }
+    .content-body .columns.left-style {
+      padding-right: 20px;
+      margin-right: -20px; }
+    .content-body .columns.no-border {
+      border-top: 0; }
+  .content-body .info-purchase {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: -20px; }
+    .content-body .info-purchase .detail-result {
+      border-top: 0.5px solid #dedede;
+      border-bottom: 0.5px solid #dedede; }
 
 .photo-content {
   margin-top: 0;
