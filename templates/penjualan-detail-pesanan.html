@@ -273,130 +273,47 @@
       <div class="level btn-wrapp">
         <div class="columns is-mobile">
           <div class="column is-half">
-            <a class="button is-primary is-large is-fullwidth is-outlined">Tolak</a>
+            <a class="button is-primary is-large is-fullwidth is-outlined js-option" data-target="#tolak">Tolak</a>
           </div>
           <div class="column">
-            <a class="button is-primary is-large is-fullwidth">Terima</a>
+            <a class="button is-primary is-large is-fullwidth js-option" data-target="#terima">Terima</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- option -->
-    <div class="sort-option" id="deliveryPackage">
-      <div class="sort-list">
-        <p><strong>Pilih Paket Pengiriman dari JNE</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option package">
-              <label class="radio">
-                <input type="radio" name="reguler">
-                <span class="service-name">JNE Reguler</span>
-                <span>2-3 Hari</span>
-                <span>Rp 15.000</span>
-              </label>
-              <label class="radio">
-                <input type="radio" name="yes">
-                <span class="service-name">JNE Yes</span>
-                <span>2-3 Hari</span>
-                <span>Rp 15.000</span>
-              </label>
-              <label class="radio">
-                <input type="radio" name="oke">
-                <span class="service-name">JNE Oke</span>
-                <span>2-3 Hari</span>
-                <span>Rp 15.000</span>
-              </label>
-            </div>
-          </div>
-        </form>
+    <div class="sort-option" id="terima">
+      <div class="notif-report">
+        <img src="../images/edit-address.svg" alt="">
+        <h3>Order Diterima</h3>
+        <p>Order telah dipindahkan ke bagian konfirmasi pengiriman. Silahkan memproses order dan jika sudah dikirim Anda tinggal memasukkan nomor resinya</p>
+        <button class="button is-primary is-large is-fullwidth">Lihat Daftar Pengiriman</button>
+        <a class="cancel">Kembali ke  Konfirmasi Pengiriman</a>
       </div>
     </div>
-    <div class="sort-option" id="insurance">
-      <div class="sort-list">
-        <p><strong>Anda ingin menggunakan Asuransi?</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option">
-              <label class="radio">
-                <input type="radio" name="ya">
-                Ya
-              </label>
-              <label class="radio">
-                <input type="radio" name="tidak">
-                Tidak
-              </label>
-            </div>
+    <div class="sort-option" id="tolak">
+      <div class="notif-report">
+        <img src="../images/edit-address.svg" alt="">
+        <h3>Anda akan menolak order</h3>
+        <p>Anda yakin akan menolak order ini? Lorem ipsum dolor sit amet </p>
+        <div class="columns is-mobile">
+          <div class="column">
+            <button class="button is-primary is-large is-fullwidth is-outlined js-option" data-target="#hasReject">Tolak</button>
           </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="kurir">
-      <div class="sort-list">
-        <p><strong>Pilih Ekspedisi Pengiriman</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option kurir">
-              <label class="radio">
-                <input type="radio" name="ya">
-                <img src="../images/jne.png" alt=""> TIKI
-              </label>
-              <label class="radio">
-                <input type="radio" name="tidak">
-                <img src="../images/jne.png" alt=""> JNE
-              </label>
-            </div>
+          <div class="column">
+            <button class="button is-primary is-large is-fullwidth is-outlined">Batal</button>
           </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="changeAddress">
-      <div class="sort-list">
-        <p><strong>Pilih Alamat Pengiriman</strong></p>
-        <form action="#" class="form">
-          <div class="field">
-            <div class="control popup-option change-address">
-              <label class="radio">
-                <input type="radio" name="address">
-                <strong>Rumah Jakarta</strong>
-                <p>Kemanggisan Jakarta Barat, Palmerah Jakarta Barat, DKI Jakarta, Indonesia 55673</p>
-              </label>
-              <a class="add-new-address">
-                + Tambah Alamat Baru
-              </a>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-    <div class="sort-option" id="voucherCode">
-      <div class="notif-report add-voucher">
-        <div class="header-notif">
-          <h3>Gunakan Kode Voucher</h3>
-          <span class="icon-close"></span>
         </div>
-        <div class="field">
-          <label class="label">Masukan Kode Voucher</label>
-          <p class="control">
-            <input class="input" type="text" value="BELANJAENAK">
-          </p>
-        </div>
-        <button class="button is-primary is-large is-fullwidth">Gunakan Kode Voucher</button>
       </div>
     </div>
 
-    <div class="sort-option" id="otherOption">
-      <div class="sort-list">
-        <ul class="other-option">
-          <li><a><span class="icon-share"></span>Bagikan</a></li>
-          <li><a><span class="icon-warning"></span>Laporkan Barang</a></li>
-        </ul>
+    <div class="sort-option" id="hasReject">
+      <div class="notif-report">
+        <h3>Order telah ditolak</h3>
+        <p>Anda telah menolak order dan order sudah dihilangkan dari daftar pesanan</p>
+        <button class="button is-primary is-large is-fullwidth">Kembali ke Daftar Pengiriman</button>
       </div>
     </div>
-
 
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
