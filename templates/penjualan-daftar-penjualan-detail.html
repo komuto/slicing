@@ -19,7 +19,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main detail bg-grey lg">
+    <div class="main detail bg-grey">
       <nav class="level header is-fullwidth">
         <div class="nav-left">
           <a class="level-item">
@@ -27,6 +27,10 @@
           </a>
         </div>
       </nav>
+      <div class="nav-tabs">
+        <a><span class="text">Status</span></a>
+        <a class="active"><span class="text">Data Pembelian</span></a>
+      </div>
       <section class="section is-paddingless has-shadow">
         <div class="info-purchase">
           <div class="detail-rate is-purchase">
@@ -183,33 +187,12 @@
                       DKI Jakarta, 55673<br>
                       Telp: 0821 - 1310 - 1585
                     </span>
-                    <div class="right-top topR">
-                      <a class="button is-primary is-outlined">Cetak Alamat</a>
-                    </div>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-         <ul class="list-trans-product">
-          <li>
-            <div class="columns custom is-mobile">
-              <div class="column">
-                <strong>Info Alamat Penjual</strong><br>
-                <span class="address">
-                  Dwinawan Hariwijaya<br>
-                  Kemanggisan Jakarta Barat,<br>
-                  DKI Jakarta, 55673<br>
-                  Telp: 0821 - 1310 - 1585
-                </span>
-                <div class="right-top topR">
-                  <a class="button is-primary is-outlined">Cetak Alamat</a>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
         <div class="column is-paddingless">
           <div class="see-all">
             <span class="link black js-option" data-target="#kurir">Kurir Pengiriman <span class="kurir">JNE</span><span class="icon-arrow-down"></span></span>
@@ -241,20 +224,26 @@
               <ul>
                 <li>
                   <div class="columns custom is-mobile">
-                    <div class="column is-half"><strong>Subtotal</strong></div>
+                    <div class="column is-half"><span>Subtotal</span></div>
                     <div class="column is-half has-text-right"><span>Rp 380.000</span></div>
                   </div>
                 </li>
                 <li>
                   <div class="columns custom is-mobile">
-                    <div class="column is-half"><strong>Biaya Asuransi</strong></div>
+                    <div class="column is-half"><span>Biaya Asuransi</span></div>
                     <div class="column is-half has-text-right"><span>Rp 10.000</span></div>
                   </div>
                 </li>
                 <li>
                   <div class="columns custom is-mobile">
-                    <div class="column is-half"><strong>Ongkos Kirim</strong></div>
+                    <div class="column is-half"><span>Ongkos Kirim</span></div>
                     <div class="column is-half has-text-right"><span>Rp 8.000</span></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="columns custom is-mobile">
+                    <div class="column is-half"><span class="text-green">Biaya Refund</span></div>
+                    <div class="column is-half has-text-right"><span class="text-green">-Rp 100.000</span></div>
                   </div>
                 </li>
               </ul>
@@ -270,16 +259,6 @@
           </div>
         </div>
       </section>
-      <div class="level btn-wrapp">
-        <div class="columns is-mobile">
-          <div class="column is-half">
-            <a class="button is-primary is-large is-fullwidth is-outlined">Tolak</a>
-          </div>
-          <div class="column">
-            <a class="button is-primary is-large is-fullwidth">Terima</a>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- option -->

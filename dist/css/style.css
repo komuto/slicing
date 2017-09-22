@@ -747,6 +747,30 @@
     transform: translate(-50%, -50%);
     color: #47bf7e; }
 
+.icon-pesanan-baru {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/097_icon_pesanan_baru.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-konfirmasi-pengiriman {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/098_icon_konfirmasi_pengiriman.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
+.icon-daftar-penjualan {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/099_icon_daftar_penjualan.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -5778,6 +5802,8 @@ strong {
     padding-bottom: 0; }
   .main.detail {
     padding-bottom: 66px; }
+    .main.detail.lg {
+      padding-bottom: 100px; }
   .main.bg-grey section {
     margin-bottom: 20px; }
     .main.bg-grey section.sm-margin {
@@ -6910,6 +6936,9 @@ strong.total {
   position: absolute;
   top: 0;
   right: 0; }
+  .right-top.topR {
+    top: 20px;
+    right: 20px; }
 
 .right-middle {
   position: absolute;
@@ -7010,6 +7039,17 @@ strong.total {
   height: 1px;
   border-bottom: 1px dashed #cccccc;
   margin: 10px 0 20px 0; }
+
+.notif-inside {
+  background-color: #ffffff;
+  padding: 20px;
+  border-bottom: 1px solid #dedede; }
+  .notif-inside .notif-info {
+    background-color: #ebf2fc;
+    border-radius: 6px;
+    padding: 20px; }
+    .notif-inside .notif-info span {
+      color: #6ca2e8; }
 
 @media screen and (max-width: 319px) {
   .notif-report .button {
@@ -8533,6 +8573,8 @@ strong.total {
     .content-body .info-purchase .detail-result {
       border-top: 0.5px solid #dedede;
       border-bottom: 0.5px solid #dedede; }
+  .content-body .input {
+    border-bottom: none; }
 
 .photo-content {
   margin-top: 0;
@@ -9654,6 +9696,9 @@ strong.total {
   .list-trans-product li:last-child {
     border-bottom: none; }
 
+.list-trans-product .columns.custom .column {
+  position: relative; }
+
 .info-purchase.space-left {
   padding: 0;
   border-bottom: none; }
@@ -10064,6 +10109,17 @@ strong.total {
     color: #ffffff; }
     .sticky-button span.txt {
       font-size: 30px; }
+
+.btn-wrapp {
+  padding: 20px;
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto; }
+  .btn-wrapp .columns {
+    width: 100%; }
 
 .catalog-button {
   color: #ffffff;
