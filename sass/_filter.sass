@@ -18,6 +18,11 @@
         background-color: transparent
         &:before, &:after
           display: none
+      &.bg-red
+        background-color: $red
+        @include boxShadow(none)
+        .modal-card-title
+          color: $white
     .modal-card-foot
       @include borderRadius(0)
       padding: 10px
@@ -96,6 +101,9 @@
     .modal-card
       .modal-card-head
         @include boxShadow($shadow-modal-head)
+        &.bg-red
+          @include boxShadow(none)
+          border-bottom: none
       .modal-card-body
         margin-left: 0
         background-color: $white

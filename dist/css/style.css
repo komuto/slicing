@@ -7593,6 +7593,11 @@ strong.total {
       background-color: transparent; }
       .modal-filter .modal-card .modal-card-head .delete:before, .modal-filter .modal-card .modal-card-head .delete:after {
         display: none; }
+    .modal-filter .modal-card .modal-card-head.bg-red {
+      background-color: #ef5656;
+      box-shadow: none; }
+      .modal-filter .modal-card .modal-card-head.bg-red .modal-card-title {
+        color: #ffffff; }
   .modal-filter .modal-card .modal-card-foot {
     border-radius: 0;
     padding: 10px;
@@ -7678,6 +7683,9 @@ strong.total {
 
 .modal-filter.modal-dropship .modal-card .modal-card-head {
   box-shadow: 0 2px 6px 0 #eaedef; }
+  .modal-filter.modal-dropship .modal-card .modal-card-head.bg-red {
+    box-shadow: none;
+    border-bottom: none; }
 
 .modal-filter.modal-dropship .modal-card .modal-card-body {
   margin-left: 0;
