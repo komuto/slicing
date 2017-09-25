@@ -47,12 +47,12 @@
                   margin-bottom: 0
                   @extend .nunito-bold
             .time-discuss
-              right: 0
+              right: 20px
               top: 2px
   .conversation
     margin-right: 0
     li
-      border-bottom: 0.5px solid $color_border
+      border-bottom: none
       .box
         .media
           .media-left
@@ -78,8 +78,11 @@
                   font-size: 12px
                   opacity: 0.5
             .time-discuss
-              right: 0
+              right: 20px
               top: 2px
+    &.bordered
+      li
+        border-bottom: 0.5px solid $color_border
 .discuss-title
   padding: 20px
   font-size: 13px

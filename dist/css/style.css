@@ -771,6 +771,14 @@
   background-repeat: no-repeat;
   vertical-align: middle; }
 
+.icon-kpmplain-barang {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/komuto-icon/100_icon_komplain_barang.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle; }
+
 @-webkit-keyframes spinAround {
   from {
     -webkit-transform: rotate(0deg);
@@ -5810,6 +5818,9 @@ strong {
       margin-bottom: 15px; }
     .main.bg-grey section.xs-margin {
       margin-bottom: 10px; }
+    .main.bg-grey section.xs-margin-top {
+      margin-top: 10px;
+      margin-bottom: 0; }
     .main.bg-grey section.list-order {
       margin: 10px 10px 0 10px;
       border-radius: 3px;
@@ -6140,6 +6151,8 @@ strong {
       -ms-flex-item-align: center;
           -ms-grid-row-align: center;
           align-self: center; }
+      .box .media .media-left.md-margin {
+        margin-right: 10px; }
       .box .media .media-left.sm-margin {
         margin-right: 1px; }
       .box .media .media-left.top {
@@ -6266,6 +6279,9 @@ strong {
   display: block;
   text-align: center;
   line-height: 22px; }
+  .notif-akun.right {
+    float: right;
+    color: #ffffff; }
 
 .sort-option {
   display: none;
@@ -9737,6 +9753,8 @@ strong.total {
       font-size: 12px;
       letter-spacing: 0.2px;
       color: #a0a3ae; }
+      .customer-order li .columns.custom .column span.notif-akun {
+        color: #ffffff; }
 
 .seller-items {
   position: absolute;
@@ -9803,13 +9821,13 @@ strong.total {
       margin-bottom: 0; }
 
 .discuss .notif-detail li .box .media .media-content .time-discuss {
-  right: 0;
+  right: 20px;
   top: 2px; }
 
 .discuss .conversation {
   margin-right: 0; }
   .discuss .conversation li {
-    border-bottom: 0.5px solid #dedede; }
+    border-bottom: none; }
     .discuss .conversation li .box .media .media-left.sm .user-pict {
       width: 30px;
       height: 30px; }
@@ -9830,8 +9848,10 @@ strong.total {
           font-size: 12px;
           opacity: 0.5; }
     .discuss .conversation li .box .media .media-content .time-discuss {
-      right: 0;
+      right: 20px;
       top: 2px; }
+  .discuss .conversation.bordered li {
+    border-bottom: 0.5px solid #dedede; }
 
 .discuss-title {
   padding: 20px;
