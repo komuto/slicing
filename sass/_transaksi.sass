@@ -20,6 +20,8 @@
     @include size(35px, 35px)
   &.lg
     @include size(60px, 60px)
+  &.lgx
+    @include size(72px, 72px)
   img
     @include borderRadius(3px)
   &.plus3
@@ -218,8 +220,13 @@
     a
       @include size(30px, 30px)
       @include borderRadius(3px)
-      display: block
+      display: inline-block
       overflow: hidden
+      vertical-align: middle
+      &.is-bordered
+         @include borderRadius(700px)
+      &.inline-text
+        margin-right: 10px
 
 +until(767px)
   .box

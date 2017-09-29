@@ -7039,6 +7039,8 @@ strong.total {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
+  .right-middle.rightMargin {
+    right: 40px; }
 
 .item-status {
   position: relative;
@@ -7163,6 +7165,30 @@ strong.total {
   line-height: 1.54;
   letter-spacing: 0.2px;
   background-color: #f9fbfc; }
+
+.notif-refund {
+  padding: 20px;
+  background-color: #fff1d7;
+  color: #d59515;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: 0.2px;
+  border-top: 1px solid #d59515;
+  border-bottom: 1px solid #d59515;
+  position: relative;
+  margin-top: -1px; }
+  .notif-refund:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-left: 1px solid #d59515;
+    border-bottom: 1px solid #d59515;
+    background-color: #fff1d7;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+    position: absolute;
+    top: -11px;
+    right: 46px; }
 
 @media screen and (max-width: 319px) {
   .notif-report .button {
@@ -9703,6 +9729,9 @@ strong.total {
   .list-transaction.lg {
     width: 60px;
     height: 60px; }
+  .list-transaction.lgx {
+    width: 72px;
+    height: 72px; }
   .list-transaction img {
     border-radius: 3px; }
   .list-transaction.plus3:after {
@@ -9892,8 +9921,13 @@ strong.total {
       width: 30px;
       height: 30px;
       border-radius: 3px;
-      display: block;
-      overflow: hidden; }
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: middle; }
+      .seller-items li a.is-bordered {
+        border-radius: 700px; }
+      .seller-items li a.inline-text {
+        margin-right: 10px; }
 
 @media screen and (max-width: 766px) {
   .box .media.list-item {

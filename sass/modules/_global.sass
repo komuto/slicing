@@ -1223,6 +1223,8 @@ strong
   @include translateY(-50%)
   strong
     @extend .nunito-bold
+  &.rightMargin
+    right: 40px
 
 .item-status
   position: relative
@@ -1352,6 +1354,27 @@ strong
   line-height: 1.54
   letter-spacing: 0.2px
   background-color: $color_bg_detail
+.notif-refund
+  padding: 20px
+  background-color: $bg_notif_refund
+  color: $digit_color
+  font-size: 13px
+  line-height: 1.54
+  letter-spacing: 0.2px
+  border-top: 1px solid $digit_color
+  border-bottom: 1px solid $digit_color
+  position: relative
+  margin-top: -1px
+  &:before
+    content: ""
+    @include size(20px, 20px)
+    border-left: 1px solid $digit_color
+    border-bottom: 1px solid $digit_color
+    background-color: $bg_notif_refund
+    @include rotate(135deg)
+    position: absolute
+    top: -11px
+    right: 46px
 +until(320px)
   .notif-report
     .button
