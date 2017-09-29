@@ -52,7 +52,7 @@
           <div class="detail-rate is-purchase">
             <div class="columns total-items is-mobile is-multiline no-margin-bottom">
               <div class="column">
-                <a class="button is-primary is-large is-fullwidth">Barang sudah saya terima</a>
+                <a class="button is-primary is-large is-fullwidth js-option" data-target="#popupRefund">Barang sudah saya terima</a>
               </div>
             </div>
           </div>
@@ -261,7 +261,14 @@
       </section>
     </div>
 
-
+    <div class="sort-option" id="popupRefund">
+      <div class="notif-report">
+        <h3>Anda yakin sudah menerima barang?</h3>
+        <p>Dengan mengkonfirmasi sudah menerima barang, Admin akan mengirimkan uang ke pembeli. </p>
+        <button class="button is-primary is-large is-fullwidth">Ya, Barang sudah saya terima</button>
+        <button class="button is-primary is-large is-fullwidth is-outlined">Batal</button>
+      </div>
+    </div>
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="../component/OwlCarousel/dist/owl.carousel.min.js"></script>
