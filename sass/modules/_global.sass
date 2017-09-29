@@ -25,6 +25,8 @@ strong
   background-color: $color_bg
 .text-green
   color: $green
+.text-waiting
+  color: $text-waiting
 .text-red
   color: $red
 .text-grey
@@ -281,6 +283,9 @@ strong
   &.no-margin-bottom
     &:last-child, &:not(:last-child)
       margin-bottom: 0
+  &.margin-bottom-sm
+    &:last-child, &:not(:last-child)
+      margin-bottom: 5px
   &.custom
     &:last-child, &:not(:last-child)
       margin-bottom: 0
@@ -1329,7 +1334,24 @@ strong
     padding: 20px
     span
       color: $color_msg_token
-
+.notif
+  background-color: $white
+  @include size(15px, 15px)
+  @include borderRadius(200px)
+  color: $red
+  font-size: 8px
+  @extend .nunito-bold
+  position: absolute
+  top: 18px
+  right: 18px
+  text-align: center
+  line-height: 15px
+.noteComplain
+  padding: 20px
+  font-size: 13px
+  line-height: 1.54
+  letter-spacing: 0.2px
+  background-color: $color_bg_detail
 +until(320px)
   .notif-report
     .button

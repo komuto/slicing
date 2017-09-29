@@ -1,7 +1,7 @@
 .saldo
   .saldo-panel
     background-color: $red
-    padding: 10px 0 25px 47px
+    padding: 0 0 25px 47px
     color: $white
     span
       font-size: 14px
@@ -24,6 +24,15 @@
             .detail-collapsed
               > span
                 margin-top: 0
+            .rating-content
+              .text-red
+                color: $red
+              .text-green
+                color: $green
+              .semi-bold
+                @extend .nunito-semibold
+              .total
+                font-size: 15px
     &.bank-transfer
       padding: 0 20px
       ul
@@ -46,15 +55,19 @@
             margin-right: -20px
             .columns
               border-bottom: 0.5px solid $color_border
-              padding-top: 15px
+              padding-top: 0
               padding-right: 20px
               padding-bottom: 15px
-              &:last-child
-                border-bottom: none
               span
-                font-size: 12px
+                font-size: 13px
                 letter-spacing: 0.2px
                 color: $color_input
+              &:last-child
+                border-bottom: none
+                padding-top: 15px
+                padding-bottom: 0
+                span
+                  font-size: 12px
             &.detail-transactoin
               margin-right: 0
               .columns
@@ -62,7 +75,41 @@
                   .is-left
                     span
                       color: $color_text_desc
+            &.pull-status
+              .columns
+                padding-top: 12px
+                border-top: 0.5px solid $color_border
+                margin-top: 15px
+                .column
+                  span
+                    font-size: 13px
   .detail
     .detail-result
       &.detail-price
         background-color: $saldo_bg_detail
+
+.status-saldo-list
+  li
+    padding: 20px
+    border-bottom: 0.5px solid $color_border
+    .columns
+      .column
+        padding: 0
+        align-self: center
+.pict-buyer
+  @include borderRadius(700px)
+  display: inline-block
+  vertical-align: middle
+  margin-right: 10px
+  &.sm
+    @include size(25px, 25px)
+
+.list-saldo
+  li
+    border-bottom: 0.5px solid $color_border
+    padding: 20px
+    .columns
+      .column
+        padding: 0
+        .label-text
+          @extend .nunito-semibold
