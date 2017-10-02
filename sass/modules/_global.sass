@@ -31,6 +31,10 @@ strong
   color: $red
 .text-grey
   color: $color_text_desc
+.text-blue
+  color: $color_msg_token
+.lt-1
+  letter-spacing: 1px
 .label-semi
   @extend .nunito-semibold
 .bold
@@ -147,6 +151,8 @@ strong
   +placeholder
     color: $color_input
     opacity: 1
+  &.no-border
+    border-bottom: none
 .textarea
   padding-top: 0.475em
   padding-left: 0

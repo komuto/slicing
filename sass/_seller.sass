@@ -64,7 +64,7 @@
             background-color: $red
             border: 0.5px solid $red
             color: $white
-.seller
+
 
 .filter-option
   position: relative
@@ -277,6 +277,8 @@
     margin-bottom: 10px
 
 .seller-akun
+  .title
+    margin-top: 20px
   .profile-wrapp
     background-color: $white
     ul
@@ -290,8 +292,23 @@
           right: -40px
           @include size(100%, 1px)
           background-color: $color_border
-  .title
-    margin-top: 20px
+  &.notification
+    padding: 0
+    ul
+      li
+        &:last-child
+          &:before
+            content: ""
+            position: absolute
+            bottom: 0
+            right: -40px
+            @include size(100%, 1px)
+            background-color: $color_border
+        .val-right
+          position: absolute
+          top: 50%
+          right: 50px
+          @include translateY(-50%)
 
 .user-info
   padding: 20px
