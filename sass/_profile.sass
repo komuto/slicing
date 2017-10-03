@@ -31,20 +31,20 @@
         position: absolute
         top: 50%
         right: 20px
-        @include translateY(-50%)
+        +translateY(-50%)
       .box
         margin-bottom: 0
         .media-left
           .user-pict
-            @include size(40px, 40px)
-            @include borderRadius(700px)
+            +size(40px, 40px)
+            +borderRadius(700px)
             img
               width: 100%
-              @include borderRadius(700px)
+              +borderRadius(700px)
           .product-pict
             img
               width: 100%
-              @include borderRadius(700px)
+              +borderRadius(700px)
         .content
           padding: 2px 0 0 0
           margin-right: 60px
@@ -70,14 +70,14 @@
             position: absolute
             top: 50%
             right: 0
-            @include translateY(-50%)
+            +translateY(-50%)
 
 .discuss
   padding: 0
   ul
     &.product-discuss
       li
-        @include boxShadow($shadow_discuss)
+        +boxShadow($shadow_discuss)
     &.main-discuss
       margin: 0
     li
@@ -112,9 +112,9 @@
       .media
         .media-left
           .image
-            @include borderRadius(0)
+            +borderRadius(0)
             img
-              @include borderRadius(0)
+              +borderRadius(0)
         .media-content
           .content
             .products-name
@@ -128,13 +128,13 @@
       .media
         .media-left
           .image
-            @include size(30px, 30px)
+            +size(30px, 30px)
   &.gap
     ul
       li
         margin-bottom: 15px
         background-color: $white
-        @include boxShadow($color_shadow_comment)
+        +boxShadow($color_shadow_comment)
         .box
           .comment-count
             padding-left: 40px

@@ -15,7 +15,7 @@ body
     left: 0
     right: 0
     bottom: 0
-    @include size(100%, 100%)
+    +size(100%, 100%)
 strong
   @extend .nunito-semibold
   letter-spacing: 0.2px
@@ -64,7 +64,7 @@ strong
         margin-bottom: 0
       &.list-order
         margin: 10px 10px 0 10px
-        @include borderRadius(3px)
+        +borderRadius(3px)
         overflow: hidden
   &.no-padding-bottom
     padding-bottom: 10px
@@ -80,7 +80,7 @@ strong
 .section
   background-color: transparent
   &.has-shadow
-    @include boxShadow($shadow_detail)
+    +boxShadow($shadow_detail)
   &:after
     content: ""
     display: block
@@ -99,7 +99,7 @@ strong
   height: auto
   letter-spacing: 0.20px
   @extend .nunito-bold
-  @include borderRadius(5px)
+  +borderRadius(5px)
   border: 1px solid $color_border
   &.is-thick
     @extend .nunito-regular
@@ -129,19 +129,19 @@ strong
       &:before
         color: $white
   &.btn-add-cart
-    @include borderRadius(0)
+    +borderRadius(0)
     border: none
   &.full-rounded
     padding: 8px 20px
-    @include borderRadius(700px)
+    +borderRadius(700px)
 
 .input
   padding-top: 0.475em
   padding-left: 0
   padding-right: 0
   padding-bottom: 0.475em
-  @include boxShadow(none)
-  @include borderRadius(0)
+  +boxShadow(none)
+  +borderRadius(0)
   border: none
   border-bottom: 1px solid $color_border
   font-size: 13px
@@ -158,8 +158,8 @@ strong
   padding-left: 0
   padding-right: 0
   padding-bottom: 0.475em
-  @include boxShadow(none)
-  @include borderRadius(0)
+  +boxShadow(none)
+  +borderRadius(0)
   border: none
   border-bottom: 1px solid $color_border
   font-size: 13px
@@ -191,8 +191,8 @@ strong
       position: absolute
       left: 0
       top: -5px
-      @include size(25px, 25px)
-      @include borderRadius(700px)
+      +size(25px, 25px)
+      +borderRadius(700px)
       border: 1px solid $color_border_ccc
     &.checked
       &:after
@@ -200,8 +200,8 @@ strong
         position: absolute
         left: 4px
         top: -1px
-        @include size(17px, 17px)
-        @include borderRadius(700px)
+        +size(17px, 17px)
+        +borderRadius(700px)
         background-color: $black
     &.blue-color
       &.checked
@@ -228,14 +228,14 @@ strong
     width: 100%
     &:after
       border-color: $color_border_ccc
-      @include size(0.7em, 0.7em)
+      +size(0.7em, 0.7em)
       right: 1px
       margin-top: -10px
     select
       width: 100%
       border: none
       border-bottom: 1px solid $color_border
-      @include borderRadius(0)
+      +borderRadius(0)
       padding: 0
       font-size: 13px
   .ex
@@ -253,10 +253,13 @@ strong
         font-size: 15px
         height: 43px
         width: 40px
+        text-align: center
+        > span
+          margin-top: 10px
         &:before
           color: $color_input
       input
-        @include borderRadius(0)
+        +borderRadius(0)
 
 .or
   position: relative
@@ -264,13 +267,13 @@ strong
   text-align: center
   &:before
     content: ""
-    @include size(100%, 1px)
+    +size(100%, 1px)
     background-color: $color_border
     position: absolute
     top: 50%
     left: 0
     letter-spacing: 0
-    @include translateY(-50%)
+    +translateY(-50%)
     z-index: 1
   span
     display: table
@@ -349,7 +352,7 @@ strong
       position: absolute
       top: 50%
       right: 55px
-      @include translateY(-50%)
+      +translateY(-50%)
       color: $color_text_desc
       @extend .nunito-regular
       &.normal
@@ -358,12 +361,12 @@ strong
       position: absolute
       top: 50%
       right: 20px
-      @include translateY(-50%)
+      +translateY(-50%)
   &.is-bordered
     border-bottom: 0.5px solid $color_border
 .pin
-  @include size(42px, 42px)
-  @include borderRadius(700px)
+  +size(42px, 42px)
+  +borderRadius(700px)
   background-color: $green
   position: relative
   span
@@ -375,7 +378,7 @@ strong
     top: 50%
     left: 0
     width: 100%
-    @include translateY(-50%)
+    +translateY(-50%)
     text-align: center
   &.disc
     background-color: $red
@@ -384,8 +387,8 @@ strong
 .box
   background-color: none
   padding: 0
-  @include boxShadow(none)
-  @include borderRadius(0)
+  +boxShadow(none)
+  +borderRadius(0)
   position: relative
   .media
     position: relative
@@ -404,18 +407,18 @@ strong
         margin-top: 0
       &.is-bordered
         img
-          @include borderRadius(3px)
+          +borderRadius(3px)
       &.is-full-bordered
         img
-          @include borderRadius(700px)
+          +borderRadius(700px)
       .image
         position: relative
         &.list-detail
           width: 100%
           max-width: 65px
-          @include borderRadius(3px)
+          +borderRadius(3px)
           img
-            @include borderRadius(3px)
+            +borderRadius(3px)
         .pin
           position: absolute
           top: -15px
@@ -514,8 +517,8 @@ strong
               bottom: 0
 
 .notif-akun
-  @include size(25px, 25px)
-  @include borderRadius(700px)
+  +size(25px, 25px)
+  +borderRadius(700px)
   border: 2px solid $white
   color: $white
   background-color: $red
@@ -548,7 +551,7 @@ strong
       overflow-y: hidden
       left: 20px
       bottom: 75px
-      @include borderRadius(5px)
+      +borderRadius(5px)
       ul
         max-height: 241px
         overflow-y: scroll
@@ -581,8 +584,8 @@ strong
         position: absolute
         top: 50%
         right: 20px
-        @include translateY(-50%)
-        @include size(24px, 24px)
+        +translateY(-50%)
+        +size(24px, 24px)
         &.checked
           background-image: url($icon-selected-sign)
         input
@@ -595,10 +598,10 @@ strong
     position: absolute
     top: 50%
     left: 50%
-    @include translateXY(-50%, -50%)
+    +translateXY(-50%, -50%)
     width: 80%
     padding: 20px
-    @include borderRadius(6px)
+    +borderRadius(6px)
     background-color: $white
     text-align: center
     button
@@ -610,7 +613,7 @@ strong
       .header-notif
         background-color: $bg_voucer_header
         position: relative
-        @include borderRadius(6px 6px 0 0)
+        +borderRadius(6px 6px 0 0)
         padding: 20px
         margin: -20px -20px 0 -20px
         margin-bottom: 20px
@@ -624,7 +627,7 @@ strong
           position: absolute
           top: 50%
           right: 20px
-          @include translateY(-50%)
+          +translateY(-50%)
           cursor: pointer
     h3
       font-size: 14px
@@ -646,27 +649,27 @@ strong
   position: absolute
   top: 0
   left: 0
-  @include size(48px, 64px)
+  +size(48px, 64px)
   cursor: pointer
   .icon-arrow-left
     position: absolute
     top: 50%
     left: 50%
-    @include translateXY(-50%, -50%)
+    +translateXY(-50%, -50%)
     display: block
 
 .notification
-  @include borderRadius(0)
+  +borderRadius(0)
   padding: 20px
   @extend .nunito-bold
   letter-spacing: 0.2px
   >.delete
-    @include size(24px, 24px)
+    +size(24px, 24px)
     background-color: transparent
     position: absolute
     top: 46%
     right: 20px
-    @include translateY(-46%)
+    +translateY(-46%)
     &:before
       width: 65%
     &:after
@@ -729,7 +732,7 @@ strong
   font-size: 0
   white-space: nowrap
   display: block
-  @include size(80px, 16px)
+  +size(80px, 16px)
   margin: 0 auto
   overflow: hidden
   position: relative
@@ -740,7 +743,7 @@ strong
     position: absolute
     left: 0
     top: 0
-    @include size(20%, 100%)
+    +size(20%, 100%)
     z-index: 1
     background-image: url($icon-star-yellow)
     background-size: contain
@@ -750,7 +753,7 @@ strong
     -webkit-appearance: none
     opacity: 0
     display:inline-block
-    @include size(20%, 100%)
+    +size(20%, 100%)
     margin: 0
     padding: 0
     z-index: 2
@@ -807,7 +810,7 @@ strong
       top: 50%
       right: 20px
       left: inherit
-      @include translateY(-50%)
+      +translateY(-50%)
       border: none
     &.checked
       &:after
@@ -816,8 +819,8 @@ strong
         top: 50%
         right: 20px
         left: inherit
-        @include size(24px, 24px)
-        @include translateY(-50%)
+        +size(24px, 24px)
+        +translateY(-50%)
         background-color: transparent
         background-image: url($icon-selected-sign)
     .opt-title
@@ -851,7 +854,7 @@ strong
         top: 50%
         left: 20px
         margin-left: 0
-        @include translateY(-50%)
+        +translateY(-50%)
 
 .kurir
   .radio
@@ -890,7 +893,7 @@ strong
       margin-bottom: 0
 
 .icon-image
-  @include size(32px, 32px)
+  +size(32px, 32px)
   margin: 0 auto
   img
     max-width: 100%
@@ -914,8 +917,8 @@ strong
       width: 50%
 .box-rounded
   background-color: $white
-  @include boxShadow($shadow_box)
-  @include borderRadius(3px)
+  +boxShadow($shadow_box)
+  +borderRadius(3px)
   &:after
     content: ""
     display: table
@@ -956,21 +959,21 @@ strong
   &.self
     position: absolute
     border: none
-    @include size(25px, 25px)
+    +size(25px, 25px)
     padding: 0
     z-index: 88
     &.center
       top: 50%
       left: 50%
-      @include translateXY(-50%, -50%)
+      +translateXY(-50%, -50%)
     &.left
       top: 50%
       left: 20px
-      @include translateY(-50%)
+      +translateY(-50%)
     &.right
       top: 50%
       right: 20px
-      @include translateY(-50%)
+      +translateY(-50%)
 strong
   &.total
     color: $green
@@ -978,7 +981,7 @@ strong
 .switch
   position: relative
   display: inline-block
-  @include size(34px, 14px)
+  +size(34px, 14px)
   input
     display: none
   .slider
@@ -989,16 +992,16 @@ strong
     right: 0
     bottom: 0
     background-color: $color_border_ccc
-    @include transition(.4s)
+    +transition(.4s)
     opacity: 0.5
     &:before
       position: absolute
       content: ""
-      @include size(20px, 20px)
+      +size(20px, 20px)
       left: 0px
       bottom: -3px
       background-color: $color_bg_slide
-      @include transition(.4s)
+      +transition(.4s)
       box-shadow: $shadow_toggle
     &.round
       border-radius: 34px
@@ -1009,7 +1012,7 @@ strong
       background-color: $color_bg_toggleslide
       opacity: 1
       &:before
-        @include translateX(15px)
+        +translateX(15px)
 
     &:focus  + .slider
       box-shadow: $shadow_toggle
@@ -1021,7 +1024,7 @@ strong
     position: absolute
     top: 50%
     right: 20px
-    @include translateY(-50%)
+    +translateY(-50%)
   &.grey-style
     .slider
       &:before
@@ -1118,24 +1121,24 @@ strong
       border-bottom: none
     .collapse-body
       .collapse-in
-        @include transition(700ms all linear)
+        +transition(700ms all linear)
         padding-bottom: 20px
         display: none
         color: $color_text_desc
       &.collapsed
         .collapse-in
-          @include transition(700ms all linear)
+          +transition(700ms all linear)
           display: block
     &.active
       .collapse-title
         > span
-          @include rotate(180deg)
+          +rotate(180deg)
 
 .option-content
   text-align: center
   > span
-    @include size(5px, 5px)
-    @include borderRadius(100px)
+    +size(5px, 5px)
+    +borderRadius(100px)
     background-color: $color_bullet
     display: inline-block
     margin-right: 3px
@@ -1154,7 +1157,7 @@ strong
     border-bottom: 2px solid transparent
     text-align: center
     display: inline-block
-    @include size(50%, 41px)
+    +size(50%, 41px)
     .text
       opacity: 0.6
     &.active
@@ -1201,7 +1204,7 @@ strong
       visibility: hidden
 
 .tag
-  @include borderRadius(3px)
+  +borderRadius(3px)
   @extend .nunito-bold
   &.is-primary
     background-color: $tag-info
@@ -1214,7 +1217,7 @@ strong
     top: 50%
     left: 0
     width: 100%
-    @include translateY(-50%)
+    +translateY(-50%)
 .right-top
   position: absolute
   top: 0
@@ -1226,7 +1229,7 @@ strong
   position: absolute
   top: 50%
   right: 0
-  @include translateY(-50%)
+  +translateY(-50%)
   strong
     @extend .nunito-bold
   &.rightMargin
@@ -1241,12 +1244,12 @@ strong
   display: table
   &:before
     content: ""
-    @include size(10px, 10px)
-    @include borderRadius(100px)
+    +size(10px, 10px)
+    +borderRadius(100px)
     position: absolute
     top: 50%
     left: 0
-    @include translateY(-50%)
+    +translateY(-50%)
   &.md
     font-size: 13px
     color: $color_text_desc
@@ -1328,7 +1331,7 @@ strong
       color: $color_input
       @extend .nunito-semibold
 .separator-dashed
-  @include size(100%, 1px)
+  +size(100%, 1px)
   border-bottom: 1px dashed $color_border_ccc
   margin: 10px 0 20px 0
 
@@ -1338,14 +1341,14 @@ strong
   border-bottom: 1px solid $color_border
   .notif-info
     background-color: $color_grey
-    @include borderRadius(6px)
+    +borderRadius(6px)
     padding: 20px
     span
       color: $color_msg_token
 .notif
   background-color: $white
-  @include size(15px, 15px)
-  @include borderRadius(200px)
+  +size(15px, 15px)
+  +borderRadius(200px)
   color: $red
   font-size: 8px
   @extend .nunito-bold
@@ -1373,14 +1376,33 @@ strong
   margin-top: -1px
   &:before
     content: ""
-    @include size(20px, 20px)
+    +size(20px, 20px)
     border-left: 1px solid $digit_color
     border-bottom: 1px solid $digit_color
     background-color: $bg_notif_refund
-    @include rotate(135deg)
+    +rotate(135deg)
     position: absolute
     top: -11px
     right: 46px
+.see-detail
+  position: relative
+  height: 100%
+  border: 1px solid $color_border
+  border-left: none
+  background-color: $white
+  a
+    text-align: center
+    display: block
+    position: relative
+    top: 50%
+    +translateY(-50%)
+    img
+      margin: 0 auto
+    span
+      display: block
+      max-width: 130px
+      color: $color_text
+      margin: 0 auto
 +until(320px)
   .notif-report
     .button

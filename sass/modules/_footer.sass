@@ -3,7 +3,7 @@
     position: fixed
     left: 0
     bottom: 0
-    @include size(100%, 46px)
+    +size(100%, 46px)
     border-top: 1px solid $color_border_ccc
     background-color: $white
     &.nav-button
@@ -42,12 +42,12 @@
         position: relative
         &:before
           content: ""
-          @include size(32px, 1px)
+          +size(32px, 1px)
           background-color: $red
           position: absolute
           top: -1px
           left: 50%
-          @include translateX(-50%)
+          +translateX(-50%)
         .icon-home
           background-image: url($icon-home-active)
         .icon-bag
@@ -69,8 +69,8 @@
       position: relative
       &:after
         content: ""
-        @include size(1px, 20px)
-        @include translateY(-50%)
+        +size(1px, 20px)
+        +translateY(-50%)
         background-color: $color_border
         position: absolute
         top: 50%
@@ -89,9 +89,9 @@
   position: fixed
   left: 0
   bottom: 0
-  @include size(100%, 46px)
+  +size(100%, 46px)
   .textarea
-    @include borderRadius(0)
+    +borderRadius(0)
     border: none
     border-top: 1px solid $color_shadow_comment
     font-size: 13px
@@ -109,15 +109,15 @@
   position: fixed
   right: 20px
   bottom: 30px
-  @include size(56px, 56px)
+  +size(56px, 56px)
   background-color: $primary
-  @include boxShadow($shadow_sticky)
-  @include borderRadius(700px)
+  +boxShadow($shadow_sticky)
+  +borderRadius(700px)
   span
     position: absolute
     top: 50%
     left: 50%
-    @include translateXY(-50%,-50%)
+    +translateXY(-50%,-50%)
     color: $white
     &.txt
       font-size: 30px
@@ -127,7 +127,7 @@
   position: fixed
   left: 0
   bottom: 0
-  @include size(100%, auto)
+  +size(100%, auto)
   .columns
     width: 100%
 
@@ -139,7 +139,7 @@
   z-index: 99
   padding: 10px 20px
   background-color: $color_radio
-  @include borderRadius(5px)
+  +borderRadius(5px)
   vertical-align: middle
   &:hover
     color: $white

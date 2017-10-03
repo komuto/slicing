@@ -6,13 +6,13 @@
     @extend .nunito-bold
     display: block
   .photo
-    @include size(99px, 99px)
-    @include borderRadius(700px)
+    +size(99px, 99px)
+    +borderRadius(700px)
     border: 7px solid $color_border_seller
     margin: 0 auto
     margin-bottom: 20px
     img
-      @include borderRadius(700px)
+      +borderRadius(700px)
   &.margin-top
     margin-top: 40px
 
@@ -70,7 +70,7 @@
     position: absolute
     top: 50%
     right: 20px
-    @include translateY(-50%)
+    +translateY(-50%)
     z-index: 1
     &.open
       z-index: 3

@@ -9,27 +9,27 @@
       display: inline-block
       background-color: $white
       font-size: 13px
-      @include size(30px, 30px)
+      +size(30px, 30px)
       vertical-align: middle
       margin-right: 20px
       position: relative
       z-index: 2
       &:after
         content: ""
-        @include size(30px, 1px)
+        +size(30px, 1px)
         background-color: $color_border
         position: absolute
         top: 50%
         right: -30px
-        @include translateY(-50%)
+        +translateY(-50%)
         z-index: 1
       &:last-child
         margin-right: 0
         &:after
           display: none
       span
-        @include size(25px, 25px)
-        @include borderRadius(700px)
+        +size(25px, 25px)
+        +borderRadius(700px)
         display: block
         margin: 2px auto
         border: 0.5px solid $color_border
@@ -92,7 +92,7 @@
       .media
         .media-left
           .image
-            @include size(35px, 35px)
+            +size(35px, 35px)
         .media-content
           .content
             p
@@ -111,8 +111,8 @@
           top: 20px
           left: 0
           right: inherit
-          @include size(25px, 25px)
-          @include translateY(0)
+          +size(25px, 25px)
+          +translateY(0)
           &.checked
           background-position: -1px
     &.left
@@ -128,8 +128,8 @@
           top: 6px
           left: 0
           right: inherit
-          @include size(25px, 25px)
-          @include translateY(0)
+          +size(25px, 25px)
+          +translateY(0)
           &.checked
           background-position: -1px
 
@@ -147,8 +147,8 @@
           top: 50%
           left: 0
           right: inherit
-          @include size(25px, 25px)
-          @include translateY(-50%)
+          +size(25px, 25px)
+          +translateY(-50%)
           margin-bottom: 0
           &.checked
           background-position: -1px
@@ -179,8 +179,8 @@
 .upload-pict
   padding: 45px 0
   .pict-wrapper
-    @include size(105px, 105px)
-    @include borderRadius(800px)
+    +size(105px, 105px)
+    +borderRadius(800px)
     margin: 0 auto 20px auto
     position: relative
     background-color: $color_bg
@@ -188,7 +188,7 @@
       position: absolute
       top: 50%
       left: 50%
-      @include translateXY(-50%, -50%)
+      +translateXY(-50%, -50%)
 
 .form-seller
   padding: 0 20px
@@ -226,7 +226,7 @@
     padding: 10px
     background-color: $color_bg
     border: 1px solid $color_border
-    @include borderRadius(5px)
+    +borderRadius(5px)
     display: block
     position: relative
     margin-bottom: 20px
@@ -236,13 +236,13 @@
       position: absolute
       top: 50%
       right: 10px
-      @include translateY(-50%)
+      +translateY(-50%)
 
 .eks-name
   position: absolute
   top: 50%
   right: 20px
-  @include translateY(-50%)
+  +translateY(-50%)
   span
     font-size: 12px
     letter-spacing: 0.2px
@@ -290,7 +290,7 @@
           position: absolute
           bottom: 0
           right: -40px
-          @include size(100%, 1px)
+          +size(100%, 1px)
           background-color: $color_border
   &.notification
     padding: 0
@@ -302,13 +302,13 @@
             position: absolute
             bottom: 0
             right: -40px
-            @include size(100%, 1px)
+            +size(100%, 1px)
             background-color: $color_border
         .val-right
           position: absolute
           top: 50%
           right: 50px
-          @include translateY(-50%)
+          +translateY(-50%)
 
 .user-info
   padding: 20px

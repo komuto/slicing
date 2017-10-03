@@ -7,30 +7,30 @@
     .box
       &.notif-payment
         background-color: $notif_payment
-        @include borderRadius(3px)
+        +borderRadius(3px)
         margin-top: 15px
 .list-transaction
-  @include size(45px, 45px)
-  @include borderRadius(3px)
+  +size(45px, 45px)
+  +borderRadius(3px)
   position: relative
   overflow: hidden
   &.xs
-    @include size(30px, 30px)
+    +size(30px, 30px)
   &.sm
-    @include size(35px, 35px)
+    +size(35px, 35px)
   &.lg
-    @include size(60px, 60px)
+    +size(60px, 60px)
   &.lgx
-    @include size(72px, 72px)
+    +size(72px, 72px)
   img
-    @include borderRadius(3px)
+    +borderRadius(3px)
   &.plus3
     &:after
       content: ""
       position: absolute
       top: 0
       left: 0
-      @include size(100%, 100%)
+      +size(100%, 100%)
       background-color: $overlay
       z-index: 1
     &>span
@@ -38,7 +38,7 @@
       position: absolute
       top: 50%
       left: 50%
-      @include translateXY(-50%, -50%)
+      +translateXY(-50%, -50%)
       z-index: 2
       @extend .nunito-semibold
 .price-items
@@ -63,8 +63,8 @@
       &:last-child
         margin-right: 0
       .confirm-btn
-        @include size(113px, 113px)
-        @include borderRadius(100%)
+        +size(113px, 113px)
+        +borderRadius(100%)
         background-color: $white
         box-shadow: $shadow_confirm
         position: relative
@@ -72,7 +72,7 @@
           position: absolute
           top: 50%
           left: 50%
-          @include translateXY(-50%, -50%)
+          +translateXY(-50%, -50%)
           span
             display: block
             font-size: 15px
@@ -92,8 +92,8 @@
           position: absolute
           left: 50%
           bottom: 0
-          @include translateX(-50%)
-          @include size(0px, 0px)
+          +translateX(-50%)
+          +size(0px, 0px)
           border: 20px solid transparent
           border-bottom: 20px solid $white
         .confirm-btn
@@ -126,7 +126,7 @@
           padding-bottom: 20px
           border-bottom: 0.5px solid $color_border
           .star-rating
-            @include size(121px, 24px)
+            +size(121px, 24px)
           .review-result
             color: $green
             letter-spacing: 0.2px
@@ -211,20 +211,20 @@
   position: absolute
   top: 50%
   right: 20px
-  @include translateY(-50%)
+  +translateY(-50%)
   li
     display: inline-block
     vertical-align: top
     border: none
     margin-bottom: 0
     a
-      @include size(30px, 30px)
-      @include borderRadius(3px)
+      +size(30px, 30px)
+      +borderRadius(3px)
       display: inline-block
       overflow: hidden
       vertical-align: middle
       &.is-bordered
-         @include borderRadius(700px)
+         +borderRadius(700px)
       &.inline-text
         margin-right: 10px
 

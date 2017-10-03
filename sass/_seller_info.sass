@@ -16,11 +16,11 @@
         padding: 20px
         .media-left
           .image
-            @include borderRadius(700px)
-            @include size(78px, 78px)
+            +borderRadius(700px)
+            +size(78px, 78px)
             border: 7px solid $color_border_seller
             img
-              @include borderRadius(700px)
+              +borderRadius(700px)
         .media-content
           .content
             h4
@@ -45,7 +45,7 @@
           padding: 10px
 .nav-seller
   border-top: 1px solid $color_border
-  @include boxShadow($shadow_detail)
+  +boxShadow($shadow_detail)
   .nav-info
     padding: 0 20px
     .nav-item
@@ -63,7 +63,7 @@
         max-width: 80px
         height: 2px
         background-color: transparent
-        @include translateX(-50%)
+        +translateX(-50%)
       a
         font-size: 13px
         letter-spacing: 0.4px
@@ -79,7 +79,7 @@
 .profile-content
   padding: 20px
   background-color: $white
-  @include boxShadow($shadow_detail)
+  +boxShadow($shadow_detail)
   &.rating
     padding-top: 0
     padding-bottom: 0
@@ -90,9 +90,9 @@
             .media
               .media-left
                 .image
-                  @include size(45px, 45px)
+                  +size(45px, 45px)
                   &.sm
-                    @include size(30px, 30px)
+                    +size(30px, 30px)
               .media-content
                 .content
                   p
@@ -105,9 +105,9 @@
               .media
                 .media-left
                   .image
-                    @include size(45px, 45px)
+                    +size(45px, 45px)
                     &.sm
-                      @include size(30px, 30px)
+                      +size(30px, 30px)
           .icon-arrow-right
             right: 0
 
@@ -119,7 +119,7 @@
               &.md
                 padding-left: 20px
                 &:before
-                  @include size(15px, 15px)
+                  +size(15px, 15px)
             &:last-child
               border-bottom: none
             .icon-arrow-right
@@ -129,7 +129,7 @@
               &:last-child
                 border-bottom: 1px solid $color_border
 .detail-rating
-  @include boxShadow($shadow_detail)
+  +boxShadow($shadow_detail)
   &:last-child
     margin-bottom: -0.75rem
   .desc
@@ -147,8 +147,8 @@
     color: $color_text_desc
 
 .close-option
-  @include size(45px, 45px)
-  @include borderRadius(5px)
+  +size(45px, 45px)
+  +borderRadius(5px)
   position: absolute
   left: 20px
   bottom: 20px
@@ -158,7 +158,7 @@
     position: absolute
     top: 50%
     left: 50%
-    @include translateXY(-50%, -50%)
+    +translateXY(-50%, -50%)
 
 .columns
   &.detail-rating

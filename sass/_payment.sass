@@ -102,13 +102,13 @@
               position: absolute
               top: 50%
               right: 0
-              @include translateY(-50%)
+              +translateY(-50%)
           .pay-code
             color: $green
             @extend .nunito-semibold
           .step-num
-            @include size(24px, 24px)
-            @include borderRadius(700px)
+            +size(24px, 24px)
+            +borderRadius(700px)
             text-align: center
             @extend .nunito-semibold
             line-height: 24px
@@ -129,7 +129,7 @@
         background-color: $item_active
         &:before
           content: ""
-          @include size(2px, 100%)
+          +size(2px, 100%)
           background-color: $primary
           position: absolute
           top: 0
@@ -258,7 +258,7 @@
       position: absolute
       top: 50%
       right: 20px
-      @include translateY(-50%)
+      +translateY(-50%)
       @extend .nunito-semibold
   .pay-method-option
     padding: 10px 20px 10px 0
@@ -350,14 +350,14 @@
     padding-bottom: 20px
     &:after
       content: ""
-      @include size(0, 0)
+      +size(0, 0)
       border: 12px solid transparent
       border-bottom: 12px solid $notif_payment
       display: block
       position: absolute
       left: 50%
       bottom: 0
-      @include translateX(-50%)
+      +translateX(-50%)
 .digit
   &.notif-payment
     margin: 0 -20px -20px -20px

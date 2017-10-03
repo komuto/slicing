@@ -9,7 +9,7 @@
     margin-bottom: 0
   ul
     background-color: $white
-    @include boxShadow($shadow_categories)
+    +boxShadow($shadow_categories)
     li
       border-bottom: 1px solid $color_border
       &:last-child
@@ -26,10 +26,10 @@
           position: absolute
           top: 50%
           right: 20px
-          @include translateY(-50%)
+          +translateY(-50%)
         .categories-img
           display: inline-block
-          @include size(24px, 24px)
+          +size(24px, 24px)
           background-image: url($categories-icon)
           vertical-align: middle
           margin-right: 8px

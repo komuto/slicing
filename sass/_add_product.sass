@@ -5,7 +5,7 @@
       position: relative
       .box
         padding: 20px
-        @include borderRadius(3px)
+        +borderRadius(3px)
         box-shadow: $shadow_add
         margin-bottom: 10px
         cursor: pointer
@@ -34,8 +34,8 @@
       &:last-child
         margin-right: 0
       .add-photo
-        @include borderRadius(3px)
-        @include size(100px, 100px)
+        +borderRadius(3px)
+        +size(100px, 100px)
         background-color: $color_add
         position: relative
         display: block
@@ -43,19 +43,19 @@
           position: absolute
           top: 50%
           left: 50%
-          @include translateXY(-50%, -50%)
+          +translateXY(-50%, -50%)
       .photo-product
         position: relative
-        @include borderRadius(3px)
-        @include size(100px, 100px)
+        +borderRadius(3px)
+        +size(100px, 100px)
         .del-photo
           display: inline-block
           position: absolute
           top: -12px
           right: -12px
         .photo-wrapp
-          @include borderRadius(3px)
-          @include size(100px, 100px)
+          +borderRadius(3px)
+          +size(100px, 100px)
           overflow: hidden
 
 .product-view
@@ -89,7 +89,7 @@
         color: $color_text
         @extend .nunito-semibold
     .textarea
-      @include borderRadius(0)
+      +borderRadius(0)
       border: none
       border-bottom: 1px solid $color_border
       box-shadow: none

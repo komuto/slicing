@@ -7,8 +7,8 @@
     padding-bottom: 102px
     .modal-card-head
       background-color: $white
-      @include borderRadius(0)
-      @include boxShadow($shadow_modal_head)
+      +borderRadius(0)
+      +boxShadow($shadow_modal_head)
       .modal-card-title
         color: $color_radio
         font-size: 14px
@@ -20,11 +20,11 @@
           display: none
       &.bg-red
         background-color: $red
-        @include boxShadow(none)
+        +boxShadow(none)
         .modal-card-title
           color: $white
     .modal-card-foot
-      @include borderRadius(0)
+      +borderRadius(0)
       padding: 10px
       background-color: $white
       position: absolute
@@ -47,7 +47,7 @@
         position: absolute
         top: 0
         left: 0
-        @include size(180px, 100%)
+        +size(180px, 100%)
         background-color: $color_grey_bg
         overflow: auto;
         .tabs
@@ -68,8 +68,8 @@
                   position: absolute
                   top: 50%
                   right: 20px
-                  @include translateY(-50%)
-                  @include size(24px, 24px)
+                  +translateY(-50%)
+                  +size(24px, 24px)
                   background-image: url($icon-selected-sign)
               a
                 justify-content: left
@@ -100,9 +100,9 @@
   &.modal-dropship
     .modal-card
       .modal-card-head
-        @include boxShadow($shadow-modal-head)
+        +boxShadow($shadow-modal-head)
         &.bg-red
-          @include boxShadow(none)
+          +boxShadow(none)
           border-bottom: none
       .modal-card-body
         margin-left: 0
@@ -122,7 +122,7 @@
   top: 0
   right: 0
   padding-left: 30px
-  @include size(100%, 100%)
+  +size(100%, 100%)
   display: none
   overflow: auto
   &.active
@@ -158,10 +158,10 @@
         position: absolute
         top: 50%
         right: 20px
-        @include translateY(-50%)
-        @include size(30px, 30px)
+        +translateY(-50%)
+        +size(30px, 30px)
         border: 1px solid $color_border_tab
-        @include borderRadius(3px)
+        +borderRadius(3px)
         &.checked
           background-image: url($icon-selected-sign)
           background-position: 1px
@@ -194,7 +194,7 @@
             font-size: 13px
           &:before
             content: ""
-            @include size(24px, 24px)
+            +size(24px, 24px)
             background-image: url($icon-arrow-down)
             position: absolute
             top: 0
