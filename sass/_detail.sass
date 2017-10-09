@@ -398,6 +398,7 @@
   .field
     margin-bottom: 30px
     .control
+      position: relative
       &.detail-address
         .location-label
           border-bottom: 0.5px solid $color_border
@@ -413,6 +414,24 @@
             top: 50%
             right: 0
             +translateY(-50%)
+      &.is-error
+        padding-bottom: 18px
+        .error-msg
+          position: absolute
+          left: 0
+          bottom: 0
+          width: 100%
+          padding: 0
+        &.detail-address
+          .location-label
+            &:after
+              content: "";
+              +size(24px, 24px)
+              background-image: url($icon-arrow-down)
+              position: absolute
+              top: 0
+              right: 0
+              +translateY(0)
 
       .input
         @extend .nunito-regular
@@ -422,9 +441,8 @@
         position: relative
         .cur-val
           position: absolute
-          top: 40%
+          top: 0
           left: 0
-          +translateY(-40%)
           @extend .nunito-semibold
           color: $color_radio
           z-index: 2
