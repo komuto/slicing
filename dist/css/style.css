@@ -9717,6 +9717,12 @@ strong.total {
   .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong {
     max-width: 68%; } }
 
+@media screen and (max-width: 360px) {
+  .discuss .notif-detail li .box .media .media-content .time-discuss.relativeMobile {
+    right: 0;
+    top: 0;
+    position: relative; } }
+
 .saldo .saldo-panel {
   background-color: #ef5656;
   padding: 0 0 25px 47px;
