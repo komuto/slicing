@@ -5520,6 +5520,11 @@ strong {
       margin: 10px 10px 0 10px;
       border-radius: 3px;
       overflow: hidden; }
+  .main.in-search {
+    padding-top: 119px; }
+    .main.in-search .level.header {
+      padding-bottom: 43px;
+      height: 112px; }
   .main.no-padding-bottom {
     padding-bottom: 10px; }
 
@@ -6897,6 +6902,10 @@ strong.total {
         transform: translateY(-50%);
         border-bottom: none;
         background-color: transparent; }
+    .level.header .nav-left .box {
+      background-color: transparent; }
+      .level.header .nav-left .box .media .media-content p strong {
+        color: #ffffff; }
   .level.header.bg-white {
     background-color: #ffffff;
     border-bottom: 1px solid #dedede; }
@@ -6950,6 +6959,11 @@ strong.total {
       color: #ffffff; }
       .level.header .button-search .media-content .content p strong {
         color: #ffffff; }
+  .level.header .search-head {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; }
 
 .home .level.header {
   height: auto; }
