@@ -66,6 +66,12 @@ strong
         margin: 10px 10px 0 10px
         +borderRadius(3px)
         overflow: hidden
+  &.is-padding-144
+    padding-top: 144px
+  &.is-padding-160
+    padding-top: 160px
+  &.is-padding-110
+    padding-top: 110px
   &.in-search
     padding-top: 119px
     .level
@@ -253,6 +259,11 @@ strong
 .search-form
   width: 100%
   margin-bottom: 15px
+  &.is-fixed
+    position: fixed
+    top: 64px
+    width: 100%
+    z-index: 2
   .control
     &.has-icons-left
       .icon
@@ -345,6 +356,11 @@ strong
 .see-all
   background-color: $white
   border-bottom: 1px solid $color_border
+  &.is-fixed
+    position: fixed
+    top: 64px
+    width: 100%
+    z-index: 2
   &:last-child
     border-bottom: 0
   .link

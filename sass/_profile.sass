@@ -55,12 +55,16 @@
             color: $color_input
             letter-spacing: 0.2px
             margin-bottom: 0
-            &.user-name, &product-name
-              width: 80%
+            &.user-name, &.product-name
+              color: $color_text
             strong
               color: $color_text
               @extend .nunito-semibold
               letter-spacing: 0.2px
+              display: block
+            .date-discuss
+              display: block
+              opacity: 0.5
             a
               display: block
               color: $color_text
@@ -78,6 +82,10 @@
     &.product-discuss
       li
         +boxShadow($shadow_discuss)
+      &.is-fixed
+        position: fixed
+        top: 64px
+        width: 100%
     &.main-discuss
       margin: 0
     li
@@ -85,7 +93,7 @@
       border-bottom: none
       .time-discuss
         position: absolute
-        top: 20px
+        top: 0
         right: 20px
         font-size: 11px
         color: $color_text
@@ -183,3 +191,13 @@
 .profile-wrapp
   &.border-bottom
     border-bottom: solid 0.5px $color_border
+
++until(361px)
+  .discuss
+    ul
+      li
+        .time-discuss
+          &.relativeMobile
+            right: 0
+            top: 6px
+            position: relative
