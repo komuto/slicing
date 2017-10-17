@@ -6608,6 +6608,7 @@ strong.total {
     border-bottom: 2px solid transparent;
     text-align: center;
     display: inline-block;
+    vertical-align: bottom;
     width: 50%;
     height: 41px; }
     .nav-tabs a .text {
@@ -9923,7 +9924,8 @@ strong.total {
   border-radius: 700px;
   vertical-align: middle;
   position: relative;
-  margin-left: 8px; }
+  margin-left: 8px;
+  top: -3px; }
   .notif-complaint > span {
     font-size: 11px;
     letter-spacing: 0.2px;
