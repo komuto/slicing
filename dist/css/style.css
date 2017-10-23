@@ -5766,6 +5766,8 @@ strong {
     margin-bottom: 0; }
   .columns.margin-bottom-sm:last-child, .columns.margin-bottom-sm:not(:last-child) {
     margin-bottom: 5px; }
+  .columns.bg-white {
+    background-color: #ffffff; }
   .columns.custom:last-child, .columns.custom:not(:last-child) {
     margin-bottom: 0; }
   .columns.custom .column {
@@ -5775,6 +5777,10 @@ strong {
     border-bottom: 1px solid #dedede; }
     .columns.custom .column.no-padding {
       padding: 0; }
+    .columns.custom .column.no-flex {
+      width: 100%;
+      -ms-flex-preferred-size: initial;
+          flex-basis: initial; }
   .columns.view-all:last-child, .columns.view-all:not(:last-child) {
     margin-bottom: 0; }
 

@@ -312,6 +312,8 @@ strong
   &.margin-bottom-sm
     &:last-child, &:not(:last-child)
       margin-bottom: 5px
+  &.bg-white
+    background-color: $white
   &.custom
     &:last-child, &:not(:last-child)
       margin-bottom: 0
@@ -322,6 +324,9 @@ strong
       border-bottom: 1px solid $color_border
       &.no-padding
         padding: 0
+      &.no-flex
+        width: 100%
+        flex-basis: initial
   &.view-all
     &:last-child, &:not(:last-child)
       margin-bottom: 0
