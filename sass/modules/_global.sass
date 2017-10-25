@@ -1432,7 +1432,17 @@ strong
       color: $color_text
       margin: 0 auto
 
-+until(320px)
++until(321px)
   .notif-report
     .button
       font-size: 12px
+  .button
+    &.btn-fave
+      padding-left: 5px
+      padding-right: 5px
+      font-size: 12px
+      > span
+        margin-right: 0
+        &.icon-selected-sign
+          +size(20px, 20px)
+          background-size: 100%
