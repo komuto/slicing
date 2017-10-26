@@ -9,38 +9,48 @@
         background-color: $notif_payment
         +borderRadius(3px)
         margin-top: 15px
-.list-transaction
-  +size(45px, 45px)
-  +borderRadius(3px)
-  position: relative
-  overflow: hidden
-  &.xs
-    +size(30px, 30px)
-  &.sm
-    +size(35px, 35px)
-  &.lg
-    +size(60px, 60px)
-  &.lgx
-    +size(72px, 72px)
-  img
-    +borderRadius(3px)
-  &.plus3
-    &:after
-      content: ""
-      position: absolute
-      top: 0
-      left: 0
-      +size(100%, 100%)
-      background-color: $overlay
-      z-index: 1
-    &>span
-      color: $white
-      position: absolute
-      top: 50%
-      left: 50%
-      +translateXY(-50%, -50%)
-      z-index: 2
-      @extend .nunito-semibold
+
+.box
+  .media
+    .media-left
+      .image
+        &.list-transaction
+          +size(45px, 45px)
+          +borderRadius(3px)
+          position: relative
+          overflow: hidden
+          &.xs
+            +size(30px, 30px)
+          &.sm
+            +size(35px, 35px)
+          &.lg
+            +size(60px, 60px)
+          &.lgx
+            +size(72px, 72px)
+          img
+            +borderRadius(3px)
+          &.plus3
+            &:after
+              content: ""
+              position: absolute
+              top: 0
+              left: 0
+              +size(100%, 100%)
+              background-color: $overlay
+              z-index: 1
+            &>span
+              color: $white
+              position: absolute
+              top: 50%
+              left: 50%
+              +translateXY(-50%, -50%)
+              z-index: 2
+              @extend .nunito-semibold
+      &.is-full-bordered
+        .image
+          &.list-transaction
+            img
+              +borderRadius(700px)
 .price-items
   display: inline-block
   vertical-align: top
