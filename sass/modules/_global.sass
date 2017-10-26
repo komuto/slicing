@@ -440,6 +440,9 @@ strong
           +borderRadius(700px)
       .image
         position: relative
+        width: 100%
+        max-width: 150px
+        margin: 0 auto
         &.list-detail
           width: 100%
           max-width: 65px
@@ -516,9 +519,11 @@ strong
   &.list
     .media
       .media-left
+        margin-right: 10px
         .image
           width: 100%
-          max-width: 140px
+          max-width: 150px
+          margin: 0 auto
   &.grid
     .media
       display: block
@@ -1246,6 +1251,12 @@ strong
     left: 0
     width: 100%
     +translateY(-50%)
+  .mid
+    position: absolute
+    top: 50%
+    left: 0
+    width: 100%
+    +translateY(-50%)
 .right-top
   position: absolute
   top: 0
@@ -1431,6 +1442,16 @@ strong
       max-width: 130px
       color: $color_text
       margin: 0 auto
+
++until(361px)
+  .box
+    &.list
+      .media
+        .media-left
+          width: 40%
+    .media
+      .media-left
+        width: 40%
 
 +until(321px)
   .notif-report

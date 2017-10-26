@@ -5894,7 +5894,10 @@ strong {
       .box .media .media-left.is-full-bordered img {
         border-radius: 700px; }
       .box .media .media-left .image {
-        position: relative; }
+        position: relative;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto; }
         .box .media .media-left .image.list-detail {
           width: 100%;
           max-width: 65px;
@@ -5964,9 +5967,12 @@ strong {
           position: absolute;
           right: -14px;
           bottom: -14px; }
-  .box.list .media .media-left .image {
-    width: 100%;
-    max-width: 140px; }
+  .box.list .media .media-left {
+    margin-right: 10px; }
+    .box.list .media .media-left .image {
+      width: 100%;
+      max-width: 150px;
+      margin: 0 auto; }
   .box.grid .media {
     display: block; }
     .box.grid .media .media-left {
@@ -6677,6 +6683,13 @@ strong.total {
     width: 100%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%); }
+  .middle-content .mid {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .right-top {
   position: absolute;
@@ -6863,6 +6876,12 @@ strong.total {
       max-width: 130px;
       color: #41475e;
       margin: 0 auto; }
+
+@media screen and (max-width: 360px) {
+  .box.list .media .media-left {
+    width: 40%; }
+  .box .media .media-left {
+    width: 40%; } }
 
 @media screen and (max-width: 320px) {
   .notif-report .button {
@@ -7191,6 +7210,9 @@ strong.total {
   .user .columns.detail-rating:not(:last-child) {
     margin-bottom: 0; }
 
+.content .desc {
+  padding: 30px 30px 20px 30px; }
+
 .profile-wrapp, .discuss {
   padding: 0 20px; }
   .profile-wrapp ul, .discuss ul {
@@ -7251,7 +7273,8 @@ strong.total {
               display: inline-block; }
             .profile-wrapp ul li .box .content p .date-discuss, .discuss ul li .box .content p .date-discuss {
               display: block;
-              opacity: 0.5; }
+              opacity: 0.5;
+              margin-bottom: 5px; }
             .profile-wrapp ul li .box .content p a, .discuss ul li .box .content p a {
               display: block;
               color: #41475e; }
