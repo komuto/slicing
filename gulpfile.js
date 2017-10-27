@@ -4,7 +4,8 @@ var gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   connect = require('gulp-connect');
 var sass = require('gulp-sass');
- 
+//var uglifycss = require('gulp-uglifycss');
+
 gulp.task('connect', function() {
    connect.server({
         livereload: true
@@ -44,12 +45,21 @@ gulp.task('image', function(){
     .pipe(connect.reload());
     //.pipe(livereload());
 });
+// gulp.task('css', function () {
+//   gulp.src('./dist/css/*.css')
+//     .pipe(uglifycss({
+//       "maxLineLen": 80,
+//       "uglyComments": true
+//     }))
+//     .pipe(gulp.dest('./dist/css'));
+// });
 
 gulp.task('watch', function () {
   //livereload.listen();
   gulp.watch(['./templates/**/*.html'], ['html']);
   gulp.watch(['./sass/**/*.sass'], ['styles']);
- gulp.watch(['js/*.js'], ['scripts']);
+  //gulp.watch(['./dist/css/*.css'], ['css']);
+  gulp.watch(['js/*.js'], ['scripts']);
   gulp.watch(['./images/*'], ['image']);
 });
 
