@@ -8570,7 +8570,8 @@ strong.total {
     border-radius: 700px;
     border: 7px solid rgba(183, 183, 183, 0.2);
     margin: 0 auto;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    overflow: hidden; }
     .photo-content .photo img {
       border-radius: 700px; }
   .photo-content.margin-top {
