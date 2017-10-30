@@ -50,6 +50,9 @@
       .box
         background-color: transparent
         .media
+          padding-top: 6px
+          .media-left
+            +size(30px, 30px)
           .media-content
             p
               strong
@@ -140,5 +143,16 @@
       opacity: 1;
       height: auto;
       display: block; */
+
++until(321px)
+  .level
+    &.header
+      .nav-left
+        .box
+          .media
+            .media-left
+            .media-content
+              p
+                font-size: 12px
 
 

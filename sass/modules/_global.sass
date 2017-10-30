@@ -443,6 +443,8 @@ strong
         width: 100%
         max-width: 150px
         margin: 0 auto
+        img
+          max-width: 100%
         &.list-detail
           width: 100%
           max-width: 65px
@@ -1454,6 +1456,15 @@ strong
     .media
       .media-left
         width: 40%
+  .main-discuss
+    .box
+      &.list
+        .media
+          .media-left
+            width: inherit
+      .media
+        .media-left
+          width: inherit
 
 +until(321px)
   .notif-report

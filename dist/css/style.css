@@ -5908,6 +5908,8 @@ strong {
         width: 100%;
         max-width: 150px;
         margin: 0 auto; }
+        .box .media .media-left .image img {
+          max-width: 100%; }
         .box .media .media-left .image.list-detail {
           width: 100%;
           max-width: 65px;
@@ -6893,7 +6895,11 @@ strong.total {
   .box.list .media .media-left {
     width: 40%; }
   .box .media .media-left {
-    width: 40%; } }
+    width: 40%; }
+  .main-discuss .box.list .media .media-left {
+    width: inherit; }
+  .main-discuss .box .media .media-left {
+    width: inherit; } }
 
 @media screen and (max-width: 320px) {
   .notif-report .button {
@@ -6968,8 +6974,13 @@ strong.total {
         background-color: transparent; }
     .level.header .nav-left .box {
       background-color: transparent; }
-      .level.header .nav-left .box .media .media-content p strong {
-        color: #ffffff; }
+      .level.header .nav-left .box .media {
+        padding-top: 6px; }
+        .level.header .nav-left .box .media .media-left {
+          width: 30px;
+          height: 30px; }
+        .level.header .nav-left .box .media .media-content p strong {
+          color: #ffffff; }
   .level.header.bg-white {
     background-color: #ffffff;
     border-bottom: 1px solid #dedede; }
@@ -7054,6 +7065,10 @@ strong.total {
       opacity: 1;
       height: auto;
       display: block; */
+@media screen and (max-width: 320px) {
+  .level.header .nav-left .box .media .media-content p {
+    font-size: 12px; } }
+
 .main.home {
   background-color: #f4f5f6;
   padding-top: 0; }
