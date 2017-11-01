@@ -7731,7 +7731,8 @@ strong.total {
         .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox {
           padding: 29.1px 10px; }
           .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .label, .modal-filter .modal-card .modal-card-body .filter-option .sort-list .checkbox .sort-text {
-            font-size: 11px; } }
+            font-size: 11px;
+            padding-right: 50px; } }
 
 .filter-price {
   position: relative; }
