@@ -7437,7 +7437,11 @@ strong.total {
   .discuss ul li .time-discuss.relativeMobile {
     right: 0;
     top: 6px;
-    position: relative; } }
+    position: relative; }
+  .profile-wrapp .box .media .media-left {
+    width: inherit; }
+  .slick-slide .box .media .media-left {
+    width: inherit; } }
 
 .wishlist .search-form {
   margin-bottom: 20px; }
