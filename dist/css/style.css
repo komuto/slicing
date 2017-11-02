@@ -6688,15 +6688,18 @@ strong.total {
     background-color: rgba(86, 170, 239, 0.15);
     color: #56aaef; }
 
+.caption {
+  padding: 15px 20px;
+  font-size: 13px;
+  line-height: 1.69;
+  letter-spacing: 0.2px;
+  background-color: #ffffff; }
+
 .middle-content {
   position: relative; }
   .middle-content > .content {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    position: relative;
+    width: 100%; }
   .middle-content .mid {
     position: absolute;
     top: 50%;
