@@ -6329,18 +6329,23 @@ strong {
       margin-right: 10px; }
 
 .package .radio {
-  padding-right: 75px;
+  padding-right: 62px;
   position: relative;
-  text-align: right; }
+  text-align: left; }
   .package .radio span {
-    margin-left: 28px; }
+    text-align: left;
+    margin-left: 0;
+    margin-right: 28px; }
     .package .radio span.service-name {
-      position: absolute;
-      top: 50%;
-      left: 20px;
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
       margin-left: 0;
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); }
+      margin-bottom: 5px;
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      text-align: left; }
 
 .kurir .radio img {
   max-width: 40px;
