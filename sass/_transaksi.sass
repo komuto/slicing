@@ -14,6 +14,15 @@
   .media
     .media-left
       .image
+        overflow: hidden
+        &.xs
+          +size(30px, 30px)
+        &.sm
+          +size(35px, 35px)
+        &.lg
+          +size(60px, 60px)
+        &.lgx
+          +size(72px, 72px)
         &.list-transaction
           +size(45px, 45px)
           +borderRadius(3px)

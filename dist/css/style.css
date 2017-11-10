@@ -9617,43 +9617,57 @@ strong.total {
   border-radius: 3px;
   margin-top: 15px; }
 
-.box .media .media-left .image.list-transaction {
-  width: 45px;
-  height: 45px;
-  border-radius: 3px;
-  position: relative;
+.box .media .media-left .image {
   overflow: hidden; }
-  .box .media .media-left .image.list-transaction.xs {
+  .box .media .media-left .image.xs {
     width: 30px;
     height: 30px; }
-  .box .media .media-left .image.list-transaction.sm {
+  .box .media .media-left .image.sm {
     width: 35px;
     height: 35px; }
-  .box .media .media-left .image.list-transaction.lg {
+  .box .media .media-left .image.lg {
     width: 60px;
     height: 60px; }
-  .box .media .media-left .image.list-transaction.lgx {
+  .box .media .media-left .image.lgx {
     width: 72px;
     height: 72px; }
-  .box .media .media-left .image.list-transaction img {
-    border-radius: 3px; }
-  .box .media .media-left .image.list-transaction.plus3:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(117, 117, 117, 0.74);
-    z-index: 1; }
-  .box .media .media-left .image.list-transaction.plus3 > span {
-    color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    z-index: 2; }
+  .box .media .media-left .image.list-transaction {
+    width: 45px;
+    height: 45px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden; }
+    .box .media .media-left .image.list-transaction.xs {
+      width: 30px;
+      height: 30px; }
+    .box .media .media-left .image.list-transaction.sm {
+      width: 35px;
+      height: 35px; }
+    .box .media .media-left .image.list-transaction.lg {
+      width: 60px;
+      height: 60px; }
+    .box .media .media-left .image.list-transaction.lgx {
+      width: 72px;
+      height: 72px; }
+    .box .media .media-left .image.list-transaction img {
+      border-radius: 3px; }
+    .box .media .media-left .image.list-transaction.plus3:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(117, 117, 117, 0.74);
+      z-index: 1; }
+    .box .media .media-left .image.list-transaction.plus3 > span {
+      color: #ffffff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: 2; }
 
 .box .media .media-left.is-full-bordered .image.list-transaction img {
   border-radius: 700px; }
