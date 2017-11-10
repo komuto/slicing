@@ -5985,7 +5985,10 @@ strong {
           right: -14px;
           bottom: -14px; }
   .box.list .media .media-left {
-    margin-right: 10px; }
+    margin-right: 10px;
+    -ms-flex-item-align: inherit;
+        -ms-grid-row-align: inherit;
+        align-self: inherit; }
     .box.list .media .media-left .image {
       width: 100%;
       max-width: 150px;
