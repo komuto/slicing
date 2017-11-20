@@ -10256,6 +10256,9 @@ strong.total {
       right: 15px;
       background-color: transparent;
       border: none; }
+      .add-comment .control button:focus {
+        border: none;
+        outline: 0 none !important; }
   .add-comment .textarea {
     border-radius: 0;
     border: none;
