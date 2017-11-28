@@ -445,6 +445,9 @@ strong
         width: 100%
         max-width: 150px
         margin: 0 auto
+        &.img-product
+          img
+            height: 150px
         &.img-catalog
           width: 40px
           height: 40px
@@ -478,15 +481,20 @@ strong
           line-height: 1.38
           letter-spacing: 0.2px
           color: $color_radio
-          margin-bottom: 5px;
+          margin-bottom: 5px
+          word-wrap: break-word
           a
             color: $color_radio
             &:hover, &:focus
               color: $primary
           p
+            word-wrap: break-word
             a
               display: block
               color: $color_radio
+        &.min-height
+          h4
+            min-height: 34px
         &.reseller
           .products-name
             span
@@ -503,6 +511,7 @@ strong
             line-height: 1.33
             letter-spacing: 0.2px
             vertical-align: middle
+            word-wrap: break-word
             span
              vertical-align: middle
           .discount
@@ -525,6 +534,8 @@ strong
             position: absolute
             right: -14px
             bottom: -14px
+          .store-name
+            min-height: 39px
   &.list
     .media
       .media-left
