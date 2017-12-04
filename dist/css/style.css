@@ -6921,6 +6921,16 @@ strong.total {
       color: #41475e;
       margin: 0 auto; }
 
+.wrapword {
+  white-space: -moz-pre-wrap !important;
+  white-space: -webkit-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal; }
+
 @media screen and (max-width: 360px) {
   .box.list .media .media-left {
     width: 40%; }
