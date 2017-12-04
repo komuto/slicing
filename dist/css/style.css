@@ -6005,6 +6005,9 @@ strong {
       width: 100%;
       max-width: 150px;
       margin: 0 auto; }
+  .box.list .media .media-content .detail .remove-item {
+    right: -10px;
+    bottom: 0; }
   .box.grid .media {
     display: block; }
     .box.grid .media .media-left {
