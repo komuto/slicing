@@ -44,6 +44,9 @@ strong
   padding-bottom: 46px
   min-height: 100%
   overflow: hidden
+  max-width: 480px
+  margin: 0 auto
+  position: relative
   &.disc
     padding-top: 105px;
   &.home
@@ -596,9 +599,12 @@ strong
   display: none
   position: fixed
   top: 0
-  left: 0
+  left: 50%
   right: 0
   bottom: 0
+  width: 100%
+  max-width: 480px
+  +translateX(-50%)
   background-color: $color_bg_overlay
   z-index: 999
   .sort-list
@@ -1019,6 +1025,9 @@ strong
             max-width: 80px
 .modal
   z-index: 999
+  left: 50%
+  max-width: 480px
+  +translateX(-50%)
 
 .is-loading
   &.self

@@ -3,8 +3,10 @@
   &.header
     position: fixed
     top: 0
-    left: 0
+    left: 50%
     width: 100%
+    max-width: 480px
+    +translateX(-50%)
     background-color: $red
     z-index: 999
     padding: 0 15px
@@ -12,6 +14,7 @@
     display: flex;
     margin-bottom: 0
     height: 64px
+    +translateX(-50%)
     .nav-left
       overflow: visible
       .level-item

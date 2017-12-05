@@ -1,12 +1,13 @@
 .level
   &.nav-bottom
     position: fixed
-    left: 0
+    left: 50%
     bottom: 0
-    +size(100%, 46px)
+    +size(480px, 46px)
     border-top: 1px solid $color_border_ccc
     background-color: $white
     z-index: 99
+    +translateX(-50%)
     &.nav-button
       height: 66px
       padding: 10px
@@ -158,3 +159,8 @@
   > span
     margin-top: -2px
     margin-left: -8px
+
++from(480px)
+  right: 0
+  left: 65%
+  +translateX(-65%)
