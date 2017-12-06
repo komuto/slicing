@@ -6196,6 +6196,11 @@ strong {
   border-radius: 0;
   padding: 20px;
   letter-spacing: 0.2px; }
+  .notification .fix-fit {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 480px; }
   .notification > .delete {
     width: 24px;
     height: 24px;
