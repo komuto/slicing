@@ -6199,7 +6199,7 @@ strong {
   border-radius: 0;
   padding: 20px 60px 20px 20px;
   letter-spacing: 0.2px; }
-  .notification .fix-fit {
+  .notification.fix-fit {
     left: 50% !important;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -7431,7 +7431,11 @@ strong.total {
   .discuss ul.product-discuss.is-fixed {
     position: fixed;
     top: 64px;
-    width: 100%; }
+    width: 100%;
+    max-width: 480px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
   .discuss ul.main-discuss {
     margin: 0; }
   .discuss ul li {
