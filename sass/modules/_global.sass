@@ -109,8 +109,9 @@ strong
     padding: 0 20px
   &.content
     > div
-      width: 100%
       max-width: 480px
+      &.w100
+        width: 100%
 
 .container
   &.is-fluid
@@ -732,7 +733,7 @@ strong
 
 .notification
   +borderRadius(0)
-  padding: 20px
+  padding: 20px 60px 20px 20px
   @extend .nunito-bold
   letter-spacing: 0.2px
   .fix-fit
