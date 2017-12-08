@@ -6199,12 +6199,6 @@ strong {
   border-radius: 0;
   padding: 20px 60px 20px 20px;
   letter-spacing: 0.2px; }
-  .notification.fix-fit {
-    left: 50% !important;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 480px; }
   .notification > .delete {
     width: 24px;
     height: 24px;
@@ -6235,6 +6229,12 @@ strong {
       background-color: #e4172d; }
   .notification:not(:last-child) {
     margin-bottom: 0; }
+  .notification.fix-fit {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 480px; }
 
 .owl-stage {
   display: -webkit-box;
@@ -10040,7 +10040,15 @@ strong.total {
 
 @media screen and (max-width: 599px) {
   .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong {
-    max-width: 68%; } }
+    max-width: 66%; } }
+
+@media screen and (max-width: 411px) {
+  .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong {
+    max-width: 64%; } }
+
+@media screen and (max-width: 359px) {
+  .discuss .notif-detail li .box .media .media-content .content p strong, .discuss .conversation li .box .media .media-content .content p strong {
+    max-width: 57%; } }
 
 @media screen and (max-width: 360px) {
   .discuss .notif-detail li .box .media .media-content .time-discuss.relativeMobile {
