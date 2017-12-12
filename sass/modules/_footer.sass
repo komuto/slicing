@@ -90,9 +90,11 @@
 
 .add-comment
   position: fixed
-  left: 0
+  left: 50%
   bottom: 0
   +size(100%, 46px)
+  max-width: 480px
+  +translateX(-50%)
   .control
     position: relative
     button
@@ -118,9 +120,15 @@
     +placeholder
       color: $color_input
       opacity: 1
-
-.sticky-button
+.wrapper-sticky
   position: fixed
+  width: 100%
+  max-width: 480px
+  left: 50%
+  bottom: 0
+  +translateX(-50%)
+.sticky-button
+  position: absolute
   right: 20px
   bottom: 30px
   +size(56px, 56px)
@@ -161,7 +169,3 @@
     margin-top: -2px
     margin-left: -8px
 
-+from(480px)
-  right: 0
-  left: 65%
-  +translateX(-65%)
