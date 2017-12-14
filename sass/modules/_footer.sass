@@ -148,15 +148,17 @@
   padding: 20px
   background-color: $white
   position: fixed
-  left: 0
+  left: 50%
   bottom: 0
   +size(100%, auto)
+  max-width: 480px
+  +translateX(-50%)
   .columns
     width: 100%
 
 .catalog-button
   color: $white
-  position: fixed
+  position: absolute
   left: 20px
   bottom: 20px
   z-index: 99
