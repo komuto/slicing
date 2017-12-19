@@ -5964,6 +5964,8 @@ strong {
           .box .media .media-content .content h4 p a {
             display: block;
             color: #404852; }
+      .box .media .media-content .content.no-margin {
+        margin: 0; }
       .box .media .media-content .content.min-height h4 {
         min-height: 34px; }
       .box .media .media-content .content.reseller .products-name span {
