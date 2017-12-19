@@ -91,11 +91,11 @@
         max-width: 480px
         left: 50%
         +translateX(-50%)
+        background-color: $white
     &.main-discuss
       margin: 0
     li
       padding: 20px
-      border-bottom: none
       .time-discuss
         position: absolute
         top: 0
@@ -111,6 +111,8 @@
           p
             strong
               display: block
+      &.no-border-bottom
+        border-bottom: none
     &.notif-detail
       .time-discuss
         top: 0

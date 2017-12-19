@@ -7437,12 +7437,12 @@ strong.total {
     max-width: 480px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    background-color: #ffffff; }
   .discuss ul.main-discuss {
     margin: 0; }
   .discuss ul li {
-    padding: 20px;
-    border-bottom: none; }
+    padding: 20px; }
     .discuss ul li .time-discuss {
       position: absolute;
       top: 0;
@@ -7455,6 +7455,8 @@ strong.total {
         margin-bottom: 10px; }
     .discuss ul li .box .content p strong {
       display: block; }
+    .discuss ul li.no-border-bottom {
+      border-bottom: none; }
   .discuss ul.notif-detail .time-discuss {
     top: 0; }
   .discuss ul.notif-detail .box .content {
