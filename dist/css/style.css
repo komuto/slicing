@@ -5955,6 +5955,8 @@ strong {
         color: #404852;
         margin-bottom: 5px;
         word-wrap: break-word; }
+        .box .media .media-content .content h4.no-margin {
+          margin-bottom: 0; }
         .box .media .media-content .content h4 a {
           color: #404852; }
           .box .media .media-content .content h4 a:hover, .box .media .media-content .content h4 a:focus {
