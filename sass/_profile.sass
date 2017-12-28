@@ -226,23 +226,24 @@
                   .detail
                     .price
                       font-size: 14px
-      &:last-child
-        .column
-          .box
-            &.grid
-              top: 50%
-              +translateY(-50%)
-              .media
-                .media-left
-                  .image
-                    width: 40px
-                    display: block
-                    margin-left: auto
-                    margin-right: auto
-                .media-content
-                  .content
-                    span
-                      font-size: 12px
+      &.fav-store
+        &:last-child
+          .column
+            .box
+              &.grid
+                top: 50%
+                +translateY(-50%)
+                .media
+                  .media-left
+                    .image
+                      width: 40px
+                      display: block
+                      margin-left: auto
+                      margin-right: auto
+                  .media-content
+                    .content
+                      span
+                        font-size: 12px
 
 +until(361px)
   .discuss
